@@ -54,12 +54,13 @@ Persona Image
 
     Motivation was set to a value between 1 (weak motivation) and 5 (strong motivation).
 
-    - Price : 5
-    - Functionality : 4
-    - Reviews : 3
-    - Environment : 2
-    - Aesthetic : 1
+    - Price : :black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:
+    - Functionality : :black_large_square::black_large_square::black_large_square::black_large_square::white_large_square:
+    - Reviews : :black_large_square::black_large_square::black_large_square::white_large_square::white_large_square:
+    - Environment : :black_large_square::black_large_square::white_large_square::white_large_square::white_large_square:
+    - Aesthetic : :black_large_square::white_large_square::white_large_square::white_large_square::white_large_square:
 - Belief
+  
     - **"The Earth can be greener by our effort."**
 - Preference
     - Haven’t had time for hobbies until now, due to hard working
@@ -259,4 +260,5 @@ This region is empty.
         As we set our target user as Newcomers of 'eco-friendly' product consumption, we wanted to explain that he is not a complete "online shopping" new comer by describing the online or shopping application he usually uses. [3]
 
 - modification of storyboards
+  
     - We combine text on the storyboard and modify the contents of the storyboard to have scenario-driven content.[4]
