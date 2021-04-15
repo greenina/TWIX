@@ -244,14 +244,14 @@ This region is empty.
         Therefore, users want to get motivated steadily in eco-friendly consumption for the desire of contributing to environment to overcome the desire of personal gain.
         We actually got this point not by our own assumption, but by the mentioning of our interviewee.
 
-    - <a name-"fb-two"></a>[2] about green points
+    - <a name="fb-two"></a>[2] about green points
 
         For reasons such as the UI of the program and its exact function are not clearly determined, we inserted the concept of a green point on the third storyboard. This is expressed as an example of a method to motivate. I will try to find a better motivation-giving method than the green point by proceeding with the project later. 
 
-    - <a name-"fb-three"></a>[3] Intention of the brand description in Persona
+    - <a name="fb-three"></a>[3] Intention of the brand description in Persona
 
         As we set our target user as Newcomers of 'eco-friendly' product consumption, we wanted to explain that he is not a complete "online shopping" new comer by describing the online or shopping application he usually uses.
 
 - Modification of storyboards
   
-    - <a name-"fb-four"></a>[4] We combine text on the storyboard and modify the contents of the storyboard to have scenario-driven content.
+    - <a name="fb-four"></a>[4] We combine text on the storyboard and modify the contents of the storyboard to have scenario-driven content.
