@@ -6,7 +6,7 @@
 
 We set up our POV using user needs and insights. We were inspired by the interview results we conducted interviews in the past.
 
-- POV
+- **POV**
 
     
 
