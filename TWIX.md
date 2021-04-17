@@ -1,7 +1,3 @@
-# DP2 보고서
-
-상태: 보고서
-
 # DP2 : Ideation
 
 ## POV
@@ -11,17 +7,20 @@
 We set up our POV using user needs and insights. We were inspired by the interview results we conducted interviews in the past.
 
 - POV
-    1. who
 
-        - **Newcomers of eco-friendly product consumption**
+    
 
-    2. needs to
+    **Newcomers of eco-friendly product consumption**
 
-        - **be motivated steadily in eco-friendly consumption**
+    needs to
 
-    3. because it
+    **be motivated steadily in eco-friendly consumption**
 
-        -makes the **“desire of contributing to environment” overcome the “desire of personal gain(price, function, etc)”** in purchasing product which helps users **act at will to protect the environment**.
+    because it
+
+    makes the **“desire of contributing to environment” overcome the “desire of personal gain(price, function, etc)”** in purchasing product which helps users **act at will to protect the environment**.
+
+    
 
 ## Persona
 
@@ -82,7 +81,7 @@ Persona Image
 
 ---
 
-We made some short HMW questions for out team's [POV](), and picked top 3 HMW questions with through the following process consisting of brainstorming, grouping, and voting.
+We made some short HMW questions for out team's [POV](#POV), and picked top 3 HMW questions with through the following process consisting of brainstorming, grouping, and voting.
 
 ### Selection Process
 
@@ -100,24 +99,27 @@ All of the HMWs can be concerned as starting with "How might we ..."
 ### List of HMW questions
 
 - 10 How Might We questions
-    - Enlighten users of product's adverse effects on the environment as well?
-    - Help users consider from product's birth to death?
-    - make people intuitively recognize product's environmental contribution?
+  
+    How Might We~
+    
+    - Enlighten users of product's <u>adverse</u> effects on the environment as well?
+    - Help users consider product's birth to death?
+    - Make people intuitively recognize product's environmental contribution?
     - Make people interact emotionally with the environment?
-    - Make users feel pride about their behavior?
+    - Make users feel pride about their behavior of purchasing eco-friendly product?
     - Help users perceive one's environmental contribution sensately?
-    - Lower the barrier for contributing to the environment?
+    - Lower the barrier of buying eco-friendly product?
     - Make users feel sense of belonging&fellowship in a social context in terms of eco-friendly consumption?
     - Use the competitive spirit of others as a material for motivation?
-    - Make connection between consumption and practical activities?
+    - Make connection between consumption and practical activities regarding environment contribution?
 
 ### Selected HMW questions & Reason
 
-1. Make people intuitively recognize product's environmental contribution?
+1. HMW make people intuitively recognize product's environmental contribution?
     - To prevent user's frustration of complicated explanation of the product & reduce effort of checking
-2. Interact emotionally with the environment?
+2. HMW interact emotionally with the environment?
     - An object with emotion as a metaphor for an abstract concept can motivate users to empathize with and therefore protect the environment.
-3. make users feel sense of belonging&fellowship in a social context in terms of eco-friendly consumption?
+3. HMW make users feel sense of belonging&fellowship in a social context in terms of eco-friendly consumption?
     - The probability of practicing a hard behavior will increase, when a person is in the context of a group, compared to his own will.
 
 ## Solution Ideas
@@ -137,33 +139,34 @@ We made some solution ideas for previous HMW questions, and select 3 solutions i
 
 ### List of Solutions
 
-- Solutions for Question 1
-    1. The color of the circle is displayed under the product price depending on the amount of chemicals from the three stages of the production process/product delivery process/product disposal process.
-    2. Each product tags parts that help the environment so that users can filter the tags themselves.
-    3. Categorize the parts, functions, and prices of each product that are beneficial to the environment, and indicate 0 to 5 according to each item.
+- **Solutions for Question 1 [HMW make people intuitively recognize product's environmental contribution]**
+    1. Display different color on each product sdepending on the amount of chemicals from the three stages of the production process/delivery process/disposal process.
+    2. Each product contains tags regarding type on environment contribution(e.g animal protection) so that users can filter the tags themselves by their interest.
+    3. Indicate the score of each item by each dimension effecting environment of the product by classifying dimensions. 
     4. The same standard applies to similar product categories only (ex. disposable products / household goods / food, etc.)
-    5. From birth to death of the product, explains in detail the impact on the environment based on the user's behavior.
-    6. Comparing the decay time of each product when it is discarded and converting it to the time saved time.
-    7. Each product can be viewed by tying up the type and number of environmental protection certification marks.
+    5. From birth to death of the product, explain in detail about the impact on the environment based on the user's behavior.
+    6. Compare the decay time of each product when it is discarded and convert it to the saved time.
+    7. Each product can be viewed by tying up the type and number of environmental protection <u>certification marks</u>.
     8. Shows the carbon footprint of the product user purchased.
-    9. Provides a figure comparing the difference between regular products and eco-friendly products as a percentage.
+    9. Provides a figure comparing the difference between regular products and eco-friendly products.
     10. It displays eco-friendly keywords (forest protection, water resource protection, etc.) with icons and provides a function to view products in groups accordingly.
-- Solutions for Question 2
+
+- **Solutions for Question 2 [HMW interact emotionally with the environment]**
     1.  Virtual companion plants depending on my consumption
-    2. Each product visually displays how the Earth (e.g., the proportion of green on Earth image) changes when it is purchased.
+    2. Each product visually displays how the Earth (e.g. the proportion of green on Earth image) changes when it is purchased.
     3. Visual demonstration of environmental contributions from a distance perspective
-    4. write user's consumption in the form of a letter to the environment as a diary.
+    4. Write user's consumption in the form of a letter to the environment as a diary.
     5. When searching or doing activities related to eco-friendly environment, they are encouraged to receive thanks after a certain time.
     6. Hold a event that let users play their roles by empathizing with their environment.
     7. Each product expresses the good or bad parts of the environment in dialogue.
     8. Let users design their own characters and visually show how they grow up doing good for the environment.
     9. When the news that particular environment elements have recovered is delivered, a thank-you can be delivered to the person who searched for the relevant product.
-    10. encourages actions that can sympathize with nature, such as taking pictures of plants, and provides some rewards.
+    10. Encourages actions that can sympathize with nature, such as taking pictures of plants, and provides some rewards.
 
-- Solutions for Question 3
+- **Solutions for Question 3 [HMW make users feel sense of belonging&fellowship in a social context in terms of eco-friendly consumption]**
     1. Visual representation of the purchase history or contribution of yourself and your acquaintances, ranking between them.
-    2. recommends products in the order that they are closely related to the environmental issues that are social issues at that time, and analyzes the relationship between the products user have consumed so far.
-    3. Team up with friends, and build up a joint green score of each period.
+    2. Recommend products in order that they are closely related to the environmental issues that are social issues at that time, and analyzes the relationship between the products user have consumed so far.
+    3. Team up, and build up result by individual consumption.
     4. Create anonymous communities to evaluate each other's spending habits
     5. Introduce a consumption level system. This level system is distinct from ranking system because it does not necessarily imply the need of compared to other users.
     6. Provides communication space for people who have similar product lines or selection criteria to consume
@@ -185,7 +188,23 @@ We made some solution ideas for previous HMW questions, and select 3 solutions i
 
 ---
 
-[Storyboards for each solution](https://www.notion.so/89a246405a24408d9ad0de335ef517cc)
+***Storyboard of Solution 1***
+
+Visually show how environment changes when purchasing each product
+
+![](https://ifh.cc/g/2aK8nO.jpg)
+
+***Storyboard of Solution 2***
+
+Provide virtual companion according to user’s consumption
+
+![](https://ifh.cc/g/17UFgp.jpg)
+
+***Storyboard of Solution 3***
+
+Team up, and build up a result by individual consumption
+
+![](https://ifh.cc/g/EVYBXe.jpg)
 
 ## Studio Reflection
 
@@ -199,27 +218,23 @@ We made some solution ideas for previous HMW questions, and select 3 solutions i
 
 **I like …**
 
-- Specific reasons of HMWs and solutions.
-    - specific reasons for each HMWQ makes me understand easily.
-    - I like that they suggest solutions, and HMW with reasons and explanations, so I could understand that easily.
-    - How they touched user’s emotion by virtual companion.
-- Detail and quality of storyboards
-    - I know talking about visual is banned, but I cannot help giving applause to your *marvelous* storyboard pictures
-    - that team provided detailed storyboard
+- Suggested solutions and specific reasons of HMWs and solutions
+    - could be understood easily
+    - how they touched user’s emotion by virtual companion
 - Contents
-    - Describing with brands info
-    - I like that the pov is related to eco-friendly products since they’re saving the nature
-    - Deviding environmental infos into several cartegories
+    - persona description with brands info
+    - the POV is related to eco-friendly products since they’re saving the nature
+    - dividing environmental infos into several categories
+    - detail and quality of storyboards
 
 **I wish ...**
 
-- descriptions
-    - I wish you can describe how ‘needs to be steadily advertised(?) by eco-friendly product’ is the needs of the new-comers to eco-friendly products! Or was it the problem status? I think it would be better if you can address it. →[[1]]()
-- wishes in a presentation
-    - I wish you to explain more about the term you use in your presentation. I does not directly what it means getting interact emotionally and other terms.
-    - I wish HMW question were reminded again while introducing the solutions
-    - I wish if you write which solutions is for which problem
-    - Indicate which storyboard explain which solution.
+- Descriptions
+    - explanation about why ‘to be steadily motivated in eco-friendly product consumption’ is the needs of the new-comers to eco-friendly products! Or was it the problem status? →[[1]](#fb-one)
+- Wishes in a presentation
+    - more explanation about the term you use in your presentation. I does not directly what it means getting interact emotionally and other terms.
+    - reminder of HMW questions while introducing the solutions
+    - indicator of which storyboard explain which solution
 - Opinions about setting product's contribution
     - The effects of each product differ by amount, material, etc.
 
@@ -229,36 +244,36 @@ This region is empty.
 
 **Others**
 
-- I’m curious why you chose those brands to explain persona! What did you intended for those information? → [[3]]()
-- Is the green points you mentioned in 3rd story board will be enough motivation? Maybe appealing that they use eco-friendly products may be good to advertise their cafe. → [[2]]()
+- I’m curious why you chose those brands to explain persona! What did you intended for those information? → [[3]](#fb-three)
+- Is the green points you mentioned in 3rd story board will be enough motivation? Maybe appealing that they use eco-friendly products may be good to advertise their cafe. → [[2]](#fb-two)
 - I’m wondering how to evaluate environmental contribution
 - I wonder what does 'interacting emotionally with eco-friendly products' means in HMW.
-- I wonder if giving points on buying eco friendly products will cause overconsumption, which is bad for the environment. → [[2]]()
-- How will the green points divided when users purchase in group? → [[2]]()
+- I wonder if giving points on buying eco friendly products will cause overconsumption, which is bad for the environment. → [[2]](#fb-two)
+- How will the green points divided when users purchase in group? → [[2]](#fb-two)
 
 ### Feedback during Session Time
 
-- Clear justification of needs → [[1]]()
-- Storyboard should not be UI-driven but scenario-driven → [[4]]()
-- Not like in the PPT, the storyboard and description should exist together, not separate → [[4]]()
+- Extra explanation regarding needs → [[1]](#fb-one)
+- Storyboard should not be UI-driven but scenario-driven → [[4]](#fb-four)
+- Not like in the PPT, the storyboard and description should exist together, not separate → [[4]](#fb-four)
 
 ### Summarize the reflection of feedback
 
-- Should provide more descriptions
-    - justification of needs :
+- Provision of more descriptions
+    - <a name="fb-one"></a>[1] Extra explanation of needs :
 
         Our target users have the will to protect the environment, but they sometimes find their desire of personal gain(price, functionality, etc) suppressing their desire of contributing to environment, and eventually fail to purchase eco-friendly product.
         Therefore, users want to get motivated steadily in eco-friendly consumption for the desire of contributing to environment to overcome the desire of personal gain.
-        We actually got this point not by our own assumption, but by the mentioning of our interviewee. [1]
+        We actually got this point not by our own assumption, but by the mentioning of our interviewee.
 
-    - about green points
+    - <a name="fb-two"></a>[2] About green points
 
-        For reasons such as the UI of the program and its exact function are not clearly determined, we inserted the concept of a green point on the third storyboard. This is expressed as an example of a method to motivate. I will try to find a better motivation-giving method than the green point by proceeding with the project later. [2]
+        For reasons such as the UI of the program and its exact function are not clearly determined, we inserted the concept of a green point on the third storyboard. This is expressed as an example of a method to motivate. I will try to find a better motivation-giving method than the green point by proceeding with the project later. 
 
-    - Intention of the brand description in Persona
+    - <a name="fb-three"></a>[3] Intention of the brand description in Persona
 
-        As we set our target user as Newcomers of 'eco-friendly' product consumption, we wanted to explain that he is not a complete "online shopping" new comer by describing the online or shopping application he usually uses. [3]
+        As we set our target user as Newcomers of 'eco-friendly' product consumption, we wanted to explain that he is not a complete "online shopping" new comer by describing the online or shopping application he usually uses.
 
-- modification of storyboards
+- Modification of storyboards
   
-    - We combine text on the storyboard and modify the contents of the storyboard to have scenario-driven content.[4]
+    - <a name="fb-four"></a>[4] We combined text on the storyboard and modified the storyboard of the solution 1 "Visually show how environment changes when purchasing each product", to make it user - and scenario- driven, not solution-driven
