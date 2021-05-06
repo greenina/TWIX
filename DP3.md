@@ -196,7 +196,11 @@ We revised our POV based on the feedback of DP2
 
 **Task 1) Get hints which implies the item's eco-friendliness.**
 
-
+- Worked well
+  - User spoke out well what hints they found out.
+- 
+  - Doesn’t know the purpose of overlaid image in the product list even after recognizing the existence of it
+  - Doesn’t scroll down in Detail Page so that doesn’t recognize GIF image and icon/short description at the bottom
 
 **Task 2) Put 3 items that you think are eco-friendly and one item that you think is not to the wish list**
 
@@ -207,8 +211,6 @@ We revised our POV based on the feedback of DP2
 
 - Overall, lots of high ranked problems are discovered in this task in the aspect of severity
 - Number of problems found were the biggest
-    - Doesn’t know the purpose of overlaid image in the product list even after recognizing the existence of it
-    - Doesn’t scroll down in Detail Page so that doesn’t recognize GIF image and icon/short description at the bottom
     - Doubtful seeing on a non-green product on the product list, or misunderstood it as an eco-friendly product
     - Tried to click “buy” button wrongly instead of heart icon btn when adding it to wish list
     - User doesn’t know the purpose of the companion
