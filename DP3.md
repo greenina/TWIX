@@ -48,6 +48,16 @@ We revised our POV based on the feedback of DP2
 
 :link:[Prototype link](https://www.figma.com/proto/g8gPyFM8M4lgUNJEruVq8E/DP3?node-id=18%3A4&scaling=min-zoom&page-id=0%3A1)
 
+**[Representative Screen Shots]**
+
+![https://ifh.cc/g/chIPWc.jpg](https://ifh.cc/g/chIPWc.jpg)
+
+
+
+![https://ifh.cc/g/Ej1bdX.jpg](https://ifh.cc/g/Ej1bdX.jpg)
+
+![https://lh6.googleusercontent.com/-F9siOkTbkGMKlr6nG7Ea0KaFVQeNyy_oXOOii3b9i7iHe5z0hNZoL7PcZBBtA_Np8pXeOujRDtFF_Ss1U4mPtyBmOatu2Gq1w5aTpf_ew](https://lh6.googleusercontent.com/-F9siOkTbkGMKlr6nG7Ea0KaFVQeNyy_oXOOii3b9i7iHe5z0hNZoL7PcZBBtA_Np8pXeOujRDtFF_Ss1U4mPtyBmOatu2Gq1w5aTpf_ew)
+
 ### Design Choice
 
 **Selection between several options**
