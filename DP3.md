@@ -1,4 +1,4 @@
-# DP2 : Low-fidelity Prototyping
+# DP3 : Low-fidelity Prototyping
 
 ## POV
 
@@ -46,7 +46,7 @@ We revised our POV based on the feedback of DP2
 
 4. Free and easy to use
 
-:link:[Prototype link](c11.kr/TWIX_prototype)
+:link:[Prototype link](https://www.figma.com/proto/g8gPyFM8M4lgUNJEruVq8E/DP3?node-id=18%3A4&scaling=min-zoom&page-id=0%3A1)
 
 ### Design Choice
 
