@@ -192,43 +192,6 @@ We revised our POV based on the feedback of DP2
 
 
 
-### Representative observations for each task
-
-**Task 1) Get hints which implies the item's eco-friendliness.**
-
-- Worked well
-  - User spoke out well what hints they found out.
-- 
-  - Doesn’t know the purpose of overlaid image in the product list even after recognizing the existence of it
-  - Doesn’t scroll down in Detail Page so that doesn’t recognize GIF image and icon/short description at the bottom
-
-**Task 2) Put 3 items that you think are eco-friendly and one item that you think is not to the wish list**
-
-- Worked well
-    - Recognizing the change in the companion state when the users go to Mypage right after adding a certain item into the wish list
-    - There were not any difficulties to both sign up and login the service page
-
-
-- Overall, lots of high ranked problems are discovered in this task in the aspect of severity
-- Number of problems found were the biggest
-    - Doubtful seeing on a non-green product on the product list, or misunderstood it as an eco-friendly product
-    - Tried to click “buy” button wrongly instead of heart icon btn when adding it to wish list
-    - User doesn’t know the purpose of the companion
-    - User is curious about Mypage is shown right after the sign up process, and even fails to recognize that the page is Mypage
-
-**Task 3) Make your companion's state "healthy"**
-
-- Worked well
-    - User distinguished well between eco-friendly and non eco-friendly items
-    - User chose to press heart icons again to remove the likes
-- The most severe problems are discovered a lot in this task compared to the others
-- Most of problems are either catastrophic or cosmetic, lacking intermediate ones
-    - Fails to realize that pressing heart btn adds the product to wish list
-    - Doubts that switching on and off the like button on the wish list is not immediately reflected in the companion’s state
-    - Everytime user puts something in wish list, the companion’s state keeps changing.
-    - It seems annoying to keep going back and forth to check it out
-    - User feels that Mypage acts as a shopping cart and says it would be nice if the expected total price was shown below
-    
 ### Lessons from Lo-Fi Prototyping
 ---
 **Severity scale**
@@ -236,63 +199,91 @@ Evaluated in three aspects, frequency, impact, and persistence, each ranged amon
 
 **Task 1) Sign up, and select your companion, then login**
 
-**Task 2) Put 3 items that you think are eco-friendly and one item that you think is not to the wish list**
+- Worked well
+  - User spoke out well what hints they found out.
+- Number of problems were not to many, but some major problems were found. 
 
-**Task 3) Make your companion's state "healthy"**
 
-<u>Problem : User doesn’t know the purpose of the companion</u>
 
-- Severity Scale : Major
-- Solution 
-    - Add a brief description when selecting a character
-    - Before choosing a character, give the user the context of the current situation, pop up a pop-up window with a speech balloon, indicating information such as that you can see other characters through arrow buttons
-- Grounds 
-    Users were embarrassed because there was usually no such function providing companion character. 
-    So we realized that it is needed to provide enough context explanation for why we are doing this. 
-
-<u>Problem : User is curious about why Mypage is shown right after signing up, and even doesn’t recognize that the page is Mypage</u>
-
-- Severity Scale : Minor
-- Solution 
-    - Show the word, “MyPage”
-    - Write a big indicator in every page which shows where you are, and make tabs in mypage that can be switched between wish list, purchased history, personal info.
+**[Problems]**
 
 <u>Problem : Uses scrolling instead of nav bar feels that the position after clicking navbar is wrong</u>
 
 - Severity Scale : Major
 - Solution
-    - Remove the nav bar and create a separate product category page instead
+  - Remove the nav bar and create a separate product category page instead
 
 <u>Problem : Doesn’t recognize the change of the frame of the product when the cursor is overlaid on the product image doesn’t catch the purpose of it even after known</u>
 
 - Severity Scale : Minor
 - Solution 
-    - Add auditory effects along with visual effects
-    - Make interaction not only product image, but also with the companion character
+  - Add auditory effects along with visual effects
+  - Make interaction not only product image, but also with the companion character
 
 <u>Problem : Does’t scroll down in Detail Page so that doesn’t recognize GIF image & icon/short description at the bottom.</u>
 
 - Severity Scale : Catastrophic
 - Ground 
-    - Because their goal is not to buy the product but to add the product to their wish list,they concentrated on clicking the heart icon, instead of looking for description.
+  - Because their goal is not to buy the product but to add the product to their wish list,they concentrated on clicking the heart icon, instead of looking for description.
     So we decided to induce them to see the information below the first frame.
 - Solution
-    - Make scroll bars more realizable.
-    - Explicit guide by the companion (i.e. “Look down!”)
+  - Make scroll bars more realizable.
+  - Explicit guide by the companion (i.e. “Look down!”)
 
 <u>Problem : Doesn’t recognize the change of GIF image, and doesn’t understand what it means.</u>
 
 - Severity : Major
 - Solution 
-    - Change it more intuitive, such as writing down large background text.
-    - Make it interactive rather than GIF
+  - Change it more intuitive, such as writing down large background text.
+  - Make it interactive rather than GIF
+
+**Task 2) Put 3 items that you think are eco-friendly and one item that you think is not to the wish list**
+
+- Worked well
+  - Recognizing the change in the companion state when the users go to Mypage right after adding a certain item into the wish list
+  - There were not any difficulties to both sign up and login the service page
+
+
+- Overall, lots of high ranked problems are discovered in this task in the aspect of severity
+- Number of problems found were the biggest
+
+**[Problems]**
+
+<u>Problem : User doesn’t know the purpose of the companion</u>
+
+- Severity Scale : Major
+- Solution 
+  - Add a brief description when selecting a character
+  - Before choosing a character, give the user the context of the current situation, pop up a pop-up window with a speech balloon, indicating information such as that you can see other characters through arrow buttons
+- Grounds 
+  Users were embarrassed because there was usually no such function providing companion character. 
+  So we realized that it is needed to provide enough context explanation for why we are doing this. 
+
+<u>Problem : User is curious about why Mypage is shown right after signing up, and even doesn’t recognize that the page is Mypage</u>
+
+- Severity Scale : Minor
+- Solution 
+  - Show the word, “MyPage”
+  - Write a big indicator in every page which shows where you are, and make tabs in mypage that can be switched between wish list, purchased history, personal info.
+
+- - 
 
 <u>Problem : Doubtful seeing on a non-green product on the product list, or misunderstood it as an eco-friendly product</u>
 
 - Severity : Major
 - Solution
-    - Get rid of all non-eco-friendly product 
-    - Change the interaction type with companions from caring healthy to raising from child to adult
+  - Get rid of all non-eco-friendly product 
+  - Change the interaction type with companions from caring healthy to raising from child to adult
+
+**Task 3) Make your companion's state "healthy"**
+
+- Worked well
+  - User distinguished well between eco-friendly and non eco-friendly items
+  - User chose to press heart icons again to remove the likes
+- The most severe problems are discovered a lot in this task compared to the others
+- Most of problems are either catastrophic or cosmetic, lacking intermediate ones
+
+**[Problems]**
 
 <u>Problem : Fails to realize that pressing heart buttons means the action of adding the product to wish list</u>
 
@@ -331,34 +322,60 @@ Evaluated in three aspects, frequency, impact, and persistence, each ranged amon
     - We believe that setting the eyes of the characters to look at the user from the front will bring us closer to the fundamental purpose of using the characters
 
 
+
+
+
 ### Feedback
+
+---
+
+
 
 - What about making "?" mark bigger?
     Applied on our prototype
+    
+    
+    
 - What about recommending new users to click "?" mark?  
     Applied to our prototype. 
-         - Made our "?" mark more attractive
-         - When the wish list is empty, text balloon shows above "?" mark of recommending to click it. 
+    
+       - Made our "?" mark more attractive
+             When the wish list is empty, text balloon shows above "?" mark of recommending to click it. 
+    
+            
+    
 - Login and Sign up are to trivial to include as a task
     - Changed the wording of our task, while making the previous observation we made not to be effected by the change of the task wording change. 
+    
     - Looking through the site, Login, Sign up, and selecting the companion was Task1, but we judged that surfing through the site is one major task of our end-to-end scenario. Getting hints about components that implies eco-friendliness of items, and was a big and major part of previous Task1. We actually emphasized it to our observers, and to speak it out everything they think of it during the observation. 
+    
+      
+    
 - Would be better if something more unique than other shopping sites are added more./I wish you focus more on why people hesitate to buy eco friendly thing and real problem in the process of buying.
     Companion will give a feedback/response to user's action not only in myPage but in most parts of the whole user scenario. In the process of devising such an brilliant way, we focused on the hesitation points of people when buying eco-friendly product. 
     We decided to apply it to our high-fidelity prototype. 
+    
+    
+    
 - Task seems to be feature driven.
 
-    **Previous Task** 
-    1. Sign up, select your companion and name it, then login
-    2. Put three items that you think are eco-friendly and one item that you think is not to the wish list
-    3. Remove like of a non eco-friendly item, and add an eco-friendly one by your own decision
+   **Previous Task** 
+   1. Sign up, select your companion and name it, then login
+   2. Put three items that you think are eco-friendly and one item that you think is not to the wish list
+   3. Remove like of a non eco-friendly item, and add an eco-friendly one by your own decision
 
-    **Revised Task**
-    1. Get hints which implies the item's eco-friendliness. 
-    2. Put three items that you think are eco-friendly and one item that you think is not, to the wish list. 
-    3. Make your companion's state "healthy"
+   **Revised Task**
+   1. Get hints which implies the item's eco-friendliness. 
+   2. Put three items that you think are eco-friendly and one item that you think is not, to the wish list. 
+   3. Make your companion's state "healthy"
+
+   
 
    - More user focused than feature focused
+
    - No difference in scenario due to change of the task.(When you try to add item to the wish list without being logged in, the prototype makes you log in or sign up.)
+
+     
 
 - Recommending to scroll down to users may be distracting
     Instead of recommending to scroll down, we may make the scroll bar a bit more attractive so that users realize there's something more below. 
