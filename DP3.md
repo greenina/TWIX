@@ -133,37 +133,64 @@ We revised our POV based on the feedback of DP2
 
 ### Participants Info
 **P1**
-age: 25 yr old
-gender: female
-feature: cafe vlog youtuber
-reason of selection:
-had experience of cafe part time job
-In the process of working at the cafe, she said that many disposable products reminded her of a picture of a straw in the turtle’s nostril, so she often uses a tumbler when she visits other cafes.
-She’s bought and used eco-friendly dishwashing detergent, but after that she doesn’t find eco-friendly products because the detergent didn’t make bubbles easily.
+
+- age: 25 yr old
+
+- gender: female
+
+- feature: cafe vlog youtuber
+
+- reason of selection:
+  had experience of cafe part time job
+
+  In the process of working at the cafe, she said that many disposable products reminded her of a picture of a straw in the turtle’s nostril, so she often uses a tumbler when she visits other cafes.She’s bought and used eco-friendly dishwashing detergent, but after that she doesn’t find eco-friendly products because the detergent didn’t make bubbles easily.
+
 **P2**
-age: 34 yr old
-gender: male
-feature: freelance entrepreneur
-reason of selection:
-as a young businessman, he did lots of food business
-once own the waffle truck at big park in Seoul
-He usually thinks he is interested in the environment, but when asked if he’s ever bought eco-friendly products, he tried to buy them, but didn’t because they were expensive
-Regarding the use of disposable products that he experienced while running the store, he said that it is expensive and difficult to dispose of because disposable products are used very much.
+
+- age: 34 yr old
+
+- gender: male
+
+- feature: freelance entrepreneur
+
+- reason of selection:
+  as a young businessman, he did lots of food business, once own the waffle truck at big park in Seoul
+
+  He usually thinks he is interested in the environment, but when asked if he’s ever bought eco-friendly products, he tried to buy them, but didn’t because they were expensive
+
+  Regarding the use of disposable products that he experienced while running the store, he said that it is expensive and difficult to dispose of because disposable products are used very much.
+
+
+
 **P3**
-age: 21 yr old
-gender: male
-feature: student
-reason of selection:
-the interviewee that gave the insight of our POV, “It’s my first time seeing eco-friendly consumption through this interview, and I want to continue eco-friendly consumption, but it’s a little difficult to actually practice due to lack of information, price, and so on.”
-He’s recently become interested in the environment, so he is looking for eco-friendly products for his friends’ birthdays
+
+- age: 21 yr old
+
+- gender: male
+
+- feature: student
+
+- reason of selection:
+  the interviewee that gave the insight of our POV, “It’s my first time seeing eco-friendly consumption through this interview, and I want to continue eco-friendly consumption, but it’s a little difficult to actually practice due to lack of information, price, and so on.”
+
+  He’s recently become interested in the environment, so he is looking for eco-friendly products for his friends’ birthdays
+
 **P4**
-age: 31 yr old
-gender: male
-feature: salaryman
-reason of selection:
-He thinks he is usually quite interested in the environment, but he feels more uncomfortable when he buys eco-friendly products than he thought, so he couldn’t overcome the barrier.
-“I’ve felt complacent about using eco-friendly products”
-However, he is desperately aware of shortcomings such as durability and high price.
+
+- age: 31 yr old
+
+- gender: male
+
+- feature: salaryman
+
+- reason of selection:
+  He thinks he is usually quite interested in the environment, but he feels more uncomfortable when he buys eco-friendly products than he thought, so he couldn’t overcome the barrier.
+
+  “I’ve felt complacent about using eco-friendly products”
+
+  However, he is desperately aware of shortcomings such as durability and high price.
+
+
 
 ### Representative observations for each task
 
