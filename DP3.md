@@ -56,6 +56,8 @@ We revised our POV based on the feedback of DP2
 
 ![https://ifh.cc/g/Ej1bdX.jpg](https://ifh.cc/g/Ej1bdX.jpg)
 
+![https://ifh.cc/g/KXHXPC.jpg](https://ifh.cc/g/KXHXPC.jpg)
+
 ![https://lh6.googleusercontent.com/-F9siOkTbkGMKlr6nG7Ea0KaFVQeNyy_oXOOii3b9i7iHe5z0hNZoL7PcZBBtA_Np8pXeOujRDtFF_Ss1U4mPtyBmOatu2Gq1w5aTpf_ew](https://lh6.googleusercontent.com/-F9siOkTbkGMKlr6nG7Ea0KaFVQeNyy_oXOOii3b9i7iHe5z0hNZoL7PcZBBtA_Np8pXeOujRDtFF_Ss1U4mPtyBmOatu2Gq1w5aTpf_ew)
 
 ### Design Choice
@@ -67,7 +69,7 @@ We revised our POV based on the feedback of DP2
     
     ​	![https://ifh.cc/g/kWF8X2.jpg](https://ifh.cc/g/kWF8X2.jpg)
     
-- <span style="color:red">Wish list instead of Cart</span>
+- Wish list instead of Cart
     We want to implement the concept of cart, but since it addresses personal credit information, we concluded it was out of the range we can deal with.
     
 - Term selection : Login instead of Sign in
@@ -135,11 +137,7 @@ We revised our POV based on the feedback of DP2
 - Didn't implement purchase function
     If user can purchase the product, actual payment process shoule be implemented for an end-to-end scenario. So leaving it as an open question, we decided to make a wish list for low-fidelity prototype.
 
-- <span style="color:red">(빼도될듯)Instead of using icons representing ‘my page’, we created a button to go to ‘my page’ using text
-</span> 
-
-- <span style="color:red">(음 뭔가 말 수정 필요)On the detail page, the descriptions of each categories with icons and the picture(gif) that shows the change of the environment were separated at first, but we put together later
-</span>
+- On the detail page, the descriptions of each categories with icons and the picture(gif) that shows the change of the environment were separated at first, but we put together later
 
 ### Participants Info
 **P1**
