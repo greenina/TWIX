@@ -71,7 +71,11 @@ class CategoryPage extends React.Component {
         });
       });
   }
+  componentWillMount(){
+    this.datarefresh();
+    //alert(this);
 
+  }
   render() {
     const { name, price, imgg, a, ecoval } = this.state;
     return (
@@ -98,7 +102,7 @@ class CategoryPage extends React.Component {
         <button id="onesight" onClick={this.onesight}>
           한눈에보기
         </button>
-        <button onClick={this.datarefresh}>ㅋㅋ</button>
+        {/* <button onClick={this.datarefresh}>ㅋㅋ</button> */}
         <div id="pc">
           <Productlist
             name={name}
