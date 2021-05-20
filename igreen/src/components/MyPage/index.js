@@ -2,7 +2,9 @@
 import './style.css';
 import { db } from '../../firebase';
 import React, { useState, useEffect } from 'react';
-import WishProduct from '../../WishProduct';
+import WishProduct from '../WishProduct';
+import CurProduct from '../CurProduct';
+import RecProduct from '../RecProduct';
 
 function MyPage() {
   // const [img_num, setImgNum] = useState(0);
@@ -14,13 +16,21 @@ function MyPage() {
   const [printed, setPrinted] = useState([]);
   const [first, setFirst] = useState(0);
   const [overlayMode, setOverlay] = useState(0);
+  const [overlayInfo, setOverlayInfo] = useState([]);
+  const [recArray, setRecArray] = useState([]);
   var del_idx = [];
   var timer;
-  var delay = 500;
+  var delay = 1000;
+  var states = ['adult_bad', 'adult_normal', 'adult_good', 'adult_dance'];
 
   useEffect(() => {
-    var states = ['adult_bad', 'adult_normal', 'adult_good', 'adult_dance'];
     var infos = ['name', 'wished', 'experience'];
+    clearTimeout(timer);
+    var bukkuk = document.getElementById('companion_gif');
+    // console.log(bukkuk);
+    if (bukkuk != null) bukkuk.style = 'margin-left: -15%';
+    setOverlayInfo(['']);
+    setRecArray([]);
 
     db.collection('companion')
       .doc('bukkuk')
@@ -33,6 +43,8 @@ function MyPage() {
           dic[i] = docs[states[i]];
           setImgSrc(dic);
         }
+        let tdic = img_src;
+        tdic[4] = img_src[2];
         console.log('companion img source list', img_src);
       });
 
@@ -66,9 +78,11 @@ function MyPage() {
               console.log(products[userInfo['wished'][i]]['eco']);
               tmpScore += products[userInfo['wished'][i]]['eco'];
             }
-            if (userInfo['wished'].length > 0)
+            if (userInfo['wished'].length > 0) {
               setScore(Math.round(tmpScore / userInfo['wished'].length));
-            else setScore(0);
+              // var
+              // db.collection('users').doc('1').set()
+            } else setScore(4);
             console.log(
               "user's eco score",
               Math.round(tmpScore / userInfo['wished'].length)
@@ -94,8 +108,40 @@ function MyPage() {
       var bukkuk = document.getElementsByClassName('companion_gif')[0];
       console.log(bukkuk);
       bukkuk.style = 'margin-left: 5%';
-      setOverlay(1);
+      if (products[val]['eco'] > 0) {
+        // console.log(String(val));
+        setOverlayInfo([val]);
+        // console.log('overlay info :::::::', overlayInfo);
+        // debugger;
+        setOverlay(1);
+        setRecArray([]);
+        // console.log('overlay num :::::::', overlayMode);
+        // debugger;
+      } else {
+        setOverlayInfo(products[val]['category']);
+        setRecArray([]);
+        var temp = [];
+        for (var i = 0; i < Object.keys(products).length; i++) {
+          // console.log(
+          //   products[val]['category'],
+          //   products['' + (i + 1)]['category']
+          // );
+          if (
+            products['' + (i + 1)]['category'] === products[val]['category'] &&
+            products['' + (i + 1)]['eco'] > 0
+          ) {
+            temp.push('' + (i + 1));
+          }
+        }
+        setRecArray(temp);
+        // console.log('temp::::', temp);
+        // console.log('recArray::::', recArray);
+        setOverlay(2);
+        // console.log('overlay num :::::::', overlayMode);
+        // debugger;
+      }
     }, delay);
+
     // if (products[val]['eco'] > 0)
     //   console.log('bukkuk loved this product', products[val]['name']);
     // else console.log("bukkuk's recommendation!");
@@ -103,11 +149,13 @@ function MyPage() {
 
   const mouseLeave = (val) => {
     console.log('mouse leaved from ' + products[val]['name']);
-    clearTimeout(timer);
     var bukkuk = document.getElementsByClassName('companion_gif')[0];
     console.log(bukkuk);
     bukkuk.style = 'margin-left: -15%';
     setOverlay(0);
+    setOverlayInfo([]);
+    setRecArray([]);
+    clearTimeout(timer);
     // if (products[val]['eco'] > 0)
     //   console.log('bukkuk loved this product', products[val]['name']);
     // else console.log("bukkuk's recommendation!");
@@ -116,6 +164,8 @@ function MyPage() {
   const heartOff = (e) => {
     e.preventDefault();
     var tmp = userInfo;
+    // console.log(tmp);
+    // debugger;
     // console.log(e.target.parentElement.getAttribute('value'));
     var val = e.target.parentElement.getAttribute('value');
     var index = userInfo['wished'].indexOf(val);
@@ -123,20 +173,28 @@ function MyPage() {
       del_idx.push(index);
       tmp['wished'].splice(index, 1);
     }
-
+    // console.log(tmp);
+    // debugger;
     db.collection('users')
       .doc('1')
       .set(tmp)
       .then(() => {
         var current_wish = wishes - 1;
         setWishes(current_wish);
-        var new_score = 0;
-        for (var i = 0; i < userInfo['wished'].length; i++) {
-          new_score += products[userInfo['wished'][i]['eco']];
+        if (userInfo['wished'].length == 0) {
+          setScore(4);
+        } else {
+          var new_score = 0;
+          for (var i = 0; i < userInfo['wished'].length; i++) {
+            new_score += products[userInfo['wished'][i]['eco']];
+          }
+          setScore(Math.round(new_score / userInfo['wished'].length));
+          // console.log(score, userInfo);
         }
-        setScore(Math.round(new_score / userInfo['wished'].length));
-        // console.log(score, userInfo);
       });
+    setOverlayInfo([]);
+    setOverlay(0);
+    setRecArray([]);
   };
 
   const heartOn = (e) => {
@@ -159,13 +217,15 @@ function MyPage() {
         setScore(Math.round(new_score / userInfo['wished'].length));
         // console.log(score, userInfo);
       });
+    setOverlayInfo([]);
+    setOverlay(0);
+    setRecArray([]);
   };
 
   return (
     <div>
       <div className="tmp"> 여기에 nav bar가 들어가면 될 것 같습니당 </div>
       <div className="container">
-        {overlayMode == 0 ? <div> 기본 정보 </div> : <div> 추천 정보 </div>}
         <img
           className="background_img"
           src="https://ifh.cc/g/ohSfv7.jpg"
@@ -180,7 +240,52 @@ function MyPage() {
             src={img_src[score]}
             alt="companion"
             key={score}
+            margin-left="-15%"
           ></img>
+        </div>
+        <div>
+          {overlayMode == 0 ? (
+            <div className="overlayBox">
+              Name: Bukkuk / State: {states[score]}
+            </div>
+          ) : overlayMode == 1 ? (
+            <div>
+              <div className="overlayBox"> Bukkuk loves this product !</div>
+              {overlayInfo[0] != null &&
+              Object.keys(products[overlayInfo[0]]).includes('name') ? (
+                <div className="showing">
+                  <CurProduct
+                    name={products[overlayInfo[0]]['name']}
+                    price={products[overlayInfo[0]]['price']}
+                    imgg={products[overlayInfo[0]]['imgg']}
+                    a={products[overlayInfo[0]]['a']}
+                    ecoval={products[overlayInfo[0]]['eco']}
+                    idx={overlayInfo[0]}
+                  />
+                </div>
+              ) : null}
+            </div>
+          ) : (
+            <div>
+              <div className="overlayBox"> Bukkuk's recommendations !</div>
+              <div className="rshowing" id="showrec">
+                {/* <div> {recArray.length} </div> */}
+                {recArray.map((val, idx) => (
+                  <div>
+                    <RecProduct
+                      name={products[val]['name']}
+                      price={products[val]['price']}
+                      imgg={products[val]['imgg']}
+                      a={products[val]['a']}
+                      ecoval={products[val]['eco']}
+                      idx={products[val]}
+                      wished={printed.includes(1)}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <div className="wishlist">
