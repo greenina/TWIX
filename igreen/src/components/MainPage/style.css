@@ -95,7 +95,3 @@ body{
 #radio-mr:checked ~ .navigation-manual .manual-btn-mr{
     background: #00a900;
 }
-
-.greenOnOff{
-    margin-right: 10%;
-}
