@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/alt-text */
 import './style.css';
 import { db } from '../../firebase';
 import React, { useState, useEffect } from 'react';
+import WishProduct from '../../WishProduct';
 
 function MyPage() {
   // const [img_num, setImgNum] = useState(0);
@@ -95,25 +97,39 @@ function MyPage() {
           ></img>
         </div>
       </div>
-      <div className="wish_container">
-        <div className="wishlist">
-          {userInfo['wished'] && Object.keys(products).length > 0 ? (
-            userInfo['wished'].map((val, idx) => (
-              <img
-                className="product_img"
-                src={products[val]['imgg']}
-                alt={'product_images ' + val}
-                width="15%"
-                key={val}
-                onMouseOver={(e) => recommend(val)}
-              />
-            ))
-          ) : (
-            <div onClick={() => console.log(userInfo['wished'])}>
-              No Product
-            </div>
-          )}
-        </div>
+      <div className="wishlist">
+        {userInfo['wished'] && Object.keys(products).length > 0 ? (
+          <div id="showwish">
+            {userInfo['wished'].map((val, idx) => (
+              <div onMouseEnter={(e) => recommend(val)} key={val}>
+                <WishProduct
+                  name={products[val]['name']}
+                  price={products[val]['price']}
+                  imgg={products[val]['imgg']}
+                  a={products[val]['a']}
+                  ecoval={products[val]['eco']}
+                  idx={idx}
+                  wished={userInfo['wished'].includes(val)}
+                />
+                {userInfo['wished'].includes(val) ? (
+                  <img
+                    className="myheart"
+                    src="https://ifh.cc/g/d7BZO6.png"
+                    width="30px"
+                  />
+                ) : (
+                  <img
+                    className="myheart"
+                    src="https://ifh.cc/g/IuZase.png"
+                    width="30px"
+                  />
+                )}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div onClick={() => console.log(userInfo['wished'])}>No Product</div>
+        )}
       </div>
     </div>
   );
