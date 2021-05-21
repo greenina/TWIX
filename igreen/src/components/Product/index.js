@@ -3,6 +3,9 @@
 import React, { Component } from 'react';
 import './style.css';
 import $ from 'jquery';
+import DetailPage from '../DetailPage';
+import { BrowserRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
+
 class Product extends Component {
   constructor(props) {
     super(props);
@@ -55,14 +58,24 @@ class Product extends Component {
           onMouseLeave={this.ml}
         >
           <div className="pimage">
-            <a href={this.props.a}>
+            <Link to={{
+              pathname:`/detail/`,
+              state:{
+                name : this.props.name,
+                price:this.props.price,
+                imgg:this.props.imgg,
+                a:this.props.a,
+                ecoval:this.props.ecoval
+              }
+            }}
+            >
               <img
                 src={this.props.imgg}
                 alt="Product image"
                 width="175px"
                 height="175px"
               ></img>
-            </a>
+            </Link>
           </div>
           {this.props.wished ? (
             <img
