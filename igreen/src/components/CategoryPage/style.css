@@ -1,25 +1,31 @@
 #pc {
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: left;
   flex-wrap: wrap;
+ 
 }
 .eco1 {
+  
   border: 10px solid green;
 }
 /* .eco1{
     border : 6px solid #87ec7c1a;
 } */
 .eco0 {
-  border: 10px solid #01561f;
+ 
+  border: 10px solid #00000095;
 }
 .eco2 {
+ 
   border: 10px solid #009a44;
 }
 .eco3 {
+  
   border: 10px solid #88ec7c;
 }
 .companion_gif1 {
@@ -74,4 +80,12 @@ font-size: 20px;
 }
 .kk{
   margin-bottom: 30px;
+ 
+}
+.kkk{
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.imgg{
+ overflow: hidden;
 }
