@@ -1,0 +1,23 @@
+.productbox {
+  margin: 20px;
+  margin-bottom: 15px;
+  width: 210px;
+  /* border: black solid 2px; */
+  border-radius: 10px;
+  background-color: rgb(247, 245, 243);
+  height: 260px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.pimage {
+  padding-top: 10px;
+}
+.des {
+  margin-left: 10px;
+  text-align: left;
+  margin-bottom: -10px;
+}
+.myheart {
+  padding-top: 15px;
+}
