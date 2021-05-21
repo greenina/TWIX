@@ -92,7 +92,7 @@ class Product extends Component {
           )}
           <div>
             <p className="des">{this.props.name}</p>
-            <p className="des">{this.props.price}won</p>
+            <p className="des">{this.props.price} won</p>
           </div>
         </div>
       </header>

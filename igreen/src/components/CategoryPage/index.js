@@ -14,33 +14,66 @@ class CategoryPage extends React.Component {
       imgg: [],
       a: [],
       ecoval: [],
-      wished: [],
+      img_src: [],
+      score: 0,
+      wished : [],
+      id : [],
+      wishlist:[],
     };
     this.datarefresh = this.datarefresh.bind(this);
     this.onesight = this.onesight.bind(this);
+    this.bukkuk = this.bukkuk.bind(this);
+    this.bukkukthen = this.bukkukthen.bind(this);
+    this.wishthen=this.wishthen.bind(this);
+  }
+  
+  bukkuk() {
+    db.collection("companion").doc("bukkuk").get().then(this.bukkukthen);
+    var user = db
+    .collection('users')
+    .doc('1')
+    .get()
+    .then(this.wishthen);
+  }
+  wishthen(doc){
+    {
+      let docs = doc.data();
+      this.setState(()=>({
+        wishlist : docs['wished'],
+
+      }))
+      
+      
+    }
+
+  }
+  bukkukthen(doc) {
+    var states = ["adult_bad", "adult_normal", "adult_good", "adult_dance"];
+    let docs = doc.data();
+
+    for (var i = 0; i < Object.keys(docs).length; i++) {
+      let dic = this.state.img_src;
+      dic[i] = docs[states[i]];
+      this.setState((prv) => ({
+        img_src: dic,
+      }));
+    }
+    console.log("companion img source list", this.state.img_src);
   }
   onesight() {
-    var elements = document.getElementsByClassName('productbox');
-    var checked = console.log(count);
-    count++;
+    var elements = document.getElementsByClassName("productbox");
+    var checked = count++;
     for (var i = 0; i < elements.length; i++) {
       if (count % 2 == 1)
-        elements[i].classList.add('eco' + this.state.ecoval[i]);
-      else elements[i].classList.remove('eco' + this.state.ecoval[i]);
+        elements[i].classList.add("eco" + this.state.ecoval[i]);
+      else elements[i].classList.remove("eco" + this.state.ecoval[i]);
     }
   }
   datarefresh() {
     count = 0;
-    var wishes = [];
+    
 
-    var user = db
-      .collection('users')
-      .doc('1')
-      .get()
-      .then(function (doc) {
-        let docs = doc.data();
-        wishes = docs['wished'];
-      });
+  
 
     var product = db
       .collection('products')
@@ -53,6 +86,7 @@ class CategoryPage extends React.Component {
           a: [],
           ecoval: [],
           wished: [],
+          id:[],
         }));
         //snapshot.forEach(datacheck);
         //alert(document.getElementById('pc'))
@@ -66,11 +100,11 @@ class CategoryPage extends React.Component {
           var veganvalid = !vegan || doc.data().vegan === vegan;
           var apvalid = !ap || doc.data().ap === ap;
           var harmvalid = !harm || doc.data().harm === harm;
-          var wishbool = wishes.includes('' + doc.id) ? true : false;
+          // var wishbool = wished.includes('' + doc.id) ? true : false;
 
           var ecovalid = !ecoonly || doc.data().eco > 0;
-          console.log(doc.id, ' => ', doc.data());
-          console.log(doc.data().eco);
+          // console.log(doc.id, " => ", doc.data());
+
           if (veganvalid && apvalid && harmvalid && ecovalid)
             this.setState((prevState) => ({
               name: [...prevState.name, doc.data().name],
@@ -78,20 +112,40 @@ class CategoryPage extends React.Component {
               imgg: [...prevState.imgg, doc.data().imgg],
               a: [...prevState.a, doc.data().a],
               ecoval: [...prevState.ecoval, doc.data().eco],
-              wished: [...prevState.wished, wishbool],
+              id:[...prevState.id, doc.id],
             }));
         });
         console.log(this.state);
+        for(var i=0;i<this.state.id.length;i++){
+          console.log('wishlist', this.state.wishlist)
+          if(this.state.wishlist.includes(''+this.state.id[i]))
+            this.setState((prevState)=>({
+              wished:[...prevState.wished, true],
+            }))
+          else 
+          this.setState((prevState)=>({
+            wished:[...prevState.wished, false],
+          }))
+
+        }
       });
   }
-
+  componentWillMount() {
+    
+    this.bukkuk();
+    this.datarefresh();
+    //alert(this);
+    console.log(this.state.img_src);
+  }
   render() {
-    const { name, price, imgg, a, ecoval, wished } = this.state;
+    // this.bukkuk();
+    const { name, price, imgg, a, ecoval, img_src, score , wished, id, wishlist} = this.state;
     return (
       <header>
-        <div> 상품 카테고리 페이지</div>
-        <div>내브바들어갈자리</div>
-        <div className="checkbox1">
+        <div id="ccontainer">
+        <div class="kk">내브바들어갈자리</div>
+        <div class="kk"> 상품 카테고리 페이지</div>
+        <div class="checkbox1 kk">
           <label>비건</label>
           <input
             type="checkbox"
@@ -114,7 +168,7 @@ class CategoryPage extends React.Component {
             onClick={this.datarefresh}
           ></input>
         </div>
-        <div className="checkbox3">
+        <div class="checkbox3 kk">
           <label>친환경만</label>
           <input
             type="checkbox"
@@ -126,16 +180,31 @@ class CategoryPage extends React.Component {
         <button id="onesight" onClick={this.onesight}>
           한눈에보기
         </button>
-        <button onClick={this.datarefresh}>ㅋㅋ</button>
-        <div id="pc">
-          <Productlist
-            name={name}
-            price={price}
-            imgg={imgg}
-            a={a}
-            ecoval={ecoval}
-            wished={wished}
-          ></Productlist>
+        <div class="pcandimg">
+          <div id="pc">
+            <Productlist
+              name={name}
+              price={price}
+              imgg={imgg}
+              a={a}
+              ecoval={ecoval}
+              wished={wished}
+            ></Productlist>
+          </div>
+          <div>
+          <div id="cprofile">
+            <img
+              id="bukkuk"
+              className="companion_gif1"
+              src={this.state.img_src[2]}
+              alt="companion"
+              key={this.state.score}
+            ></img>
+            <p>name : bukkuk</p>
+            <p>state : happy</p>
+          </div>
+          </div>
+        </div>
         </div>
       </header>
     );
