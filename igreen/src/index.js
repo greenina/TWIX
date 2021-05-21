@@ -3,18 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-//import { Provider } from "react-redux";
-//import { PersistGate } from "redux-persist/integration/react";
-//import { store, persistor } from './redux/store';
-
-// store.subscribe(()=> {
-//   console.log(store.getState())
-//   // debugger;
-// })
+import NavBar from './NavBar';
 
 ReactDOM.render(
   <React.StrictMode>
-        <App />
+    <NavBar />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
