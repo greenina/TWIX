@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={MainPage} />
-        <Route path="/category" exact component={CategoryPage} />
+        <Route path="/category/:cg" exact component={CategoryPage} />
         <Route path="/detail" exact component={DetailPage} />
         {/* <Route path="/detail/:name/:price/:img/:link" component={DetailPage} /> */}
         <Route path="/mypage" exact component={MyPage} />

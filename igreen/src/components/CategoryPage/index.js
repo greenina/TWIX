@@ -5,9 +5,12 @@ import Productlist from './productlist';
 import { db, firebaseApp, firebase } from './../../firebase';
 
 var count = 0;
+var cgg="";
 class CategoryPage extends React.Component {
   constructor(props) {
     super(props);
+    console.log(props.match.params.cg);
+    cgg=props.match.params.cg;
     this.state = {
       name: [],
       price: [],
@@ -69,11 +72,10 @@ class CategoryPage extends React.Component {
       else elements[i].classList.remove("eco" + this.state.ecoval[i]);
     }
   }
-  datarefresh() {
+  datarefresh(cg) {
     count = 0;
     
 
-  
 
     var product = db
       .collection('products')
@@ -100,12 +102,23 @@ class CategoryPage extends React.Component {
           var veganvalid = !vegan || doc.data().vegan === vegan;
           var apvalid = !ap || doc.data().ap === ap;
           var harmvalid = !harm || doc.data().harm === harm;
+          var cgtest=false;
+          if(cgg=='living'&&(doc.data().category=='tissue'||doc.data().category=='mask')){
+            cgtest=true;
+          }
+          else if(cgg=='bath'&&(doc.data().category=='toothpaste'||doc.data().category=='shampoo'))
+          {
+            cgtest=true;
+          }
+          else if(cgg=='beauty'&&(doc.data().category=='facial'||doc.data().category=='pack')){
+            cgtest=true;
+          }
           // var wishbool = wished.includes('' + doc.id) ? true : false;
 
           var ecovalid = !ecoonly || doc.data().eco > 0;
           // console.log(doc.id, " => ", doc.data());
 
-          if (veganvalid && apvalid && harmvalid && ecovalid)
+          if (veganvalid && apvalid && harmvalid && ecovalid&&cgtest)
             this.setState((prevState) => ({
               name: [...prevState.name, doc.data().name],
               price: [...prevState.price, doc.data().price],
@@ -116,36 +129,51 @@ class CategoryPage extends React.Component {
             }));
         });
         console.log(this.state);
-        for(var i=0;i<this.state.id.length;i++){
-          console.log('wishlist', this.state.wishlist)
+        var sum=0;
+        var i
+        for(i=0;i<this.state.id.length;i++){
+          // console.log('wishlist', this.state.wishlist)
           if(this.state.wishlist.includes(''+this.state.id[i]))
+            {
+              sum+=this.state.ecoval[i];
             this.setState((prevState)=>({
               wished:[...prevState.wished, true],
-            }))
+            }))}
           else 
           this.setState((prevState)=>({
             wished:[...prevState.wished, false],
           }))
 
         }
+        this.setState((prevState)=>({score : Math.round(sum/i)}));
+        console.log(this.state.score);
       });
   }
   componentWillMount() {
     
     this.bukkuk();
-    this.datarefresh();
+    this.datarefresh(this.props.cg);
     //alert(this);
     console.log(this.state.img_src);
   }
   render() {
     // this.bukkuk();
+    var states = ["adult_bad", "adult_normal", "adult_good", "adult_dance"];
     const { name, price, imgg, a, ecoval, img_src, score , wished, id, wishlist} = this.state;
+    
     return (
       <header>
         <div id="ccontainer">
-        <div class="kk">내브바들어갈자리</div>
-        <div class="kk"> 상품 카테고리 페이지</div>
+        
+        <div class="kkk"> {cgg}</div>
         <div class="checkbox1 kk">
+        <label>친환경만</label>
+          <input
+            type="checkbox"
+            id="ecoonly"
+            value="에코"
+            onClick={this.datarefresh}
+          ></input>
           <label>비건</label>
           <input
             type="checkbox"
@@ -168,15 +196,7 @@ class CategoryPage extends React.Component {
             onClick={this.datarefresh}
           ></input>
         </div>
-        <div class="checkbox3 kk">
-          <label>친환경만</label>
-          <input
-            type="checkbox"
-            id="ecoonly"
-            value="에코"
-            onClick={this.datarefresh}
-          ></input>
-        </div>
+        
         <button id="onesight" onClick={this.onesight}>
           한눈에보기
         </button>
@@ -196,12 +216,12 @@ class CategoryPage extends React.Component {
             <img
               id="bukkuk"
               className="companion_gif1"
-              src={this.state.img_src[2]}
+              src={this.state.img_src[score]}
               alt="companion"
               key={this.state.score}
             ></img>
             <p>name : bukkuk</p>
-            <p>state : happy</p>
+            <p>state : {states[score]}</p>
           </div>
           </div>
         </div>
