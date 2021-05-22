@@ -1,12 +1,8 @@
-.tmp {
-  position: fixed;
-  margin: 5px;
-}
 .overlayBox {
   position: fixed;
   width: 50%;
   height: 2vw;
-  margin-top: 2%;
+  margin-top: 1%;
   background-color: #e9e1e1;
   opacity: 50%;
   border-radius: 10px;
@@ -17,7 +13,6 @@
 }
 .container {
   overflow: hidden;
-  margin-top: 20px;
 }
 .background_img {
   position: fixed;
@@ -36,13 +31,16 @@
   margin-left: -15%;
 }
 .wish_container {
-  display: flex;
+  position: fixed;
+  top: 36vw;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
 }
 .wishlist {
-  position: absolute;
-  top: 27vw;
+  position: fixed;
+  /* display: flex; */
+  top: 32vw;
   width: 100%;
   overflow: scroll;
 }
@@ -72,7 +70,7 @@
 }
 
 .rshowing {
-  /* position: fixed; */
+  position: fixed;
   z-index: 100;
 }
 #showrec {
