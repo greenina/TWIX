@@ -11,12 +11,13 @@
 }
 
 .pimage {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .des {
   margin-left: 10px;
   text-align: left;
   margin-bottom: -10px;
+  max-width: 200px;
 }
 .myheart {
   padding-top: 15px;
