@@ -11,16 +11,17 @@ function NavBar() {
         <header className="NavBar-header">
           <img onClick={mv2main} src={logo} className="NavBar-logo" alt="logo"/>
           <nav>
-            <ul class="nav__links">
+            <ul className="nav__links">
                 <li><a href="/category/living">Living</a></li>
+                <li><a href="/category/kitchen">Kitchen</a></li>
                 <li><a href="/category/bath">Bath</a></li>
                 <li><a href="/category/beauty">Beauty</a></li>
                 {/* <li><a href="/detail">Details</a></li> */}
-                <li><a href="/mypage">Mypage</a></li>
+                {/*<li><a href="/mypage">Mypage</a></li>*/}
                 <li>|</li>
             </ul>
         </nav>
-        <a class="cta" href="#"><button class="login">Login</button></a>
+        <a className="cta" href="/mypage"><button className="login">My Page</button></a>
         </header>
       </div>
     );
