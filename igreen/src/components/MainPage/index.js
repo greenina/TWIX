@@ -1,5 +1,9 @@
 import './style.css';
+<<<<<<< HEAD
 import {db} from '../../firebase';
+=======
+import { db, firebaseApp, firebase } from '../../firebase';
+>>>>>>> 576e47a9a9aa4c51314e81aed6b5ad0bdd51d027
 import React, { useEffect, useState } from 'react';
 import Tippy from 'react-tooltip';
 //import Switch from './Switch';
@@ -90,24 +94,25 @@ function MainPage() {
   const resizeArea = (data) => {
     const winWidth = document.body.offsetWidth;
     let a = [];
-    for (let i=0; i<data.length; i++) {
-      a.push(data[i]*winWidth/1440);
+    for (let i = 0; i < data.length; i++) {
+      a.push((data[i] * winWidth) / 1440);
     }
     return a.join();
   };
   const [windowSize, setWindowSize] = useState(document.body.offsetWidth);
   const handleResize = () => {
-      setWindowSize({
-        winWidth: window.innerWidth
-      });
-    }
-    
-    useEffect(() => {
-      window.addEventListener('resize', handleResize);
-      return () => { // cleanup 
-        window.removeEventListener('resize', handleResize);
-      }
-    }, [windowSize]);
+    setWindowSize({
+      winWidth: window.innerWidth,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      // cleanup
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [windowSize]);
 
   const mv2mypage = () => {
     document.location.href = '/mypage';
@@ -115,6 +120,7 @@ function MainPage() {
 
   return (
     <div>
+<<<<<<< HEAD
       <div className="slider">
         <div className="slides">
           <input type="radio" name="radio-btn" id="radio-lr" defaultChecked></input>
@@ -153,6 +159,56 @@ function MainPage() {
                 shape="poly" alt="" title=""
                 coords={resizeArea([764,28,752,72,817,72,830,24])}
                   />
+=======
+      <div class="slider">
+        <div class="slides">
+          <input
+            type="radio"
+            name="radio-btn"
+            id="radio-lr"
+            defaultChecked
+          ></input>
+          <input type="radio" name="radio-btn" id="radio-kc"></input>
+          <input type="radio" name="radio-btn" id="radio-br"></input>
+          <input type="radio" name="radio-btn" id="radio-mr"></input>
+
+          <div class="slide first">
+            <img
+              src="https://ifh.cc/g/il5UZy.png"
+              alt=""
+              usemap="#livingroom-map"
+            ></img>
+            <map
+              id="livingroom-map"
+              name="livingroom-map"
+              width="100%"
+              height="100%"
+              border="5px solid #000000"
+            >
+              <area
+                shape="poly"
+                alt=""
+                title=""
+                coords={resizeArea([
+                  204, 260, 242, 240, 277, 255, 261, 210, 286, 197, 297, 226,
+                  316, 235, 302, 261, 375, 281, 382, 341, 317, 355, 197, 315,
+                  202, 256, 203, 262,
+                ])}
+                href="/category"
+                target=""
+              />
+              <area
+                shape="poly"
+                alt=""
+                title=""
+                coords={resizeArea([
+                  540, 603, 467, 720, 483, 768, 835, 768, 1078, 689, 1118, 636,
+                  1081, 538, 970, 493, 820, 493, 537, 600,
+                ])}
+                href="/category"
+                target=""
+              />
+>>>>>>> 576e47a9a9aa4c51314e81aed6b5ad0bdd51d027
             </map>
           </div>
           <div className="slide">

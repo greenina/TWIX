@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body{
     margin: 0;
@@ -6,6 +7,15 @@ body{
     justify-content: center;
     align-items: center;
     background: #ffffff;
+=======
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* background: #a0a3a3; */
+>>>>>>> 576e47a9a9aa4c51314e81aed6b5ad0bdd51d027
 }
 
 /*css for picture slider*/
@@ -97,6 +107,7 @@ body{
 #radio-mr:checked ~ .navigation-manual .manual-btn-mr {
   background: #00a900;
 }
+<<<<<<< HEAD
 
 /*companion state*/
 .companion-mainpage{
@@ -111,3 +122,9 @@ body{
     margin-left: 22%;
     cursor: pointer;
 }
+=======
+.bottom {
+  width: 100%;
+  text-align: center;
+}
+>>>>>>> 576e47a9a9aa4c51314e81aed6b5ad0bdd51d027
