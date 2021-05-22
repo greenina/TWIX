@@ -1,4 +1,3 @@
-
 body{
     margin: 0;
     padding: 0;
@@ -97,7 +96,6 @@ body{
 #radio-mr:checked ~ .navigation-manual .manual-btn-mr {
   background: #00a900;
 }
-
 /*companion state*/
 .companion-mainpage{
   position: absolute;
@@ -110,4 +108,9 @@ body{
     height: 10vw;
     margin-left: 22%;
     cursor: pointer;
+}
+
+.bottom {
+  width: 100%;
+  text-align: center;
 }

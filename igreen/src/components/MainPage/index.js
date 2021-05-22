@@ -90,24 +90,25 @@ function MainPage() {
   const resizeArea = (data) => {
     const winWidth = document.body.offsetWidth;
     let a = [];
-    for (let i=0; i<data.length; i++) {
-      a.push(data[i]*winWidth/1440);
+    for (let i = 0; i < data.length; i++) {
+      a.push((data[i] * winWidth) / 1440);
     }
     return a.join();
   };
   const [windowSize, setWindowSize] = useState(document.body.offsetWidth);
   const handleResize = () => {
-      setWindowSize({
-        winWidth: window.innerWidth
-      });
-    }
-    
-    useEffect(() => {
-      window.addEventListener('resize', handleResize);
-      return () => { // cleanup 
-        window.removeEventListener('resize', handleResize);
-      }
-    }, [windowSize]);
+    setWindowSize({
+      winWidth: window.innerWidth,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      // cleanup
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [windowSize]);
 
   const mv2mypage = () => {
     document.location.href = '/mypage';
