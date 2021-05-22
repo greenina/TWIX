@@ -1,6 +1,6 @@
 import './style.css';
 import React, {useState, useEffect} from 'react';
-import Product from '../CategoryPage/product';
+import Product from '../CategoryPage/productlist';
 
 
 function DetailPage(props) {
