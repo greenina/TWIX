@@ -12,8 +12,10 @@ function NavBar() {
           <img onClick={mv2main} src={logo} className="NavBar-logo" alt="logo"/>
           <nav>
             <ul class="nav__links">
-                <li><a href="/category">Categories</a></li>
-                <li><a href="/detail">Details</a></li>
+                <li><a href="/category/living">Living</a></li>
+                <li><a href="/category/bath">Bath</a></li>
+                <li><a href="/category/beauty">Beauty</a></li>
+                {/* <li><a href="/detail">Details</a></li> */}
                 <li><a href="/mypage">Mypage</a></li>
                 <li>|</li>
             </ul>

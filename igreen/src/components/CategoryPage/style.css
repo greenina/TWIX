@@ -2,10 +2,12 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: left;
   flex-wrap: wrap;
+ 
 }
 .eco1 {
   border: 0.5vw solid green;
@@ -69,4 +71,13 @@
 }
 .kk {
   margin-bottom: 30px;
+ 
 }
+.kkk{
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.imgg{
+ overflow: hidden;
+}
+

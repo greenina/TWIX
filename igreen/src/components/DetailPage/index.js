@@ -1,10 +1,12 @@
 import './style.css';
-import React, { useState, useEffect } from 'react';
-import Product from '../Product';
+
+import React, {useState, useEffect} from 'react';
+import Product from '../Product/index';
+
 
 function DetailPage(props) {
   //const [name, setName] = ;
-  console.log('props', props);
+  console.log("props",props);
   const [name, setName] = useState(props.location.state.name);
   const [price, setPrice] = useState(props.location.state.price);
   const [img, setImg] = useState(props.location.state.imgg);
