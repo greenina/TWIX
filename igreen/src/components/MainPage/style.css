@@ -51,6 +51,7 @@ body{
 
 .navigation-manual label {
   border: 2px solid #00a900;
+  background-color: rgba(0, 169, 0, 0.1);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -95,4 +96,18 @@ body{
 
 #radio-mr:checked ~ .navigation-manual .manual-btn-mr {
   background: #00a900;
+}
+
+/*companion state*/
+.companion-mainpage{
+  position: absolute;
+  margin-top: 40%;
+  display: flex;
+}
+
+.companion-mp{
+    position: fixed;
+    height: 10vw;
+    margin-left: 22%;
+    cursor: pointer;
 }
