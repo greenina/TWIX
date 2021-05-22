@@ -70,6 +70,7 @@ class Product extends Component {
             }}
             >
               <img
+                classname="imgg"
                 src={this.props.imgg}
                 alt="Product image"
                 width="175px"
