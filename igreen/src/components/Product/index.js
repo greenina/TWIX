@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { Component } from 'react';
 import './style.css';
-import $ from 'jquery';
+//import $ from 'jquery';
 import DetailPage from '../DetailPage';
 import { BrowserRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
 
