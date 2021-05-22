@@ -1,11 +1,10 @@
-
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    /* background: #a0a3a3; */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* background: #a0a3a3; */
 }
 
 /*css for picture slider*/
@@ -95,4 +94,8 @@ body{
 
 #radio-mr:checked ~ .navigation-manual .manual-btn-mr {
   background: #00a900;
+}
+.bottom {
+  width: 100%;
+  text-align: center;
 }

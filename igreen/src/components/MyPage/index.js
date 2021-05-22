@@ -48,7 +48,7 @@ function MyPage() {
           var docs = doc.data();
           let dic = products;
           count++;
-          dic['' + count] = docs;
+          dic[doc.id] = docs;
           setProducts(dic);
         });
         console.log('product list', products);
@@ -64,35 +64,6 @@ function MyPage() {
     setOverlayInfo(['']);
     setRecArray([]);
 
-    // db.collection('companion')
-    //   .doc('bukkuk')
-    //   .get()
-    //   .then(function (doc) {
-    //     let docs = doc.data();
-    //     setImgSrc([]);
-    //     for (var i = 0; i < Object.keys(docs).length; i++) {
-    //       let dic = img_src;
-    //       dic[i] = docs[states[i]];
-    //       setImgSrc(dic);
-    //     }
-    //     let tdic = img_src;
-    //     tdic[4] = img_src[2];
-    //     console.log('companion img source list', img_src);
-    //   });
-
-    // var count = 0;
-    // db.collection('products')
-    //   .get()
-    //   .then((snapshot) => {
-    //     snapshot.forEach((doc) => {
-    //       var docs = doc.data();
-    //       let dic = products;
-    //       count++;
-    //       dic['' + count] = docs;
-    //       setProducts(dic);
-    //     });
-    //     console.log('product list', products);
-
     db.collection('users')
       .doc('1')
       .get()
@@ -107,7 +78,6 @@ function MyPage() {
 
         var tmpScore = 0;
         for (i = 0; i < userInfo['wished'].length; i++) {
-          console.log(products[userInfo['wished'][i]]['eco']);
           tmpScore += products[userInfo['wished'][i]]['eco'];
         }
         if (userInfo['wished'].length > 0) {
@@ -126,8 +96,10 @@ function MyPage() {
           setFirst(1);
           setPrinted(userInfo['wished']);
           console.log('printed wishlist changed');
+          debugger;
         }
-        console.log(printed);
+        console.log('printed', printed);
+        console.log(products[printed[0]]);
       });
     // });
 
@@ -140,7 +112,7 @@ function MyPage() {
     timer = setTimeout(function () {
       var bukkuk = document.getElementsByClassName('companion_gif')[0];
       console.log(bukkuk);
-      bukkuk.style = 'margin-left: 5%';
+      bukkuk.style = 'margin-left: 10%';
       if (products[val]['eco'] > 0) {
         // console.log(String(val));
         setOverlayInfo([val]);
@@ -256,7 +228,7 @@ function MyPage() {
   };
 
   return (
-    <div>
+    <div className="entire">
       <div className="container">
         <img
           className="background_img"
@@ -338,15 +310,15 @@ function MyPage() {
                 value={val}
               >
                 <WishProduct
-                  name={products[val]['name']}
-                  price={products[val]['price']}
-                  imgg={products[val]['imgg']}
-                  a={products[val]['a']}
-                  ecoval={products[val]['eco']}
+                  name={products[printed[idx]]['name']}
+                  price={products[printed[idx]]['price']}
+                  imgg={products[printed[idx]]['imgg']}
+                  a={products[printed[idx]]['a']}
+                  ecoval={products[printed[idx]]['eco']}
                   idx={idx}
-                  wished={printed.includes(val)}
+                  wished={printed.includes(printed[idx])}
                 />
-                {userInfo['wished'].includes(val) ? (
+                {userInfo['wished'].includes(printed[idx]) ? (
                   <img
                     className="myheart"
                     src="https://ifh.cc/g/d7BZO6.png"
