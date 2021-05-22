@@ -1,28 +1,27 @@
 #pc {
-  margin-left: auto;
+  margin-left: 4vw;
   margin-right: auto;
-  width: 100%;
+  width: 95%;
 
   display: flex;
   align-items: center;
   justify-content: left;
   flex-wrap: wrap;
- 
 }
 .eco1 {
-  border: 0.5vw solid green;
+  border: 0.5vw solid rgb(85, 141, 85);
 }
 /* .eco1{
     border : 6px solid #87ec7c1a;
 } */
 .eco0 {
-  border: 0.5vw solid #01561f;
+  border: 0.5vw solid #4d4d4d;
 }
 .eco2 {
-  border: 0.5vw solid #009a44;
+  border: 0.5vw solid #2d9b5d;
 }
 .eco3 {
-  border: 0.5vw solid #88ec7c;
+  border: 0.5vw solid #97c592;
 }
 .companion_gif1 {
   width: 95%;
@@ -65,19 +64,18 @@
 }
 
 #ccontainer {
-  width: 90%;
+  position: fixed;
+  width: 100%;
 
   margin: auto;
 }
 .kk {
   margin-bottom: 30px;
- 
 }
-.kkk{
+.kkk {
   margin-bottom: 30px;
   font-size: 40px;
 }
-.imgg{
- overflow: hidden;
+.imgg {
+  overflow: hidden;
 }
-

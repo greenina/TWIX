@@ -12,10 +12,12 @@
 }
 
 .pimage {
+  position: relative;
   padding-top: 20px;
   /* margin-top: 20px; */
 }
 .des {
+  max-width: 150px;
   margin-left: 10px;
   text-align: left;
   margin-bottom: -10px;
