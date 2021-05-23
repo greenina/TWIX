@@ -237,7 +237,7 @@ function MainPage() {
           <img
             id="companion-mp"
             className="companion-mp"
-            src="https://ifh.cc/g/d7BZO6.png"//{img_src[score]}
+            src={img_src[score]}//"https://ifh.cc/g/d7BZO6.png"//{img_src[score]}
             alt="companion"
             key={score}
             margin-left="-15%"
