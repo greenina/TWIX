@@ -96,6 +96,8 @@ body{
 #radio-mr:checked ~ .navigation-manual .manual-btn-mr {
   background: #00a900;
 }
+
+
 /*companion state*/
 .companion-mainpage{
   position: absolute;
@@ -104,9 +106,9 @@ body{
 }
 
 .companion-mp{
-    position: fixed;
+    position: absolute;
     height: 10vw;
-    margin-left: 22%;
+    margin-left: 22vw;
     cursor: pointer;
 }
 
