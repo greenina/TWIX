@@ -174,40 +174,42 @@ class CategoryPage extends React.Component {
       <header>
         <div id="ccontainer">
           {/* <div class="kkk"> {cgg}</div> */}
-          <div class="checkbox1 kk">
-            <label>친환경만</label>
-            <input
-              type="checkbox"
-              id="ecoonly"
-              value="에코"
-              onClick={this.datarefresh}
-            ></input>
-            <label>environment</label>
-            <input
-              type="checkbox"
-              id="vegan"
-              value="비건"
-              onClick={this.datarefresh}
-            />
-            <label>animal</label>
-            <input
-              type="checkbox"
-              id="ap"
-              value="동물보호"
-              onClick={this.datarefresh}
-            ></input>
-            <label>health</label>
-            <input
-              type="checkbox"
-              id="harm"
-              value="유해물질x"
-              onClick={this.datarefresh}
-            ></input>
-          </div>
+          <div className="fixed_container">
+            <div className="checkbox1 kk">
+              <label>Eco-friendly</label>
+              <input
+                type="checkbox"
+                id="ecoonly"
+                value="에코"
+                onClick={this.datarefresh}
+              ></input>
+              <label>Save Environment</label>
+              <input
+                type="checkbox"
+                id="vegan"
+                value="비건"
+                onClick={this.datarefresh}
+              />
+              <label>Protect Animal</label>
+              <input
+                type="checkbox"
+                id="ap"
+                value="동물보호"
+                onClick={this.datarefresh}
+              ></input>
+              <label>Stay healthy</label>
+              <input
+                type="checkbox"
+                id="harm"
+                value="유해물질x"
+                onClick={this.datarefresh}
+              ></input>
 
-          <button id="onesight" onClick={this.onesight}>
-            한눈에보기
-          </button>
+              <button id="onesight" onClick={this.onesight}>
+                In a Glance
+              </button>
+            </div>
+          </div>
           <div class="pcandimg">
             <div id="pc">
               <Productlist
