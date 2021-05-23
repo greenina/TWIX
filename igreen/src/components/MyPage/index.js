@@ -324,14 +324,14 @@ function MyPage() {
                 />
                 {userInfo['wished'].includes(printed[idx]) ? (
                   <img
-                    className="myheart"
+                    className="myheart__"
                     src="https://ifh.cc/g/d7BZO6.png"
                     width="30px"
                     onClick={(e) => heartOff(e)}
                   />
                 ) : (
                   <img
-                    className="myheart"
+                    className="myheart__"
                     src="https://ifh.cc/g/IuZase.png"
                     width="30px"
                     onClick={(e) => heartOn(e)}

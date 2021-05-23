@@ -31,15 +31,15 @@ class CategoryPage extends React.Component {
 
   bukkuk() {
     db.collection('companion').doc('bukkuk').get().then(this.bukkukthen);
-    //var user = db.collection('users').doc('1').get().then(this.wishthen);
+    var user = db.collection('users').doc('1').get().then(this.wishthen);
   }
   wishthen(doc) {
     // eslint-disable-next-line no-lone-blocks
     {
       let docs = doc.data();
-      this.setState(()=>({
-        wishlist : docs['wished'],
-      })) 
+      this.setState(() => ({
+        wishlist: docs['wished'],
+      }));
     }
   }
   bukkukthen(doc) {
@@ -57,7 +57,8 @@ class CategoryPage extends React.Component {
   }
   onesight() {
     var elements = document.getElementsByClassName('productbox');
-    //var checked = count++;
+    console.log(elements, count);
+    count++;
     for (var i = 0; i < elements.length; i++) {
       if (count % 2 === 1)
         elements[i].classList.add('eco' + this.state.ecoval[i]);
@@ -92,6 +93,7 @@ class CategoryPage extends React.Component {
           var apvalid = !ap || doc.data().ap === ap;
           var harmvalid = !harm || doc.data().harm === harm;
           var cgtest = false;
+
           if (
             cgg == 'living' &&
             (doc.data().category == 'tissue' ||
@@ -106,8 +108,7 @@ class CategoryPage extends React.Component {
             cgtest = true;
           } else if (
             cgg == 'beauty' &&
-            (doc.data().category == 'facial' ||
-              doc.data().category == 'bag')
+            (doc.data().category == 'facial' || doc.data().category == 'bag')
           ) {
             cgtest = true;
           }
@@ -129,8 +130,9 @@ class CategoryPage extends React.Component {
         console.log(this.state);
         var sum = 0;
         var i;
+        console.log('wishlist', this.state.wishlist);
         for (i = 0; i < this.state.id.length; i++) {
-          // console.log('wishlist', this.state.wishlist)
+          console.log(this.state.id[i]);
           if (this.state.wishlist.includes('' + this.state.id[i])) {
             sum += this.state.ecoval[i];
             this.setState((prevState) => ({
@@ -142,14 +144,15 @@ class CategoryPage extends React.Component {
             }));
         }
         this.setState((prevState) => ({ score: Math.round(sum / i) }));
-        console.log(this.state.score);
+        // console.log(this.state.score);
       });
   }
   componentWillMount() {
     this.bukkuk();
+
     this.datarefresh(this.props.cg);
     //alert(this);
-    console.log(this.state.img_src);
+    // console.log(this.state.img_src);
   }
   render() {
     // this.bukkuk();
