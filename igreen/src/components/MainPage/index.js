@@ -41,7 +41,7 @@ function MainPage() {
           var docs = doc.data();
           let dic = products;
           count++;
-          dic['' + count] = docs;
+          dic[doc.id] = docs;
           setProducts(dic);
         });
         console.log('product list', products);
@@ -72,6 +72,7 @@ function MainPage() {
         for (i = 0; i < userInfo['wished'].length; i++) {
           console.log(products[userInfo['wished'][i]]['eco']);
           tmpScore += products[userInfo['wished'][i]]['eco'];
+          console.log(products[userInfo['wished'][i]]);
         }
         if (userInfo['wished'].length > 0) {
           setScore(Math.round(tmpScore / userInfo['wished'].length));
