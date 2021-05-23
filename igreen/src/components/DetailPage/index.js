@@ -6,53 +6,22 @@ import { db } from '../../firebase';
 
 function DetailPage(props) {
   //console.log("props",props)
-  const [wished, setWished] = useState();
+  const [wished, setWished] = useState([]);
+  const [score, setScore] = useState();
   const [console2, setConsole2] = useState();
   const [console3, setConsole3] = useState(0);
-  const [bukkuk, setBukkuk] = useState();
+  const [bukkuk, setBukkuk] = useState([]);
   const [stage, setStage] = useState([]);
   const [status, setStatus] = useState();
-  const [name, setName] = useState(props.location.state.name);
-  const [price, setPrice] = useState(props.location.state.price);
-  const [img, setImg] = useState(props.location.state.imgg);
-  const [link, setLink] = useState(props.location.state.a);
   const [isClick, setClick] = useState();
-  const [idx, setIdx] = useState(props.location.state.idx);
   const [userInfo, setUserInfo] = useState({});
+  const name = props.location.state.name;
+  const price = props.location.state.price;
+  const img = props.location.state.imgg;
+  const link = props.location.state.link;
+  const idx = props.location.state.idx;
+  const ecoval = props.location.state.ecoval;
   var states = ['adult_bad', 'adult_normal', 'adult_good', 'adult_dance'];
-  //const [wished, setWished] = useState();
-  db.collection('products1')
-  .doc(String(idx+1))
-  .get()
-  .then(
-    function(doc){
-      setStage(doc.data())
-    }
-  )
-  db.collection('users')
-  .doc('1')
-  .get()
-  .then(
-    function(doc){
-      var docs = doc.data();
-      var clicked = !!(docs['wished'].indexOf(String(idx+1))+1);
-      setClick(clicked);
-    }
-  )
-  //console.log(name, price, img, link, idx);
-  db.collection('companion')
-  .doc('bukkuk')
-  .get()
-  .then(
-    function(doc){
-      var docs = doc.data();
-      var imgs=[]
-      for(var i=0;i<Object.keys(docs).length;i++){
-        imgs.push(docs[states[i]]);
-        setBukkuk(imgs);
-      }
-    }
-  )
 
   var avg = function(list){
     var sum=0;
@@ -61,14 +30,10 @@ function DetailPage(props) {
     }
     return sum/list.length;
   }
-  var heartClick = function(e){
-    var a = console3+1;
-    setConsole3(a);
-    setClick(!isClick);
-    isClick?setConsole2("true"):setConsole2("false")
-  }
 
-  useEffect(()=>{
+
+  var heartClick = function(e){
+    setClick(!isClick);
     db.collection('users')
     .doc('1')
     .get()
@@ -77,7 +42,7 @@ function DetailPage(props) {
         var docs = doc.data();
         var index = docs['wished'].indexOf(String(idx+1));
         if(isClick){
-          if(index==-1){
+          if(index===-1){
             docs['wished'].push(String(idx+1))
           }
         }
@@ -87,6 +52,8 @@ function DetailPage(props) {
           }
         }
         setWished(docs['wished']);
+        console.log("wished1",wished);
+        console.log("wished2",docs['wished'])
         db.collection('users')
         .doc('1')
         .set(docs)
@@ -103,11 +70,50 @@ function DetailPage(props) {
               })
             })
             setStatus(avg(eco));
+            console.log("status",status)
+            console.log("status2",avg(eco))
           }
         )
       } 
   )
-  },[isClick, wished]);
+    isClick?setConsole2("true"):setConsole2("false")
+  }
+
+  
+  useEffect(()=>{
+    db.collection('products1')
+      .doc(String(idx+1))
+      .get()
+      .then(
+        function(doc){
+          setStage(doc.data())
+        }
+      )
+    db.collection('users')
+    .doc('1')
+    .get()
+    .then(
+      function(doc){
+        var docs = doc.data();
+        var clicked = !!(docs['wished'].indexOf(String(idx+1))+1);
+        console.log("clicked",clicked)
+        setClick(clicked);
+      }
+    )
+    db.collection('companion')
+    .doc('bukkuk')
+    .get()
+    .then(
+      function(doc){
+        var docs = doc.data();
+        var imgs=[]
+        for(var i=0;i<Object.keys(docs).length;i++){
+          imgs.push(docs[states[i]]);
+          setBukkuk(imgs);
+        }
+      }
+    )
+  },[])
 
   return (
     <div class="whole">
@@ -177,7 +183,16 @@ function DetailPage(props) {
           </div>
         </div>
         <div>
-          <img src={bukkuk[status]}/>
+          <div className="companion">
+          {/* <img
+            id="bukkuk"
+            className="companion_gif"
+            src={img_src[score]}
+            alt="companion"
+            key={score}
+            margin-left="-15%"
+          ></img> */}
+        </div>
         </div>
     </div>
       {status==0||status==1?
