@@ -9,7 +9,7 @@ function DetailPage(props) {
   const [wished, setWished] = useState();
   const [console2, setConsole2] = useState();
   const [console3, setConsole3] = useState(0);
-  const [bukkuk, setBukkuk] = useState();
+  const [bukkuk, setBukkuk] = useState([]);
   const [stage, setStage] = useState([]);
   const [status, setStatus] = useState();
   const [name, setName] = useState(props.location.state.name);
