@@ -1,5 +1,7 @@
 .wrap{
     display: flex;
+    /* align-items: center; */
+    padding:50px;
 }
 .info{
     display:flex;
@@ -17,11 +19,14 @@
 .whole{
     display:flex;
     flex-direction: column;
-}
-#a{
-  background-color: greenyellow;  
+    align-items: center;
+    /* padding:50px; */
+    
 }
 #b{
+  background-color: greenyellow;  
+}
+#a{
     background-color: grey;
 }
 .images{

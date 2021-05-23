@@ -1,8 +1,7 @@
 import './style.css';
-import React, { Component } from 'react';
-import Product from '../Product';
+import React from 'react';
 import Productlist from './productlist';
-import { db, firebaseApp, firebase } from './../../firebase';
+import { db } from './../../firebase';
 
 var count = 0;
 var cgg = '';
@@ -32,14 +31,15 @@ class CategoryPage extends React.Component {
 
   bukkuk() {
     db.collection('companion').doc('bukkuk').get().then(this.bukkukthen);
-    var user = db.collection('users').doc('1').get().then(this.wishthen);
+    //var user = db.collection('users').doc('1').get().then(this.wishthen);
   }
   wishthen(doc) {
+    // eslint-disable-next-line no-lone-blocks
     {
       let docs = doc.data();
-      this.setState(() => ({
-        wishlist: docs['wished'],
-      }));
+      this.setState(()=>({
+        wishlist : docs['wished'],
+      })) 
     }
   }
   bukkukthen(doc) {
@@ -57,9 +57,9 @@ class CategoryPage extends React.Component {
   }
   onesight() {
     var elements = document.getElementsByClassName('productbox');
-    var checked = count++;
+    //var checked = count++;
     for (var i = 0; i < elements.length; i++) {
-      if (count % 2 == 1)
+      if (count % 2 === 1)
         elements[i].classList.add('eco' + this.state.ecoval[i]);
       else elements[i].classList.remove('eco' + this.state.ecoval[i]);
     }
@@ -94,7 +94,8 @@ class CategoryPage extends React.Component {
           var cgtest = false;
           if (
             cgg == 'living' &&
-            (doc.data().category == 'tissue' || doc.data().category == 'mask')
+            (doc.data().category == 'tissue' ||
+              doc.data().category == 'cushion')
           ) {
             cgtest = true;
           } else if (
@@ -105,7 +106,8 @@ class CategoryPage extends React.Component {
             cgtest = true;
           } else if (
             cgg == 'beauty' &&
-            (doc.data().category == 'facial' || doc.data().category == 'pack')
+            (doc.data().category == 'facial' ||
+              doc.data().category == 'container')
           ) {
             cgtest = true;
           }
@@ -158,11 +160,11 @@ class CategoryPage extends React.Component {
       imgg,
       a,
       ecoval,
-      img_src,
+      //img_src,
       score,
       wished,
-      id,
-      wishlist,
+      //id,
+      //wishlist,
     } = this.state;
 
     return (
@@ -177,21 +179,21 @@ class CategoryPage extends React.Component {
               value="에코"
               onClick={this.datarefresh}
             ></input>
-            <label>비건</label>
+            <label>environment</label>
             <input
               type="checkbox"
               id="vegan"
               value="비건"
               onClick={this.datarefresh}
             />
-            <label>동물보호</label>
+            <label>animal</label>
             <input
               type="checkbox"
               id="ap"
               value="동물보호"
               onClick={this.datarefresh}
             ></input>
-            <label>유해물질x</label>
+            <label>health</label>
             <input
               type="checkbox"
               id="harm"
