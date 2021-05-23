@@ -16,13 +16,13 @@
   margin-top: 10px;
 }
 .wdes1 {
-  margin-left: 10px;
+  padding-left: 10px;
   text-align: left;
   margin-bottom: -10px;
   max-width: 200px;
 }
 .wdes2 {
-  margin-left: 10px;
+  padding-left: 10px;
   text-align: left;
   padding-bottom: 20px;
   max-width: 200px;
@@ -34,9 +34,7 @@
   border: 0.3vw solid rgb(85, 141, 85);
   padding: 0;
 }
-/* .eco1{
-    border : 6px solid #87ec7c1a;
-} */
+
 .eco0 {
   border: 0.3vw solid #4d4d4d;
   padding: 0;
