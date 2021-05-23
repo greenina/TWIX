@@ -4,7 +4,6 @@ import Product from '../Product/index';
 import Heart from "react-animated-heart";
 import { db } from '../../firebase';
 
-
 function DetailPage(props) {
   //console.log("props",props)
   const [wished, setWished] = useState();

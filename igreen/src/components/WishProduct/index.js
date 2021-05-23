@@ -57,8 +57,8 @@ class WishProduct extends Component {
             />
           )} */}
           <div>
-            <p className="des">{this.props.name}</p>
-            <p className="des">{this.props.price}won</p>
+            <p className="wdes1">{this.props.name}</p>
+            <p className="wdes2">{this.props.price}won</p>
           </div>
         </div>
       </header>

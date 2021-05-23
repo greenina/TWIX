@@ -3,20 +3,27 @@
   margin-bottom: 15px;
   width: 210px;
   /* border: black solid 2px; */
-  border-radius: 10px;
-  background-color: rgb(247, 245, 243);
-  height: 260px;
+  /* border-radius: 10px; */
+  background-color: rgb(252, 252, 252);
+  height: 280px;
   font-size: 15px;
   text-align: center;
 }
 
 .pimage {
-  padding-top: 10px;
+  margin-top: 10px;
 }
-.des {
+.wdes1 {
   margin-left: 10px;
   text-align: left;
   margin-bottom: -10px;
+  max-width: 200px;
+}
+.wdes2 {
+  margin-left: 10px;
+  text-align: left;
+  padding-bottom: 20px;
+  max-width: 200px;
 }
 .myheart {
   padding-top: 15px;
