@@ -21,7 +21,13 @@ function MyPage() {
   var del_idx = [];
   var timer;
   var delay = 1000;
-  var states = ['adult_bad', 'adult_normal', 'adult_good', 'adult_dance'];
+  var states = [
+    'adult_bad',
+    'adult_normal',
+    'adult_good',
+    'adult_dance',
+    'adult_good',
+  ];
 
   useEffect(() => {
     db.collection('companion')
@@ -57,10 +63,10 @@ function MyPage() {
 
   useEffect(() => {
     var infos = ['name', 'wished', 'experience'];
-    clearTimeout(timer);
+    // clearTimeout(timer);
     var bukkuk = document.getElementById('companion_gif');
     // console.log(bukkuk);
-    if (bukkuk != null) bukkuk.style = 'margin-left: -15%';
+    if (bukkuk != null && overlayMode != 0) bukkuk.style = 'margin-left: -15%';
 
     db.collection('users')
       .doc('1')
@@ -248,7 +254,7 @@ function MyPage() {
         <div>
           {overlayMode == 0 ? (
             <div className="overlayBox">
-              Name: Bukkuk / State: {states[score]}
+              Name: Bukkuk | State: {states[score]}
             </div>
           ) : overlayMode == 1 ? (
             <div>
