@@ -108,8 +108,7 @@ class CategoryPage extends React.Component {
             cgtest = true;
           } else if (
             cgg == 'beauty' &&
-            (doc.data().category == 'facial' ||
-              doc.data().category == 'bag')
+            (doc.data().category == 'facial' || doc.data().category == 'bag')
           ) {
             cgtest = true;
           }
@@ -174,7 +173,7 @@ class CategoryPage extends React.Component {
     return (
       <header>
         <div id="ccontainer">
-          <div class="kkk"> {cgg}</div>
+          {/* <div class="kkk"> {cgg}</div> */}
           <div class="checkbox1 kk">
             <label>친환경만</label>
             <input
