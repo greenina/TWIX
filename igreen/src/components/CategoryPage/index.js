@@ -37,9 +37,9 @@ class CategoryPage extends React.Component {
     // eslint-disable-next-line no-lone-blocks
     {
       let docs = doc.data();
-      this.setState(()=>({
-        wishlist : docs['wished'],
-      })) 
+      this.setState(() => ({
+        wishlist: docs['wished'],
+      }));
     }
   }
   bukkukthen(doc) {
@@ -67,7 +67,7 @@ class CategoryPage extends React.Component {
   }
   datarefresh(cg) {
     count = 0;
-    var product =   db
+    var product = db
       .collection('products')
       .get()
       .then((snapshot) => {
@@ -83,7 +83,6 @@ class CategoryPage extends React.Component {
         //snapshot.forEach(datacheck);
         //alert(document.getElementById('pc'))
         snapshot.forEach((doc) => {
-          
           // doc.data() is never undefined for query doc snapshots
 
           var vegan = document.getElementById('vegan').checked;
@@ -94,7 +93,7 @@ class CategoryPage extends React.Component {
           var apvalid = !ap || doc.data().ap === ap;
           var harmvalid = !harm || doc.data().harm === harm;
           var cgtest = false;
-          
+
           if (
             cgg == 'living' &&
             (doc.data().category == 'tissue' ||
@@ -109,8 +108,7 @@ class CategoryPage extends React.Component {
             cgtest = true;
           } else if (
             cgg == 'beauty' &&
-            (doc.data().category == 'facial' ||
-              doc.data().category == 'bag')
+            (doc.data().category == 'facial' || doc.data().category == 'bag')
           ) {
             cgtest = true;
           }
@@ -134,7 +132,7 @@ class CategoryPage extends React.Component {
         var i;
         console.log('wishlist', this.state.wishlist);
         for (i = 0; i < this.state.id.length; i++) {
-          console.log( this.state.id[i]);
+          console.log(this.state.id[i]);
           if (this.state.wishlist.includes('' + this.state.id[i])) {
             sum += this.state.ecoval[i];
             this.setState((prevState) => ({
@@ -151,7 +149,7 @@ class CategoryPage extends React.Component {
   }
   componentWillMount() {
     this.bukkuk();
-  
+
     this.datarefresh(this.props.cg);
     //alert(this);
     // console.log(this.state.img_src);
@@ -175,7 +173,7 @@ class CategoryPage extends React.Component {
     return (
       <header>
         <div id="ccontainer">
-          <div class="kkk"> {cgg}</div>
+          {/* <div class="kkk"> {cgg}</div> */}
           <div class="checkbox1 kk">
             <label>친환경만</label>
             <input

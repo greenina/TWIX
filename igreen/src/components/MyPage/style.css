@@ -58,7 +58,13 @@
 
 .myheart {
   position: absolute;
-  margin-top: -90px;
+  margin-top: -50px;
+  margin-left: 186px;
+}
+
+.myheart__ {
+  position: absolute;
+  margin-top: -150px;
   margin-left: 186px;
 }
 

@@ -2,12 +2,12 @@
   margin: 20px;
   margin-bottom: 50px;
   box-sizing: border-box;
-  padding : 0.3vw;
+  padding: 0.3vw;
   width: 210px;
   /* border: black solid 2px; */
   /* border-radius: 10px; */
   background-color: rgb(252, 252, 252);
-  height: 320px;
+  height: 280px;
   font-size: 15px;
   text-align: center;
 }
@@ -31,21 +31,21 @@
   padding-top: 15px;
 }
 .eco1 {
-  border: 0.5vw solid rgb(85, 141, 85);
-  padding:0;
+  border: 0.3vw solid rgb(85, 141, 85);
+  padding: 0;
 }
 /* .eco1{
     border : 6px solid #87ec7c1a;
 } */
 .eco0 {
   border: 0.3vw solid #4d4d4d;
-  padding:0;
+  padding: 0;
 }
 .eco2 {
-  border: 0.5vw solid #2d9b5d;
-  padding:0;
+  border: 0.3vw solid #2d9b5d;
+  padding: 0;
 }
 .eco3 {
-  border: 0.5vw solid #97c592;
-  padding-top:0;
+  border: 0.3vw solid #97c592;
+  padding-top: 0;
 }

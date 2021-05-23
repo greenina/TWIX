@@ -11,22 +11,22 @@
   box-sizing: border-box;
  
 }
+ */
 
 .pimage {
-  
   position: relative;
-  padding-top: 20px;
-
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 .des {
   max-width: 150px;
-  margin-left: 10px;
+  padding-left: 10px;
   text-align: left;
   margin-bottom: -10px;
 }
+
 .heart {
   position: absolute;
   margin-top: 20px;
-  margin-left: 65px;
+  margin-left: 55px;
 }
- */
