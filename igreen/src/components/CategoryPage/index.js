@@ -110,7 +110,7 @@ class CategoryPage extends React.Component {
           } else if (
             cgg == 'beauty' &&
             (doc.data().category == 'facial' ||
-              doc.data().category == 'container')
+              doc.data().category == 'bag')
           ) {
             cgtest = true;
           }

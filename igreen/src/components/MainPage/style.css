@@ -101,14 +101,14 @@ body{
 /*companion state*/
 .companion-mainpage{
   position: absolute;
-  margin-top: 40%;
+  margin-top: 35%;
   display: flex;
 }
 
 .companion-mp{
     position: absolute;
-    height: 10vw;
-    margin-left: 22vw;
+    height: 15vw;
+    margin-left: 18vw;
     cursor: pointer;
 }
 

@@ -1,6 +1,5 @@
 import './style.css';
 import React, {useState, useEffect} from 'react';
-import Product from '../Product/index';
 import Heart from "react-animated-heart";
 import { db } from '../../firebase';
 
