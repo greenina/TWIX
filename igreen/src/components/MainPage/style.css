@@ -106,9 +106,9 @@ body{
 }
 
 .companion-mp{
-    position: fixed;
+    position: absolute;
     height: 10vw;
-    margin-left: 22%;
+    margin-left: 22vw;
     cursor: pointer;
 }
 
