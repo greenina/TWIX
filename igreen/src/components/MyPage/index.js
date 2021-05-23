@@ -61,8 +61,6 @@ function MyPage() {
     var bukkuk = document.getElementById('companion_gif');
     // console.log(bukkuk);
     if (bukkuk != null) bukkuk.style = 'margin-left: -15%';
-    setOverlayInfo(['']);
-    setRecArray([]);
 
     db.collection('users')
       .doc('1')
@@ -96,7 +94,7 @@ function MyPage() {
           setFirst(1);
           setPrinted(userInfo['wished']);
           console.log('printed wishlist changed');
-          debugger;
+          //debugger;
         }
         console.log('printed', printed);
         console.log(products[printed[0]]);
@@ -104,7 +102,7 @@ function MyPage() {
     // });
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [printed, wishes]);
+  }, [printed, wishes, overlayMode]);
 
   const mouseEnter = (val) => {
     console.log('mouse entered to ' + products[val]['name']);
