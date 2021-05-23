@@ -62,7 +62,7 @@ function MyPage() {
   }, []);
 
   useEffect(() => {
-    var infos = ['name', 'wished', 'experience'];
+    var infos = ['name', 'wished', 'experience', 'score'];
     // clearTimeout(timer);
     var bukkuk = document.getElementById('companion_gif');
     // console.log(bukkuk);
@@ -104,8 +104,18 @@ function MyPage() {
         }
         console.log('printed', printed);
         console.log(products[printed[0]]);
+
+        console.log(':::::::::::::', score, userInfo);
+        debugger;
+
+        var tmpDic = userInfo;
+
+        console.log(userInfo);
+        tmpDic['score'] = score;
+        console.log(userInfo);
+        debugger;
+        db.collection('users').doc('1').set(tmpDic);
       });
-    // });
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [printed, wishes, overlayMode]);
@@ -198,9 +208,18 @@ function MyPage() {
             new_score += products[userInfo['wished'][i]['eco']];
           }
           setScore(Math.round(new_score / userInfo['wished'].length));
-          // console.log(score, userInfo);
+          console.log(':::::::::::::', score, userInfo);
+          debugger;
         }
+        var tmpDic = userInfo;
+
+        console.log(userInfo);
+        tmpDic['score'] = score;
+        console.log(userInfo);
+        debugger;
+        db.collection('users').doc('1').set(tmpDic);
       });
+
     setOverlayInfo([]);
     setOverlay(0);
     setRecArray([]);
