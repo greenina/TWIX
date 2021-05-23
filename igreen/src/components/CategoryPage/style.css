@@ -1,49 +1,67 @@
-.productbox{
-    margin-left : 20px;
-    margin-right : 20px;
-    width: 150px;
-    /* border: black solid 2px; */
-    border-radius: 10px;
-    background-color: rgb(179, 247, 247);
-    height : 230px;
-    font-size : 15px;
-    margin-top: 20px;
+#pc {
+  margin-left: 4vw;
+  margin-right: auto;
+  width: 95%;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
 }
 
-div.pimage{
-  
-   
-    
-    
-    
-    
+.companion_gif1 {
+  width: 95%;
+  height: auto;
+  /* margin-left: 50%; */
 }
-.des{
+.pcandimg {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  width: 100%;
+}
+.pcandimg > *:first-child {
+  width: 100%;
+  /* align-self: stretch; */
+}
+.pcandimg > *:nth-child(2) {
+  /* position : absolute; */
+  width: 20%;
+  /* display: flex; */
+  /* height: 100%; */
+  text-align: center;
+}
+.pcandimg .selected {
+  align-self: center;
+}
 
-   text-align: right;
-    
+#cprofile {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  /* background-color: rgb(255, 255, 255); */
+  /* border-radius: 10px; */
+
+  font-size: 1vw;
 }
-#pc{
-    margin-left:auto;
-    margin-right: auto;
-    width : 80%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-wrap: wrap;
+#cprofile.p {
+  width: 100%;
 }
-.eco1{
-    border : 6px solid green;
+
+#ccontainer {
+  position: fixed;
+  width: 100%;
+
+  margin: auto;
 }
-/* .eco1{
-    border : 6px solid #87ec7c1a;
-} */
-.eco0{
-    border : 6px solid #01561f;
+.kk {
+  margin-bottom: 30px;
 }
-.eco2{
-    border : 6px solid #009a44;
+.kkk {
+  margin-bottom: 30px;
+  font-size: 40px;
 }
-.eco3{
-    border : 6px solid #88ec7c;
+.imgg {
+  overflow: hidden;
 }
