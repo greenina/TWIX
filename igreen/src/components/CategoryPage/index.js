@@ -27,11 +27,23 @@ class CategoryPage extends React.Component {
     this.bukkuk = this.bukkuk.bind(this);
     this.bukkukthen = this.bukkukthen.bind(this);
     this.wishthen = this.wishthen.bind(this);
+    this.scorethen=this.scorethen.bind(this);
   }
 
   bukkuk() {
     db.collection('companion').doc('bukkuk').get().then(this.bukkukthen);
+    var user = db.collection('users').doc('1').get().then(this.scorethen);
     var user = db.collection('users').doc('1').get().then(this.wishthen);
+  }
+  scorethen(doc){
+    {
+      let docs=doc.data();
+      this.setState(()=>({
+        score : docs['score'],
+
+      }));
+      console.log(docs);
+    }
   }
   wishthen(doc) {
     // eslint-disable-next-line no-lone-blocks
@@ -131,10 +143,10 @@ class CategoryPage extends React.Component {
         var sum = 0;
         var i;
         console.log('wishlist', this.state.wishlist);
-        for (i = 0; i < this.state.id.length; i++) {
+        for (i = 0; i < this.state.id.length; i++){
           console.log(this.state.id[i]);
           if (this.state.wishlist.includes('' + this.state.id[i])) {
-            sum += this.state.ecoval[i];
+            
             this.setState((prevState) => ({
               wished: [...prevState.wished, true],
             }));
@@ -143,8 +155,7 @@ class CategoryPage extends React.Component {
               wished: [...prevState.wished, false],
             }));
         }
-        this.setState((prevState) => ({ score: Math.round(sum / i) }));
-        // console.log(this.state.score);
+        
       });
   }
   componentWillMount() {

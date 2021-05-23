@@ -2,7 +2,7 @@
   margin: 20px;
   margin-bottom: 50px;
   box-sizing: border-box;
-  padding: 0.3vw;
+  padding: 0.5vw;
   width: 210px;
   /* border: black solid 2px; */
   /* border-radius: 10px; */
@@ -31,19 +31,19 @@
   padding-top: 15px;
 }
 .eco1 {
-  border: 0.3vw solid rgb(85, 141, 85);
+  border: 0.5vw solid rgb(85, 141, 85);
   padding: 0;
 }
 
 .eco0 {
-  border: 0.3vw solid #4d4d4d;
+  border: 0.5vw solid #4d4d4d;
   padding: 0;
 }
 .eco2 {
-  border: 0.3vw solid #2d9b5d;
+  border: 0.5vw solid #2d9b5d;
   padding: 0;
 }
 .eco3 {
-  border: 0.3vw solid #97c592;
+  border: 0.5vw solid #97c592;
   padding-top: 0;
 }
