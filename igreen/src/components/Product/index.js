@@ -16,7 +16,6 @@ class Product extends Component {
       price: '',
       imgg: '',
       a: '',
-      wished: false,
       ecoval: 1,
     };
     this.me = this.me.bind(this);
@@ -53,7 +52,7 @@ class Product extends Component {
         <div
           id={'pdb' + idx}
           className="productbox"
-          valuee={this.props.eco}
+          value={this.props.eco}
           onMouseEnter={this.me}
           onMouseLeave={this.ml}
         >
@@ -65,7 +64,8 @@ class Product extends Component {
                 price:this.props.price,
                 imgg:this.props.imgg,
                 a:this.props.a,
-                ecoval:this.props.ecoval
+                ecoval:this.props.ecoval,
+                idx:this.props.idx
               }
             }}
             >

@@ -40,12 +40,8 @@ class CategoryPage extends React.Component {
       let docs = doc.data();
       this.setState(()=>({
         wishlist : docs['wished'],
-
-      }))
-      
-      
+      })) 
     }
-
   }
   bukkukthen(doc) {
     var states = ["adult_bad", "adult_normal", "adult_good", "adult_dance"];
