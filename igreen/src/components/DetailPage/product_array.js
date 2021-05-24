@@ -88,5 +88,42 @@ let tissue = [
 
 ];
 
+let toothpaste_element=[
+  'docs',
+  'price',
+  'main feature', 
+  'capacity', 
+  'formulation',
+  'rating'
+
+];
+
+
+let toothpaste =[
+  ['4', '11000', 'Fluorine free,  Colorless, No CPC', '50', 'solid', '4.5'],
+['19', '12800', 'Colorless', '120g', 'tube', '4.7'],
+['20', '8700', 'Fluorine free,  Colorless, No CPC', '120g', 'tube', '5'],
+['21', '800', 'None', '120g', 'tube', '4.8'],
+['22', '700', 'Fluorine free,  No CPC', '160g', 'tube', '4.8'],
+
+];
+
+let scrubber_element = [
+  'docs', 
+  'price',
+  'material',
+  'rating',
+];
+let scrubber =[
+
+  ['27', '5000', 'Loofah cucumber', '4.9'],
+  ['28', '10000', 'Burlap', '4.5'],
+  ['29', '7000', 'Burlap', '3.9'],
+  ['30', '15000', 'plastic', '4.7'],
+  ['31', '6000', 'plastic', '4.0'],
+];
+
 export { facials_element, facials };
 export {tissue_element, tissue};
+export {toothpaste_element, toothpaste};
+export {scrubber_element, scrubber};
