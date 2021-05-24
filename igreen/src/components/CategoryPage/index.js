@@ -187,7 +187,6 @@ class CategoryPage extends React.Component {
           {/* <div class="kkk"> {cgg}</div> */}
           <div className="fixed_container">
             <div className="checkbox1 kk">
-              <span class="checkin">
               <label>Eco-friendly</label>
               <input
                 type="checkbox"
@@ -195,8 +194,6 @@ class CategoryPage extends React.Component {
                 value="에코"
                 onClick={this.datarefresh}
               ></input>
-              </span>
-              <span class="checkin">
               <label>Save Environment</label>
               <input
                 type="checkbox"
@@ -204,8 +201,6 @@ class CategoryPage extends React.Component {
                 value="비건"
                 onClick={this.datarefresh}
               />
-              </span>
-              <span class="checkin">
               <label>Protect Animal</label>
               <input
                 type="checkbox"
@@ -213,8 +208,6 @@ class CategoryPage extends React.Component {
                 value="동물보호"
                 onClick={this.datarefresh}
               ></input>
-              </span>
-              <span class="checkin">
               <label>Stay healthy</label>
               <input
                 type="checkbox"
@@ -222,7 +215,7 @@ class CategoryPage extends React.Component {
                 value="유해물질x"
                 onClick={this.datarefresh}
               ></input>
-              </span>
+
               <button id="onesight" onClick={this.onesight}>
                 In a Glance
               </button>
