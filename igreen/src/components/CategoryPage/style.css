@@ -69,7 +69,5 @@
 .fixed_container {
   text-align: right;
   margin-right: 10vw;
-  margin-bottom: vw;
- 
+  margin-bottom: -2vw;
 }
-
