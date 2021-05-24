@@ -123,6 +123,30 @@ let scrubber =[
   ['31', '6000', 'plastic', '4.0'],
 ];
 
+let bag_element=[
+  'docs',
+  'price',
+  'purpose',
+  'material', 
+  'capacity', 
+  'safety', 
+  'waterproof', 
+  'strap drop', 
+  'pockets', 
+  'rating',
+
+];
+let bag =[
+
+  ['5', '79000', 'backpack', 'recycled fiber', 'laptops, chargers, and iPads', 'X', 'X', '55~74', 'one zipper pocket, two-stage inner storage', '4.8'],
+  ['23', '49000', 'crossbody bag', 'recycled fiber', 'smartphones, cards, and cash', 'X', 'X', '55~109', 'two zipper-pockets, one slot pocket', '4.5'],
+  ['24', '32000', 'pocket bag', 'recycled fiber', 'smartphone, muld-card pouch, Airpod case and mask', 'X', 'X', 'cross strap', 'frot pocket', '4.3'],
+  ['25', '15000', 'hip pack', 'polyester', 'smartphone, muld-card pouch, Airpod case and mask', 'X', 'O', 'cross strap', 'two pockets, one mesh inner pocket', '4.7'],
+  ['26', '32000', 'backpack', 'polyester', 'laptops, chargers, and iPads', 'X', 'O', '48~76', 'two zipper pocket', '4.5'],
+
+  
+]
+
 export { facials_element, facials };
 export {tissue_element, tissue};
 export {toothpaste_element, toothpaste};
