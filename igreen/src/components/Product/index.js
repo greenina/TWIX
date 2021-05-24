@@ -63,7 +63,7 @@ class Product extends Component {
                 name : this.props.name,
                 price:this.props.price,
                 imgg:this.props.imgg,
-                a:this.props.a,
+                link:this.props.a,
                 ecoval:this.props.ecoval,
                 idx:this.props.idx
               }

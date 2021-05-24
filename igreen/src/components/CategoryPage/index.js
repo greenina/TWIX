@@ -27,14 +27,15 @@ class CategoryPage extends React.Component {
     this.bukkuk = this.bukkuk.bind(this);
     this.bukkukthen = this.bukkukthen.bind(this);
     this.wishthen = this.wishthen.bind(this);
-    this.scorethen=this.scorethen.bind(this);
+    this.scorethen = this.scorethen.bind(this);
   }
 
   bukkuk() {
     db.collection('companion').doc('bukkuk').get().then(this.bukkukthen);
+
     var user = db.collection('users').doc('1').get().then(this.scorethen);
     var user = db.collection('users').doc('1').get().then(this.wishthen);
-  }
+  } 
   scorethen(doc){
     {
       let docs=doc.data();
@@ -44,14 +45,15 @@ class CategoryPage extends React.Component {
       }));
       console.log(docs);
     }
+
   }
   wishthen(doc) {
     // eslint-disable-next-line no-lone-blocks
     {
       let docs = doc.data();
-      this.setState(() => ({
-        wishlist: docs['wished'],
-      }));
+      this.setState(()=>({
+        wishlist : docs['wished'],
+      })) 
     }
   }
   bukkukthen(doc) {
@@ -69,8 +71,7 @@ class CategoryPage extends React.Component {
   }
   onesight() {
     var elements = document.getElementsByClassName('productbox');
-    console.log(elements, count);
-    count++;
+    //var checked = count++;
     for (var i = 0; i < elements.length; i++) {
       if (count % 2 === 1)
         elements[i].classList.add('eco' + this.state.ecoval[i]);
@@ -105,11 +106,16 @@ class CategoryPage extends React.Component {
           var apvalid = !ap || doc.data().ap === ap;
           var harmvalid = !harm || doc.data().harm === harm;
           var cgtest = false;
-
           if (
             cgg == 'living' &&
             (doc.data().category == 'tissue' ||
               doc.data().category == 'cushion')
+          ) {
+            cgtest = true;
+          } else if (
+            cgg == 'kitchen' &&
+            (doc.data().category == 'scrubber' ||
+              doc.data().category == 'detergent')
           ) {
             cgtest = true;
           } else if (
@@ -120,7 +126,8 @@ class CategoryPage extends React.Component {
             cgtest = true;
           } else if (
             cgg == 'beauty' &&
-            (doc.data().category == 'facial' || doc.data().category == 'bag')
+            (doc.data().category == 'facial' ||
+              doc.data().category == 'bag')
           ) {
             cgtest = true;
           }
@@ -142,11 +149,10 @@ class CategoryPage extends React.Component {
         console.log(this.state);
         var sum = 0;
         var i;
-        console.log('wishlist', this.state.wishlist);
-        for (i = 0; i < this.state.id.length; i++){
-          console.log(this.state.id[i]);
+        for (i = 0; i < this.state.id.length; i++) {
+          // console.log('wishlist', this.state.wishlist)
           if (this.state.wishlist.includes('' + this.state.id[i])) {
-            
+            sum += this.state.ecoval[i];
             this.setState((prevState) => ({
               wished: [...prevState.wished, true],
             }));
@@ -155,15 +161,15 @@ class CategoryPage extends React.Component {
               wished: [...prevState.wished, false],
             }));
         }
-        
+        this.setState((prevState) => ({ score: Math.round(sum / i) }));
+        console.log(this.state.score);
       });
   }
-  componentWillMount() {
+  componentWillMount() {    
     this.bukkuk();
-
     this.datarefresh(this.props.cg);
     //alert(this);
-    // console.log(this.state.img_src);
+    console.log(this.state.img_src);
   }
   render() {
     // this.bukkuk();
@@ -220,7 +226,12 @@ class CategoryPage extends React.Component {
                 In a Glance
               </button>
             </div>
+
           </div>
+
+          <button id="onesight" onClick={this.onesight}>
+            한눈에보기
+          </button>
           <div class="pcandimg">
             <div id="pc">
               <Productlist
