@@ -34,7 +34,7 @@ class CategoryPage extends React.Component {
     db.collection('companion').doc('bukkuk').get().then(this.bukkukthen);
     var user = db.collection('users').doc('1').get().then(this.scorethen);
     var user = db.collection('users').doc('1').get().then(this.wishthen);
-  }
+  } 
   scorethen(doc){
     {
       let docs=doc.data();
@@ -159,6 +159,15 @@ class CategoryPage extends React.Component {
       });
   }
   componentWillMount() {
+    for(var k=1;k<37;k++){
+      db.collection("products2").doc(String(k)).set({
+        compinf : [0, 1, 2],
+
+
+      })
+      console.log("k", k);
+    }
+    
     this.bukkuk();
 
     this.datarefresh(this.props.cg);
