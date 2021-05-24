@@ -36,6 +36,16 @@ function DetailPage(props) {
     }
     return sum/list.length;
   }
+  var CopyUrlToClipboard = function(){
+    // var obShareUrl = document.getElementById("ShareUrl");
+    // obShareUrl.value = window.document.location.href;  // 현재 URL 을 세팅해 줍니다.obShareUrl.select();  // 해당 값이 선택되도록 select() 합니다
+    // document.execCommand("copy"); // 클립보드에 복사합니다.
+    // obShareUrl.blur(); // 선택된 것을 다시 선택안된것으로 바꿈니다.
+    alert("URL이 클립보드에 복사되었습니다");
+    console.log("alert") 
+  }
+
+
 
   var heartClick = function(e){
     console.log("heartIdd",idd)
@@ -186,6 +196,7 @@ function DetailPage(props) {
           temp.push(docc.id);
           setRecArray(temp)
           console.log("temppppp",temp)
+          console.log("recArray", recArray)
         } 
         },1000)
         
@@ -204,6 +215,13 @@ function DetailPage(props) {
           <div class="row1">
             <h1>{name}</h1>
             <Heart isClick={isClick} onClick={heartClick} />
+            <div class="share" onClick={() => {
+              navigator.clipboard.writeText(window.location.href);
+              console.log("copy");
+              alert("copied")
+            }}>
+              <img src="/images/share.png" height="30px"/>
+            </div>
           </div>
           <div class="row2">
             {stage[0]?
@@ -275,11 +293,11 @@ function DetailPage(props) {
         <img src="/images/imagea.jpeg"/>
       </div>:
       <div class="images">
-        <img src="/images/imagea.jpeg"/>
+        <img height="400px"src="/images/imagea.jpeg"/>
       </div>
       }
       <div class="recbox">
-        Recommendations
+        <div class="recommendations">Recommendations</div>
         {recArray.map((val, idx) => (
                   <div key={val}>
                     <RecProduct
