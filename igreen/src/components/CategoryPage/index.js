@@ -27,6 +27,7 @@ class CategoryPage extends React.Component {
     this.bukkuk = this.bukkuk.bind(this);
     this.bukkukthen = this.bukkukthen.bind(this);
     this.wishthen = this.wishthen.bind(this);
+    this.scorethen = this.scorethen.bind(this);
   }
 
   bukkuk() {
@@ -112,6 +113,12 @@ class CategoryPage extends React.Component {
           ) {
             cgtest = true;
           } else if (
+            cgg == 'kitchen' &&
+            (doc.data().category == 'scrubber' ||
+              doc.data().category == 'detergent')
+          ) {
+            cgtest = true;
+          } else if (
             cgg == 'bath' &&
             (doc.data().category == 'toothpaste' ||
               doc.data().category == 'shampoo')
@@ -120,7 +127,7 @@ class CategoryPage extends React.Component {
           } else if (
             cgg == 'beauty' &&
             (doc.data().category == 'facial' ||
-              doc.data().category == 'container')
+              doc.data().category == 'bag')
           ) {
             cgtest = true;
           }
@@ -158,16 +165,7 @@ class CategoryPage extends React.Component {
         console.log(this.state.score);
       });
   }
-  componentWillMount() {
-    for(var k=1;k<37;k++){
-      db.collection("products2").doc(String(k)).set({
-        compinf : [0, 1, 2],
-
-
-      })
-      console.log("k", k);
-    }
-    
+  componentWillMount() {    
     this.bukkuk();
     this.datarefresh(this.props.cg);
     //alert(this);
