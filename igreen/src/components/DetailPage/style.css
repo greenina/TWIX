@@ -1,71 +1,72 @@
-.wrap{
-    display: flex;
-    /* align-items: center; */
-    padding:50px;
+.wrap {
+  display: flex;
+  /* align-items: center; */
+  padding: 50px;
 }
-.img{
-    margin-right:100px;
+.img {
+  margin-right: 100px;
 }
-.recbox{
-    display: flex;
+.recbox {
+  display: flex;
 }
-.info{
-    display:flex;
-    flex-direction: column;
-    margin-left:100px;
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
 }
-.row1{
-    display:flex;
+.row1 {
+  display: flex;
 }
-.row2{
-    display:flex;
+.row2 {
+  display: flex;
 }
-.row3{
-    margin-top: 280px;
-    display: flex;
+.row3 {
+  margin-top: 280px;
+  display: flex;
 }
-.price{
-    font-size: 30px;
-    margin-right: 20px;
+.price {
+  font-size: 30px;
+  margin-right: 20px;
 }
-.whole{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    /* padding:50px; */
-    
+.whole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding:50px; */
 }
-#b{
-  background-color: rgba(156, 178, 78, 0.5);  
+/* /* #b {
+  background-color: rgba(156, 178, 78, 0.5);
+} */
+/* #a {
+  background-color: rgba(210, 211, 212, 0.5);
+} */
+.images {
+  display: flex;
 }
-#a{
-    background-color: rgba(210, 211, 212, 0.5);
+.companion {
+  margin-left: 170px;
 }
-.images{
-    display: flex;
+/* .feature3 {
+  align-items: center;
+  border-radius: 60px;
+} */
+.feature1 {
+  align-items: center;
+  border-radius: 60px;
+  background-color: rgba(210, 211, 212, 0.5);
 }
-.companion{
-    margin-left: 170px;
+.feature2 {
+  align-items: center;
+  border-radius: 60px;
+  background-color: rgba(156, 178, 78, 0.5);
 }
-.feature3{
-    align-items: center;
-    border-radius: 60px;
+.image {
+  margin-left: 15px;
+  margin-top: 10px;
 }
-.feature1{
-    align-items: center;
-    border-radius: 60px;
+.share {
+  margin-top: 35px;
 }
-.feature2{
-    align-items: center;
-    border-radius: 60px;
-}
-.image{
-    margin-left: 15px;
-    margin-top: 10px;
-}
-.share{
-    margin-top: 35px;
-}
-.recommendations{
-    font-size: 30px;
+.recommendations {
+  font-size: 30px;
 }

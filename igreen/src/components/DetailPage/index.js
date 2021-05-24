@@ -5,6 +5,10 @@ import { db } from '../../firebase';
 import RecProduct from '../RecProduct';
 import { Button } from '@material-ui/core';
 import { facials_element, facials } from './product_array';
+import { tissue_element, tissue } from './product_array';
+import { toothpaste_element, toothpaste } from './product_array';
+import { scrubber_element, scrubber } from './product_array';
+import { bag_element, bag } from './product_array';
 
 function DetailPage(props) {
   //console.log("props",props)
@@ -23,6 +27,17 @@ function DetailPage(props) {
   const [userInfo, setUserInfo] = useState({});
   const [idd, setIdd] = useState();
   const [product_id, setProductId] = useState(0);
+  const [e_length, setELength] = useState(0);
+  const [elements, setElements] = useState([]);
+  const [products_in, setProductIn] = useState([]);
+  // const [dominant, setDominant] = useState(0);
+  // const [subDominant, setSubDominant] = useState(0);
+  // const [triDominant, setTriDominant] = useState(0);
+  // const [img1, setImg1] = useState('');
+  // const [img2, setImg2] = useState('');
+  // const [img3, setImg3] = useState('');
+  const dominant = 0;
+
   const name = props.location.state.name;
   const price = props.location.state.price;
   const img = props.location.state.imgg;
@@ -92,11 +107,41 @@ function DetailPage(props) {
 
           if (dic[doc.id]['name'] == name) {
             cgg = products[doc.id]['category'];
+            if (cgg == 'facial') {
+              setELength(facials_element.length);
+              setElements(facials_element);
+              setProductIn(facials);
+              // setDominant(0);
+              // setSubDominant(1);
+              // setTriDominant(2);
+            } else if (cgg == 'tissue') {
+              setELength(tissue_element.length);
+              setElements(tissue_element);
+              setProductIn(tissue);
+            } else if (cgg == 'toothpaste') {
+              setELength(toothpaste_element.length);
+              setElements(toothpaste_element);
+              setProductIn(toothpaste);
+            } else if (cgg == 'scrubber') {
+              setELength(scrubber_element.length);
+              setElements(scrubber_element);
+              setProductIn(scrubber);
+            } else if (cgg == 'bag') {
+              setELength(bag_element.length);
+              setElements(bag_element);
+              setProductIn(bag);
+            }
             var tmp = Number(doc.id);
             for (var i = 0; i < facials.length; i++) {
-              if (facials[i][0] == tmp) setProductId(i);
+              if (facials[i][0] == tmp) {
+                setProductId(i);
+                break;
+              }
             }
+
+            console.log('::::::', elements, products_in);
             console.log('category', cgg, 'product_id', product_id);
+            console.log(products_in[product_id]);
             debugger;
           }
           /////////get product id, category///////////
@@ -107,7 +152,8 @@ function DetailPage(props) {
               .doc(doc.id)
               .get()
               .then(function (doc2) {
-                setStage(doc2.data());
+                setStage(doc2.data()['stage']);
+                console.log('::::::::', doc2.data()['stage']);
               });
             db.collection('users')
               .doc('1')
@@ -153,7 +199,9 @@ function DetailPage(props) {
       });
   }, []);
 
-  useEffect(() => {}, [product_id]);
+  useEffect(() => {
+    console.log('page re-rendered');
+  }, [product_id]);
 
   return (
     <div class="whole">
@@ -177,7 +225,7 @@ function DetailPage(props) {
             </div>
           </div>
           <div class="row2">
-            {stage[0] ? (
+            {stage[0] == 0 ? (
               <div class="feature1" id="a">
                 <div class="image">
                   <img src="/images/setting.png" height="30px" />
@@ -185,7 +233,7 @@ function DetailPage(props) {
                 <div>produce</div>
               </div>
             ) : (
-              <div class="feature1" id="b">
+              <div class="feature2" id="b">
                 <div class="image">
                   <img src="/images/setting.png" height="30px" />
                 </div>
@@ -193,39 +241,39 @@ function DetailPage(props) {
               </div>
             )}
 
-            {stage[1] ? (
-              <div class="feature2" id="a">
-                <div class="image">
+            {stage[1] == 0 ? (
+              <div className="feature1" id="a">
+                <div className="image">
                   <img src="/images/hello.png" height="30px" />
                 </div>
                 <div>사용중..?</div>
               </div>
             ) : (
-              <div class="feature2" id="b">
-                <div class="image">
+              <div className="feature2" id="b">
+                <div className="image">
                   <img src="/images/hello.png" height="30px" />
                 </div>
                 <div>사용중..?</div>
               </div>
             )}
-            {stage[2] ? (
-              <div class="feature3" id="a">
-                <div class="image">
+            {stage[2] == 0 ? (
+              <div className="feature1" id="a">
+                <div className="image">
                   <img src="/images/bin.png" height="30px" />
                 </div>
                 <div>after use</div>
               </div>
             ) : (
-              <div class="feature3" id="b">
-                <div class="image">
+              <div className="feature2" id="b">
+                <div className="image">
                   <img src="/images/bin.png" height="30px" />
                 </div>
                 <div>after use</div>
               </div>
             )}
           </div>
-          <div class="row3">
-            <div class="price">
+          <div className="row3">
+            <div className="price">
               {price}
               <span>&#8361;</span>
             </div>
@@ -248,27 +296,85 @@ function DetailPage(props) {
           ></img>
         </div>
       </div>
-      <div>
-        <img alt="product_img" src={img} width="300px"></img>
-        <img alt="product_img" src={img} width="300px"></img>
-      </div>
-      <div>
-        {product_id != null ? (
-          <table>
-            <thead> {cgg} </thead>
-            <tbody>
-              {facials[product_id].map((val, index) =>
-                index != 0 ? (
-                  <tr>
-                    <td> {facials_element[index]} </td>
-                    <td> {val} </td> <td> {facials[product_id][index]} </td>
-                  </tr>
-                ) : null
-              )}
-            </tbody>
-          </table>
-        ) : null}
-      </div>
+      {ecoval > 0 ? (
+        <div>
+          <div>
+            {products_in != null && products_in.length > 0 ? (
+              <div>
+                <img
+                  alt="product_img"
+                  src={products_in[0][elements.length]}
+                  width="300px"
+                ></img>
+                <img
+                  alt="product_img"
+                  src={products_in[1][elements.length]}
+                  width="300px"
+                ></img>
+                <img
+                  alt="product_img"
+                  src={products_in[2][elements.length]}
+                  width="300px"
+                ></img>
+              </div>
+            ) : null}
+          </div>
+          <div>
+            {products_in != null &&
+            products_in.length > 0 &&
+            product_id != null ? (
+              <table>
+                <thead> {cgg} </thead>
+                <tbody>
+                  {products_in[product_id].map((val, index) =>
+                    index != 0 && index != e_length ? (
+                      <tr>
+                        <td> {elements[index]} </td>
+                        <td> {products_in[0][index]} </td>{' '}
+                        <td> {products_in[1][index]} </td>
+                        <td> {products_in[2][index]} </td>
+                      </tr>
+                    ) : null
+                  )}
+                </tbody>
+              </table>
+            ) : null}
+          </div>
+        </div>
+      ) : (
+        <div>
+          <div>
+            <img alt="product_img" src={img} width="300px"></img>
+            {products_in != null && products_in.length > 0 ? (
+              <img
+                alt="product_img"
+                src={products_in[0][elements.length]}
+                width="300px"
+              ></img>
+            ) : null}
+          </div>
+          <div>
+            {products_in != null &&
+            products_in.length > 0 &&
+            product_id != null ? (
+              <table>
+                <thead> {cgg} </thead>
+                <tbody>
+                  {products_in[product_id].map((val, index) =>
+                    index != 0 && index != e_length ? (
+                      <tr>
+                        <td> {elements[index]} </td>
+                        <td> {val} </td>{' '}
+                        <td> {products_in[dominant][index]} </td>
+                      </tr>
+                    ) : null
+                  )}
+                </tbody>
+              </table>
+            ) : null}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
