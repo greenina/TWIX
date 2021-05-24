@@ -159,14 +159,7 @@ class CategoryPage extends React.Component {
       });
   }
   componentWillMount() {
-    for(var k=1;k<37;k++){
-      db.collection("products2").doc(String(k)).set({
-        compinf : [0, 1, 2],
-
-
-      })
-      console.log("k", k);
-    }
+   
     
     this.bukkuk();
 
