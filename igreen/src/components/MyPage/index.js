@@ -106,14 +106,14 @@ function MyPage() {
         console.log(products[printed[0]]);
 
         console.log(':::::::::::::', score, userInfo);
-        debugger;
+        //debugger;
 
         var tmpDic = userInfo;
 
         console.log(userInfo);
         tmpDic['score'] = score;
         console.log(userInfo);
-        debugger;
+        //debugger;
         db.collection('users').doc('1').set(tmpDic);
       });
 
@@ -209,14 +209,14 @@ function MyPage() {
           }
           setScore(Math.round(new_score / userInfo['wished'].length));
           console.log(':::::::::::::', score, userInfo);
-          debugger;
+          //debugger;
         }
         var tmpDic = userInfo;
 
         console.log(userInfo);
         tmpDic['score'] = score;
         console.log(userInfo);
-        debugger;
+        //debugger;
         db.collection('users').doc('1').set(tmpDic);
       });
 
