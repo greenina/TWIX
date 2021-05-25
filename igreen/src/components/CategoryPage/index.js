@@ -27,20 +27,19 @@ class CategoryPage extends React.Component {
     this.bukkuk = this.bukkuk.bind(this);
     this.bukkukthen = this.bukkukthen.bind(this);
     this.wishthen = this.wishthen.bind(this);
-    this.scorethen=this.scorethen.bind(this);
+    this.scorethen = this.scorethen.bind(this);
   }
 
   bukkuk() {
     db.collection('companion').doc('bukkuk').get().then(this.bukkukthen);
     var user = db.collection('users').doc('1').get().then(this.scorethen);
     var user = db.collection('users').doc('1').get().then(this.wishthen);
-  } 
-  scorethen(doc){
+  }
+  scorethen(doc) {
     {
-      let docs=doc.data();
-      this.setState(()=>({
-        score : docs['score'],
-
+      let docs = doc.data();
+      this.setState(() => ({
+        score: docs['score'],
       }));
       console.log(docs);
     }
@@ -73,8 +72,8 @@ class CategoryPage extends React.Component {
     count++;
     for (var i = 0; i < elements.length; i++) {
       if (count % 2 === 1)
-        elements[i].classList.add('eco' + this.state.ecoval[i]);
-      else elements[i].classList.remove('eco' + this.state.ecoval[i]);
+        elements[i].classList.add('ecoo' + this.state.ecoval[i]);
+      else elements[i].classList.remove('ecoo' + this.state.ecoval[i]);
     }
   }
   datarefresh(cg) {
@@ -123,6 +122,12 @@ class CategoryPage extends React.Component {
             (doc.data().category == 'facial' || doc.data().category == 'bag')
           ) {
             cgtest = true;
+          } else if (
+            cgg == 'kitchen' &&
+            (doc.data().category == 'scrubber' ||
+              doc.data().category == 'detergent')
+          ) {
+            cgtest = true;
           }
           // var wishbool = wished.includes('' + doc.id) ? true : false;
 
@@ -143,10 +148,9 @@ class CategoryPage extends React.Component {
         var sum = 0;
         var i;
         console.log('wishlist', this.state.wishlist);
-        for (i = 0; i < this.state.id.length; i++){
+        for (i = 0; i < this.state.id.length; i++) {
           console.log(this.state.id[i]);
           if (this.state.wishlist.includes('' + this.state.id[i])) {
-            
             this.setState((prevState) => ({
               wished: [...prevState.wished, true],
             }));
@@ -155,12 +159,9 @@ class CategoryPage extends React.Component {
               wished: [...prevState.wished, false],
             }));
         }
-        
       });
   }
   componentWillMount() {
-   
-    
     this.bukkuk();
 
     this.datarefresh(this.props.cg);
@@ -220,13 +221,13 @@ class CategoryPage extends React.Component {
                 ></input>
               </span>
               <span class="checkin">
-              <label>Stay healthy</label>
-              <input
-                type="checkbox"
-                id="harm"
-                value="유해물질x"
-                onClick={this.datarefresh}
-              ></input>
+                <label>Stay healthy</label>
+                <input
+                  type="checkbox"
+                  id="harm"
+                  value="유해물질x"
+                  onClick={this.datarefresh}
+                ></input>
               </span>
               <button
                 id="onesight"
