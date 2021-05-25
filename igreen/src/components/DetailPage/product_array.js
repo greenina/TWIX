@@ -79,48 +79,54 @@ let tissue_element = [
 
 let tissue = [
   [
+    '3',
+    '11000',
+    '3-ply',
+    'Natural pulp, No fluorescence, Colorless, Fragrance free',
+    'cotton',
+    '4',
+    'pack',
+    '4.1',
+  ],
+  [
+    '15',
+    '10000',
+    '1-ply',
+    'Natural pulp, No fluorescence, Colorless, Fragrance free',
+    'cotton',
+    '10',
+    'reusable',
+    '4.6',
+  ],
+  [
     '16',
     '6000',
     '2-ply',
-    ' Natural pulp, No fluorescence, Colorless, Fragrance free',
+    'Natural pulp, No fluorescence, Colorless, Fragrance free',
     'cotton',
     '3',
     'pack',
     '4.0',
-    'https://morestore.co.kr/web/product/big/202104/5c02a392f988d4076c4a81e2b517747b.jpg',
   ],
   [
     '17',
     '11000',
     '3-ply',
-    ' Natural pulp, No fluorescence, Colorless, Fragrance free',
+    'Natural pulp, No fluorescence, Colorless, Fragrance free',
     'cotton',
     '30',
     'roll',
     '4.1',
-    'https://shopping-phinf.pstatic.net/main_2105173/21051735457.20191114161731.jpg?type=f640',
   ],
   [
     '18',
     '1000',
     '2-ply',
-    ' Natural pulp, No fluorescence, Fragrance free',
+    'Natural pulp, No fluorescence, Fragrance free',
     'cotton',
     '840',
     'pack',
     '4.2',
-    'https://shopping-phinf.pstatic.net/main_5602940/5602940127.20200602173738.jpg?type=f640',
-  ],
-  [
-    '3',
-    '11000',
-    '3-ply',
-    ' Natural pulp, No fluorescence, Colorless, Fragrance free',
-    'cotton',
-    '4',
-    'pack',
-    '4.1',
-    'https://morestore.co.kr/web/product/big/202007/edaab347cb891638e7e57b9b090f1c56.jpg',
   ],
 ];
 
@@ -300,8 +306,90 @@ let bag = [
   ],
 ];
 
+let detergent_element = [
+  'docs',
+  'price',
+  'ingredient',
+  'form',
+  'cleaning power',
+  'volume',
+  'rating',
+];
+
+let detergent = [
+  ['32', '6000', 'coconut oil', 'solid', 'middle', '150g', '4.3'],
+  ['33', '14000', 'coconut oil', 'solid', 'high', '500g', '4.6'],
+  ['34', '14000', 'natural ingredients', 'solid', 'high', '200g', '4.8'],
+  ['35', '17000', 'surfactants', 'sheet', 'high', '120 sheets', '4.5'],
+  ['36', '5000', 'surfactants', 'liquid', 'middle', '450mL', '4.4'],
+];
+
+let cushion_element = [
+  'docs',
+  'price',
+  'cover',
+  'filling',
+  'feature',
+  'dimension',
+  'rating',
+];
+let cushion = [
+  [
+    '6',
+    '47000',
+    'polyester, cotton',
+    'cotton(linen upcycling)',
+    'Change shape',
+    '90*100cm',
+    '4.0',
+    'https://morestore.co.kr/web/product/big/20200109/e3e51ddf19f340c8c38ea3210b61aa0d.jpg',
+  ],
+  [
+    '37',
+    '70000',
+    'Handmade woven fabric',
+    'Kapok(natural fiber)',
+    'Use cushion for two usage',
+    '50*50cm',
+    '4.2',
+    'http://thumbnail.10x10.co.kr/webimage/image/basic/36/B000360034.jpg?cmd=thumb&w=500&h=500&fit=true&ws=false',
+  ],
+  [
+    '38',
+    '46000',
+    'Handmade woven fabric',
+    'Kapok(natural fiber',
+    'Change shape',
+    '30*50cm',
+    '4.5',
+    'https://contents.lotteon.com/itemimage/LO/10/47/10/44/77/_1/04/71/04/47/8/LO1047104477_1047104478_1.jpg/dims/resizef/554X554',
+  ],
+  [
+    '39',
+    '11000',
+    'polyester',
+    'cotton',
+    'Designed cover',
+    '50*50cm',
+    '4.3',
+    'https://contents.lotteon.com/itemimage/LO/10/38/45/78/58/_1/03/84/57/85/9/LO1038457858_1038457859_1.jpg/dims/resizef/554X554',
+  ],
+  [
+    '40',
+    '10000',
+    'cotton',
+    'polyester',
+    'Cheap price',
+    '40*40cm',
+    '3.6',
+    'http://item.ssgcdn.com/27/58/51/item/1000049515827_i1_1200.jpg',
+  ],
+];
+
 export { facials_element, facials };
 export { tissue_element, tissue };
 export { toothpaste_element, toothpaste };
 export { scrubber_element, scrubber };
 export { bag_element, bag };
+export { detergent_element, detergent };
+export { cushion_element, cushion };
