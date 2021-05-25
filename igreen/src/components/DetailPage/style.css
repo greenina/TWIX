@@ -163,3 +163,15 @@ table {
 .table3 {
   margin-left: -50px;
 }
+table {
+    width: 100%;
+    border: 1px solid rgba(210, 211, 212, 0.3);
+    border-collapse: collapse;
+  }
+th, td {
+  border: 1px solid rgba(210, 211, 212, 0.3);
+  padding: 10px;
+}
+#green{
+  background-color: rgba(156, 178, 78, 0.2);
+}
