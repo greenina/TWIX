@@ -17,7 +17,7 @@ function DetailPage(props) {
   const [category, setCategory] = useState();
   const [products, setProducts] = useState({});
   const [img_src, setImgSrc] = useState({});
-  const [score, setScore] = useState();
+  const [score, setScore] = useState(0);
   const [console2, setConsole2] = useState();
   const [console3, setConsole3] = useState(0);
   const [bukkuk, setBukkuk] = useState([]);
@@ -183,6 +183,7 @@ function DetailPage(props) {
               .then(function (docc) {
                 var docs = docc.data();
                 setWished(docs['wished']);
+                setScore(docs['score']);
                 var clicked = !!(docs['wished'].indexOf(doc.id) + 1);
                 setStatus(
                   avg(
@@ -231,7 +232,7 @@ function DetailPage(props) {
         <img
           id="bukkuk"
           className="companion_gif"
-          src={img_src[1]}
+          src={img_src[score]}
           alt="companion"
           key={status}
           margin-left="-10%"
@@ -371,46 +372,38 @@ function DetailPage(props) {
       {ecoval > 0 ? (
         <div>
           <div>
-            
+            {products_in != null && products_in.length > 0 ? (
+              <div>
+                <img
+                  alt="product_img"
+                  src={products_in[0][elements.length]}
+                  width="300px"
+                ></img>
+                <img
+                  alt="product_img"
+                  src={products_in[1][elements.length]}
+                  width="300px"
+                ></img>
+                <img
+                  alt="product_img"
+                  src={products_in[2][elements.length]}
+                  width="300px"
+                ></img>
+              </div>
+            ) : null}
           </div>
           <div>
             {products_in != null &&
             products_in.length > 0 &&
             product_id != null ? (
-              <table class="table">
+              <table>
                 <thead> {cgg} </thead>
                 <tbody>
-                  {products_in != null && products_in.length > 0 ? (
-                  <tr>
-                    <td>{''}</td>
-                    <td id="green">
-                      <img
-                      alt="product_img"
-                      src={products_in[0][elements.length]}
-                      width="300px"
-                      ></img>
-                    </td>
-                    <td>
-                      <img
-                      alt="product_img"
-                      src={products_in[1][elements.length]}
-                      width="300px"
-                      ></img>
-                    </td>
-                    <td>
-                      <img
-                      alt="product_img"
-                      src={products_in[2][elements.length]}
-                      width="300px"
-                      ></img>
-                    </td>
-                  </tr>
-                ) : null}
                   {products_in[product_id].map((val, index) =>
                     index != 0 && index != e_length ? (
                       <tr>
                         <td> {elements[index]} </td>
-                        <td id="green"> {products_in[0][index]} </td>{' '}
+                        <td> {products_in[0][index]} </td>{' '}
                         <td> {products_in[1][index]} </td>
                         <td> {products_in[2][index]} </td>
                       </tr>

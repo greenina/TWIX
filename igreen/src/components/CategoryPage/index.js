@@ -27,19 +27,20 @@ class CategoryPage extends React.Component {
     this.bukkuk = this.bukkuk.bind(this);
     this.bukkukthen = this.bukkukthen.bind(this);
     this.wishthen = this.wishthen.bind(this);
-    this.scorethen = this.scorethen.bind(this);
+    this.scorethen=this.scorethen.bind(this);
   }
 
   bukkuk() {
     db.collection('companion').doc('bukkuk').get().then(this.bukkukthen);
     var user = db.collection('users').doc('1').get().then(this.scorethen);
     var user = db.collection('users').doc('1').get().then(this.wishthen);
-  }
-  scorethen(doc) {
+  } 
+  scorethen(doc){
     {
-      let docs = doc.data();
-      this.setState(() => ({
-        score: docs['score'],
+      let docs=doc.data();
+      this.setState(()=>({
+        score : docs['score'],
+
       }));
       console.log(docs);
     }
@@ -122,12 +123,6 @@ class CategoryPage extends React.Component {
             (doc.data().category == 'facial' || doc.data().category == 'bag')
           ) {
             cgtest = true;
-          } else if (
-            cgg == 'kitchen' &&
-            (doc.data().category == 'scrubber' ||
-              doc.data().category == 'detergent')
-          ) {
-            cgtest = true;
           }
           // var wishbool = wished.includes('' + doc.id) ? true : false;
 
@@ -148,9 +143,10 @@ class CategoryPage extends React.Component {
         var sum = 0;
         var i;
         console.log('wishlist', this.state.wishlist);
-        for (i = 0; i < this.state.id.length; i++) {
+        for (i = 0; i < this.state.id.length; i++){
           console.log(this.state.id[i]);
           if (this.state.wishlist.includes('' + this.state.id[i])) {
+            
             this.setState((prevState) => ({
               wished: [...prevState.wished, true],
             }));
@@ -159,9 +155,12 @@ class CategoryPage extends React.Component {
               wished: [...prevState.wished, false],
             }));
         }
+        
       });
   }
   componentWillMount() {
+   
+    
     this.bukkuk();
 
     this.datarefresh(this.props.cg);
@@ -191,40 +190,40 @@ class CategoryPage extends React.Component {
           <div className="fixed_container">
             <div className="checkbox1 kk">
               <span class="checkin">
-                <label>Eco-friendly</label>
-                <input
-                  type="checkbox"
-                  id="ecoonly"
-                  value="에코"
-                  onClick={this.datarefresh}
-                ></input>
+              <label>Eco-friendly</label>
+              <input
+                type="checkbox"
+                id="ecoonly"
+                value="에코"
+                onClick={this.datarefresh}
+              ></input>
               </span>
               <span class="checkin">
-                <label>Save Environment</label>
-                <input
-                  type="checkbox"
-                  id="vegan"
-                  value="비건"
-                  onClick={this.datarefresh}
-                />
+              <label>Save Environment</label>
+              <input
+                type="checkbox"
+                id="vegan"
+                value="비건"
+                onClick={this.datarefresh}
+              />
               </span>
               <span class="checkin">
-                <label>Protect Animal</label>
-                <input
-                  type="checkbox"
-                  id="ap"
-                  value="동물보호"
-                  onClick={this.datarefresh}
-                ></input>
+              <label>Protect Animal</label>
+              <input
+                type="checkbox"
+                id="ap"
+                value="동물보호"
+                onClick={this.datarefresh}
+              ></input>
               </span>
               <span class="checkin">
-                <label>Stay healthy</label>
-                <input
-                  type="checkbox"
-                  id="harm"
-                  value="유해물질x"
-                  onClick={this.datarefresh}
-                ></input>
+              <label>Stay healthy</label>
+              <input
+                type="checkbox"
+                id="harm"
+                value="유해물질x"
+                onClick={this.datarefresh}
+              ></input>
               </span>
               <button id="onesight" onClick={this.onesight}>
                 In a Glance

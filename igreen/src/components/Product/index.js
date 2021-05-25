@@ -57,18 +57,17 @@ class Product extends Component {
           onMouseLeave={this.ml}
         >
           <div className="pimage">
-            <Link
-              to={{
-                pathname: `/detail/`,
-                state: {
-                  name: this.props.name,
-                  price: this.props.price,
-                  imgg: this.props.imgg,
-                  link: this.props.a,
-                  ecoval: this.props.ecoval,
-                  idx: this.props.idx,
-                },
-              }}
+            <Link to={{
+              pathname:`/detail/`,
+              state:{
+                name : this.props.name,
+                price:this.props.price,
+                imgg:this.props.imgg,
+                a:this.props.a,
+                ecoval:this.props.ecoval,
+                idx:this.props.idx
+              }
+            }}
             >
               <img
                 classname="imgg"

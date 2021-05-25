@@ -22,10 +22,9 @@ class RecProduct extends Component {
   //   if (this.props.ecoval > 0) console.log('bukkuk loved this product');
   //   else console.log("bukkuk's recommendation!");
   // }
-  
+
   render() {
     var { name, price, imgg, a, ecoval, wished, idx } = this.props;
-    console.log("Recprops",this.props);
     return (
       <header>
         <div className="recBox"></div>

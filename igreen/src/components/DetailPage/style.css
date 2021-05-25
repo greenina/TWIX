@@ -140,3 +140,32 @@ th, td {
 #green{
   background-color: rgba(156, 178, 78, 0.2);
 }
+.info{
+    display:flex;
+    flex-direction: column;
+}
+.row1{
+    display:flex;
+}
+.row2{
+    display:flex;
+}
+.row3{
+    display: flex;
+}
+.whole{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding:50px; */
+    
+}
+#b{
+  background-color: greenyellow;  
+}
+#a{
+    background-color: grey;
+}
+.images{
+    display: flex;
+}
