@@ -300,8 +300,37 @@ let bag = [
   ],
 ];
 
+let detergent_element =[
+    'docs', 'price', 'ingredient', 'form', 'cleaning power', 'volume', 'rating'
+
+
+];
+
+let detergent = [
+    ['32', '6000', 'coconut oil', 'solid', 'middle', '150g', '4.3'],
+['33', '14000', 'coconut oil', 'solid', 'high', '500g', '4.6'],
+['34', '14000', 'natural ingredients', 'solid', 'high', '200g', '4.8'],
+['35', '17000', 'surfactants', 'sheet', 'high', '120 sheets', '4.5'],
+['36', '5000', 'surfactants', 'liquid', 'middle', '450mL', '4.4'],
+
+];
+
+let cushion_element = [
+    'docs', 'price', 'cover', 'filling', 'dimension', 'rating'
+
+];
+let cushion =[
+    ['6', '47000', 'polyester, cotton', 'cotton(linen upcycling)', 'Change shape', '90*100cm', '4.0'],
+    ['37', '70000', 'Handmade woven fabric', 'Kapok(natural fiber)', 'Use cushion for two usage', '50*50cm', '4.2'],
+    ['38', '46000', 'Handmade woven fabric', 'Kapok(natural fiber', 'Change shape', '30*50cm', '4.5'],
+    ['39', '11000', 'polyester', 'cotton', 'Designed cover', '50*50cm', '4.3'],
+    ['40', '10000', 'cotton', 'polyester', 'Cheap price', '40*40cm', '3.6'],
+];
+
 export { facials_element, facials };
 export { tissue_element, tissue };
 export { toothpaste_element, toothpaste };
 export { scrubber_element, scrubber };
 export { bag_element, bag };
+export { detergent_element, detergent};
+export { cushion_element, cushion};
