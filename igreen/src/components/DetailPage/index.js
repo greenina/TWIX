@@ -9,6 +9,9 @@ import { tissue_element, tissue } from './product_array';
 import { toothpaste_element, toothpaste } from './product_array';
 import { scrubber_element, scrubber } from './product_array';
 import { bag_element, bag } from './product_array';
+import { detergent_element, detergent } from './product_array';
+import { cushion_element, cushion } from './product_array';
+import { shampoo_element, shampoo } from './product_array';
 
 function DetailPage(props) {
   //console.log("props",props)
@@ -159,6 +162,36 @@ function DetailPage(props) {
                   break;
                 }
               }
+            } else if (cgg == 'detergent') {
+              setELength(detergent_element.length);
+              setElements(detergent_element);
+              setProductIn(detergent);
+              for (var i = 0; i < detergent.length; i++) {
+                if (detergent[i][0] == tmp) {
+                  setProductId(i);
+                  break;
+                }
+              }
+            } else if (cgg == 'cushion') {
+              setELength(cushion_element.length);
+              setElements(cushion_element);
+              setProductIn(cushion);
+              for (var i = 0; i < cushion.length; i++) {
+                if (cushion[i][0] == tmp) {
+                  setProductId(i);
+                  break;
+                }
+              }
+            } else if (cgg == 'shampoo') {
+              setELength(shampoo_element.length);
+              setElements(shampoo_element);
+              setProductIn(shampoo);
+              for (var i = 0; i < shampoo.length; i++) {
+                if (shampoo[i][0] == tmp) {
+                  setProductId(i);
+                  break;
+                }
+              }
             }
 
             console.log('::::::', elements, products_in);
@@ -251,7 +284,7 @@ function DetailPage(props) {
         <div className="info">
           <div className="row1">
             <h1 className="product_name">{name}</h1>
-            <Heart isClick={isClick} onClick={heartClick} />
+            <Heart className="heart" isClick={isClick} onClick={heartClick} />
             <div
               className="share"
               onClick={() => {
@@ -376,23 +409,26 @@ function DetailPage(props) {
               <div>
                 <img
                   alt="product_img"
+                  className="oone"
                   src={products_in[0][elements.length]}
-                  width="300px"
+                  width="250px"
                 ></img>
                 <img
                   alt="product_img"
+                  className="two"
                   src={products_in[1][elements.length]}
-                  width="300px"
+                  width="250px"
                 ></img>
                 <img
                   alt="product_img"
+                  className="two"
                   src={products_in[2][elements.length]}
-                  width="300px"
+                  width="250px"
                 ></img>
               </div>
             ) : null}
           </div>
-          <div>
+          <div className="table3">
             {products_in != null &&
             products_in.length > 0 &&
             product_id != null ? (
@@ -402,10 +438,22 @@ function DetailPage(props) {
                   {products_in[product_id].map((val, index) =>
                     index != 0 && index != e_length ? (
                       <tr>
-                        <td> {elements[index]} </td>
-                        <td> {products_in[0][index]} </td>{' '}
-                        <td> {products_in[1][index]} </td>
-                        <td> {products_in[2][index]} </td>
+                        <td className="first_col" id="factors">
+                          {' '}
+                          {elements[index]}{' '}
+                        </td>
+                        <td className="second_col">
+                          {' '}
+                          {products_in[0][index]}{' '}
+                        </td>{' '}
+                        <td className="second_col">
+                          {' '}
+                          {products_in[1][index]}{' '}
+                        </td>
+                        <td className="second_col">
+                          {' '}
+                          {products_in[2][index]}{' '}
+                        </td>
                       </tr>
                     ) : null
                   )}
@@ -421,14 +469,14 @@ function DetailPage(props) {
               alt="product_img"
               className="one"
               src={img}
-              width="300px"
+              width="250px"
             ></img>
             {products_in != null && products_in.length > 0 ? (
               <img
                 className="two"
                 alt="product_img"
                 src={products_in[0][elements.length]}
-                width="300px"
+                width="250px"
               ></img>
             ) : null}
           </div>
@@ -442,9 +490,12 @@ function DetailPage(props) {
                   {products_in[product_id].map((val, index) =>
                     index != 0 && index != e_length ? (
                       <tr background-color={index % 2 == 0 ? 'grey' : 'white'}>
-                        <td className="first_col"> {elements[index]} </td>
+                        <td className="first_col" id="factors">
+                          {' '}
+                          {elements[index]}{' '}
+                        </td>
                         <td className="second_col"> {val} </td>
-                        <td className="third_col">
+                        <td className="third_col" id="green1">
                           {' '}
                           {products_in[dominant][index]}{' '}
                         </td>

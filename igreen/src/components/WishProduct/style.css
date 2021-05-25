@@ -48,7 +48,10 @@
   padding: 0;
 }
 
-.checkin{
-
+.checkin {
   margin-right: 20px;
-} 
+}
+
+.productbox :hover {
+  opacity: 90%;
+}
