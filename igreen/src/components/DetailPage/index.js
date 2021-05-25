@@ -371,25 +371,7 @@ function DetailPage(props) {
       {ecoval > 0 ? (
         <div>
           <div>
-            {products_in != null && products_in.length > 0 ? (
-              <div>
-                <img
-                  alt="product_img"
-                  src={products_in[0][elements.length]}
-                  width="300px"
-                ></img>
-                <img
-                  alt="product_img"
-                  src={products_in[1][elements.length]}
-                  width="300px"
-                ></img>
-                <img
-                  alt="product_img"
-                  src={products_in[2][elements.length]}
-                  width="300px"
-                ></img>
-              </div>
-            ) : null}
+            
           </div>
           <div>
             {products_in != null &&
@@ -398,6 +380,32 @@ function DetailPage(props) {
               <table>
                 <thead> {cgg} </thead>
                 <tbody>
+                  {products_in != null && products_in.length > 0 ? (
+                  <tr>
+                    <td>{''}</td>
+                    <td>
+                      <img
+                      alt="product_img"
+                      src={products_in[0][elements.length]}
+                      width="300px"
+                      ></img>
+                    </td>
+                    <td>
+                      <img
+                      alt="product_img"
+                      src={products_in[1][elements.length]}
+                      width="300px"
+                      ></img>
+                    </td>
+                    <td>
+                      <img
+                      alt="product_img"
+                      src={products_in[2][elements.length]}
+                      width="300px"
+                      ></img>
+                    </td>
+                  </tr>
+                ) : null}
                   {products_in[product_id].map((val, index) =>
                     index != 0 && index != e_length ? (
                       <tr>
