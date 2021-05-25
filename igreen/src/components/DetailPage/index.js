@@ -377,7 +377,7 @@ function DetailPage(props) {
             {products_in != null &&
             products_in.length > 0 &&
             product_id != null ? (
-              <table>
+              <table class="table">
                 <thead> {cgg} </thead>
                 <tbody>
                   {products_in != null && products_in.length > 0 ? (
