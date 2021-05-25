@@ -12,6 +12,7 @@ import { bag_element, bag } from './product_array';
 import { detergent_element, detergent } from './product_array';
 import { cushion_element, cushion } from './product_array';
 import { shampoo_element, shampoo } from './product_array';
+import { BrowserRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
 
 function DetailPage(props) {
   //console.log("props",props)
@@ -253,7 +254,7 @@ function DetailPage(props) {
         tdic[4] = img_src[2];
         // console.log('companion img source list', img_src);
       });
-  }, []);
+  }, [product_id]);
 
   useEffect(() => {
     console.log('page re-rendered');
@@ -407,24 +408,69 @@ function DetailPage(props) {
           <div>
             {products_in != null && products_in.length > 0 ? (
               <div>
+                <Link
+                  to={{
+                    pathname: `/detail/`,
+                    state: {
+                      name: products_in[0][1],
+                      price: products_in[0][2],
+                      imgg: products_in[0][e_length],
+                      link: products_in[0][e_length+2],
+                      ecoval: Number(products_in[0][e_length+1]),
+                      idx: products_in[0][e_length+3],
+                    },
+                  }}
+                >
                 <img
                   alt="product_img"
                   className="oone"
                   src={products_in[0][elements.length]}
-                  width="250px"
+                    width="250px"
+                    onClick={() => {setProductId(0)}}
                 ></img>
+                </Link>
+                <Link
+                  to={{
+                    pathname: `/detail/`,
+                    state: {
+                      name: products_in[1][1],
+                      price: products_in[1][2],
+                      imgg: products_in[1][e_length],
+                      link: products_in[1][e_length+2],
+                      ecoval: Number(products_in[1][e_length+1]),
+                      idx: products_in[1][e_length+3],
+                    },
+                  }}
+                >
                 <img
                   alt="product_img"
                   className="two"
                   src={products_in[1][elements.length]}
-                  width="250px"
-                ></img>
+                    width="250px"
+                    onClick={() => {setProductId(1)}}
+                  ></img>
+                </Link>
+                <Link
+                  to={{
+                    pathname: `/detail/`,
+                    state: {
+                      name: products_in[2][1],
+                      price: products_in[2][2],
+                      imgg: products_in[2][e_length],
+                      link: products_in[2][e_length+2],
+                      ecoval: Number(products_in[2][e_length+1]),
+                      idx: products_in[2][e_length+3],
+                    },
+                  }}
+                >
                 <img
                   alt="product_img"
                   className="two"
                   src={products_in[2][elements.length]}
-                  width="250px"
-                ></img>
+                    width="250px"
+                    onClick={() => {setProductId(2)}}
+                  ></img>
+                </Link>
               </div>
             ) : null}
           </div>
@@ -442,15 +488,15 @@ function DetailPage(props) {
                           {' '}
                           {elements[index]}{' '}
                         </td>
-                        <td className="second_col">
+                        <td className="second_col" id={(index == 1)?"green1":"notgreen"}>
                           {' '}
                           {products_in[0][index]}{' '}
                         </td>{' '}
-                        <td className="second_col">
+                        <td className="second_col" id={(index == 1)?"green1":"notgreen"}>
                           {' '}
                           {products_in[1][index]}{' '}
                         </td>
-                        <td className="second_col">
+                        <td className="second_col" id={(index == 1)?"green1":"notgreen"}>
                           {' '}
                           {products_in[2][index]}{' '}
                         </td>
@@ -464,20 +510,52 @@ function DetailPage(props) {
         </div>
       ) : (
         <div>
-          <div>
-            <img
-              alt="product_img"
-              className="one"
-              src={img}
-              width="250px"
-            ></img>
-            {products_in != null && products_in.length > 0 ? (
+            <div>
+              {products_in != null && products_in.length > 0 ? (
+                <div>
+                <Link
+                to={{
+                  pathname: `/detail/`,
+                  state: {
+                    name: products_in[product_id][1],
+                    price: products_in[product_id][2],
+                    imgg: products_in[product_id][e_length],
+                    link: products_in[product_id][e_length+2],
+                    ecoval: Number(products_in[product_id][e_length+1]),
+                    idx: products_in[product_id][e_length+3],
+                  },
+                }}
+              >
+          <img
+            alt="product_img"
+            className="one"
+            src={img}
+                      width="250px"
+                      onclick = {()=>{}}
+              ></img>
+              </Link>
+                <Link
+                to={{
+                  pathname: `/detail/`,
+                  state: {
+                    name: products_in[0][1],
+                    price: products_in[0][2],
+                    imgg: products_in[0][e_length],
+                    link: products_in[0][e_length+2],
+                    ecoval: Number(products_in[0][e_length+1]),
+                    idx: products_in[0][e_length+3],
+                  },
+                }}
+              >
               <img
                 className="two"
                 alt="product_img"
                 src={products_in[0][elements.length]}
-                width="250px"
+                      width="250px"
+                      onClick={() => {setProductId(0)}}
               ></img>
+                  </Link>
+                  </div>
             ) : null}
           </div>
           <div>
