@@ -67,14 +67,14 @@ let facials = [
 ];
 
 let tissue_element = [
-  'docs',
-  'price',
-  'ply rating',
-  'main feature',
-  'material',
-  'sheet count',
-  'package type',
-  'rating',
+  'Docs',
+  'Price',
+  'Ply Rating',
+  'Main Feature',
+  'Material',
+  'Sheet Count',
+  'Package Type',
+  'Rating',
 ];
 
 let tissue = [
@@ -125,12 +125,12 @@ let tissue = [
 ];
 
 let toothpaste_element = [
-  'docs',
-  'price',
-  'main feature',
-  'capacity',
-  'formulation',
-  'rating',
+  'Docs',
+  'Price',
+  'Main Feature',
+  'Capacity',
+  'Formulation',
+  'Rating',
 ];
 
 let toothpaste = [
@@ -181,7 +181,7 @@ let toothpaste = [
   ],
 ];
 
-let scrubber_element = ['docs', 'price', 'material', 'rating'];
+let scrubber_element = ['Docs', 'Price', 'Material', 'Rating'];
 let scrubber = [
   [
     '27',
@@ -221,16 +221,16 @@ let scrubber = [
 ];
 
 let bag_element = [
-  'docs',
-  'price',
-  'purpose',
-  'material',
-  'capacity',
-  'safety',
-  'waterproof',
-  'strap drop',
-  'pockets',
-  'rating',
+  'Docs',
+  'Price',
+  'Purpose',
+  'Material',
+  'Capacity',
+  'Safety',
+  'Waterproof',
+  'Strap drop',
+  'Pockets',
+  'Rating',
 ];
 let bag = [
   [

@@ -107,35 +107,57 @@ function DetailPage(props) {
 
           if (dic[doc.id]['name'] == name) {
             cgg = products[doc.id]['category'];
+            var tmp = Number(doc.id);
+
             if (cgg == 'facial') {
               setELength(facials_element.length);
               setElements(facials_element);
               setProductIn(facials);
-              // setDominant(0);
-              // setSubDominant(1);
-              // setTriDominant(2);
+              for (var i = 0; i < facials.length; i++) {
+                if (facials[i][0] == tmp) {
+                  setProductId(i);
+                  break;
+                }
+              }
             } else if (cgg == 'tissue') {
               setELength(tissue_element.length);
               setElements(tissue_element);
               setProductIn(tissue);
+              for (var i = 0; i < tissue.length; i++) {
+                if (tissue[i][0] == tmp) {
+                  setProductId(i);
+                  break;
+                }
+              }
             } else if (cgg == 'toothpaste') {
               setELength(toothpaste_element.length);
               setElements(toothpaste_element);
               setProductIn(toothpaste);
+              for (var i = 0; i < toothpaste.length; i++) {
+                if (toothpaste[i][0] == tmp) {
+                  setProductId(i);
+                  break;
+                }
+              }
             } else if (cgg == 'scrubber') {
               setELength(scrubber_element.length);
               setElements(scrubber_element);
               setProductIn(scrubber);
+              for (var i = 0; i < scrubber.length; i++) {
+                if (scrubber[i][0] == tmp) {
+                  setProductId(i);
+                  break;
+                }
+              }
             } else if (cgg == 'bag') {
               setELength(bag_element.length);
               setElements(bag_element);
               setProductIn(bag);
-            }
-            var tmp = Number(doc.id);
-            for (var i = 0; i < facials.length; i++) {
-              if (facials[i][0] == tmp) {
-                setProductId(i);
-                break;
+              for (var i = 0; i < bag.length; i++) {
+                if (bag[i][0] == tmp) {
+                  setProductId(i);
+                  break;
+                }
               }
             }
 
@@ -205,16 +227,32 @@ function DetailPage(props) {
 
   return (
     <div class="whole">
-      <div class="wrap">
-        <div class="img">
-          <img src={img} alt="Product image" width="500" height="500"></img>
+      <div className="d_companion">
+        <img
+          id="bukkuk"
+          className="companion_gif"
+          src={img_src[1]}
+          alt="companion"
+          key={status}
+          margin-left="-10%"
+        ></img>
+      </div>
+      <div className="wrap">
+        <div className="img">
+          <img
+            src={img}
+            alt="Product image"
+            width="500px"
+            height="500px"
+            className="product_img"
+          ></img>
         </div>
-        <div class="info">
-          <div class="row1">
-            <h1>{name}</h1>
+        <div className="info">
+          <div className="row1">
+            <h1 className="product_name">{name}</h1>
             <Heart isClick={isClick} onClick={heartClick} />
             <div
-              class="share"
+              className="share"
               onClick={() => {
                 navigator.clipboard.writeText(window.location.href);
                 // console.log('copy');
@@ -223,54 +261,17 @@ function DetailPage(props) {
             >
               <img src="/images/share.png" height="30px" />
             </div>
-          </div>
-          <div class="row2">
-            {stage[0] == 0 ? (
-              <div class="feature1" id="a">
-                <div class="image">
-                  <img src="/images/setting.png" height="30px" />
-                </div>
-                <div>produce</div>
-              </div>
-            ) : (
-              <div class="feature2" id="b">
-                <div class="image">
-                  <img src="/images/setting.png" height="30px" />
-                </div>
-                <div>produce</div>
-              </div>
-            )}
 
-            {stage[1] == 0 ? (
-              <div className="feature1" id="a">
-                <div className="image">
-                  <img src="/images/hello.png" height="30px" />
-                </div>
-                <div>사용중..?</div>
+            <a href={link}>
+              <div className="buy">
+                <span
+                  class="iconify"
+                  data-icon="clarity:shopping-bag-line"
+                  data-inline="false"
+                  height="35px"
+                ></span>
               </div>
-            ) : (
-              <div className="feature2" id="b">
-                <div className="image">
-                  <img src="/images/hello.png" height="30px" />
-                </div>
-                <div>사용중..?</div>
-              </div>
-            )}
-            {stage[2] == 0 ? (
-              <div className="feature1" id="a">
-                <div className="image">
-                  <img src="/images/bin.png" height="30px" />
-                </div>
-                <div>after use</div>
-              </div>
-            ) : (
-              <div className="feature2" id="b">
-                <div className="image">
-                  <img src="/images/bin.png" height="30px" />
-                </div>
-                <div>after use</div>
-              </div>
-            )}
+            </a>
           </div>
           <div className="row3">
             <div className="price">
@@ -278,22 +279,93 @@ function DetailPage(props) {
               <span>&#8361;</span>
             </div>
 
-            <a href={link}>
-              <Button variant="contained" color="primary">
+            {/* <Button className="gotobuy" variant="contained">
                 Go to Buy
-              </Button>
-            </a>
+              </Button> */}
           </div>
-        </div>
-        <div class="companion">
-          <img
-            id="bukkuk"
-            className="companion_gif"
-            src={img_src[1]}
-            alt="companion"
-            key={status}
-            margin-left="-10%"
-          ></img>
+          <div className="row2">
+            {stage[0] == 0 ? (
+              <div className="feature1" id="a">
+                <div className="image">
+                  <img
+                    src="/images/setting.png"
+                    height="30px"
+                    alt="icons"
+                    className="icons"
+                  />
+                </div>
+                <div>Production</div>
+                <div>Process</div>
+              </div>
+            ) : (
+              <div className="feature2" id="b">
+                <div className="image">
+                  <img
+                    alt="icons"
+                    className="icons"
+                    src="/images/setting.png"
+                    height="30px"
+                  />
+                </div>
+                <div>Production</div>
+                <div>Process</div>
+              </div>
+            )}
+            {stage[1] == 0 ? (
+              <div className="feature1" id="a">
+                <div className="image">
+                  <img
+                    alt="icons"
+                    src="/images/hello.png"
+                    height="30px"
+                    className="icons"
+                  />
+                </div>
+                <div>Using</div>
+                <div>Product</div>
+              </div>
+            ) : (
+              <div className="feature2" id="b">
+                <div className="image">
+                  <img
+                    alt="icons"
+                    src="/images/hello.png"
+                    height="30px"
+                    className="icons"
+                  />
+                </div>
+                <div>Using</div>
+                <div>Product</div>
+              </div>
+            )}
+            {stage[2] == 0 ? (
+              <div className="feature1" id="a">
+                <div className="image">
+                  <img
+                    src="/images/bin.png"
+                    height="30px"
+                    alt="icons"
+                    className="icons"
+                  />
+                </div>
+                <div>After</div>
+                <div>Use</div>
+              </div>
+            ) : (
+              <div className="feature2" id="b">
+                <div className="image">
+                  <img
+                    src="/images/bin.png"
+                    height="30px"
+                    alt="icons"
+                    className="icons"
+                  />
+                </div>
+                <div>After</div>
+                <div>Use</div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
       {ecoval > 0 ? (
@@ -344,9 +416,15 @@ function DetailPage(props) {
       ) : (
         <div>
           <div>
-            <img alt="product_img" src={img} width="300px"></img>
+            <img
+              alt="product_img"
+              className="one"
+              src={img}
+              width="300px"
+            ></img>
             {products_in != null && products_in.length > 0 ? (
               <img
+                className="two"
                 alt="product_img"
                 src={products_in[0][elements.length]}
                 width="300px"
@@ -362,10 +440,13 @@ function DetailPage(props) {
                 <tbody>
                   {products_in[product_id].map((val, index) =>
                     index != 0 && index != e_length ? (
-                      <tr>
-                        <td> {elements[index]} </td>
-                        <td> {val} </td>{' '}
-                        <td> {products_in[dominant][index]} </td>
+                      <tr background-color={index % 2 == 0 ? 'grey' : 'white'}>
+                        <td className="first_col"> {elements[index]} </td>
+                        <td className="second_col"> {val} </td>
+                        <td className="third_col">
+                          {' '}
+                          {products_in[dominant][index]}{' '}
+                        </td>
                       </tr>
                     ) : null
                   )}
