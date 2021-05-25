@@ -72,8 +72,8 @@ class CategoryPage extends React.Component {
     count++;
     for (var i = 0; i < elements.length; i++) {
       if (count % 2 === 1)
-        elements[i].classList.add('eco' + this.state.ecoval[i]);
-      else elements[i].classList.remove('eco' + this.state.ecoval[i]);
+        elements[i].classList.add('ecoo' + this.state.ecoval[i]);
+      else elements[i].classList.remove('ecoo' + this.state.ecoval[i]);
     }
   }
   datarefresh(cg) {

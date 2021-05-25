@@ -436,7 +436,7 @@ function DetailPage(props) {
                 <thead> {cgg} </thead>
                 <tbody>
                   {products_in[product_id].map((val, index) =>
-                    index != 0 && index != e_length ? (
+                    index != 0 && index < e_length ? (
                       <tr>
                         <td className="first_col" id="factors">
                           {' '}
@@ -488,8 +488,8 @@ function DetailPage(props) {
                 <thead> {cgg} </thead>
                 <tbody>
                   {products_in[product_id].map((val, index) =>
-                    index != 0 && index != e_length ? (
-                      <tr background-color={index % 2 == 0 ? 'grey' : 'white'}>
+                    index != 0 && index < e_length ? (
+                      <tr>
                         <td className="first_col" id="factors">
                           {' '}
                           {elements[index]}{' '}
