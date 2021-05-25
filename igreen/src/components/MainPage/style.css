@@ -1,10 +1,10 @@
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
 }
 
 /*css for picture slider*/
@@ -97,19 +97,18 @@ body{
   background: #00a900;
 }
 
-
 /*companion state*/
-.companion-mainpage{
+.companion-mainpage {
   position: absolute;
   margin-top: 35%;
   display: flex;
 }
 
-.companion-mp{
-    position: absolute;
-    height: 15vw;
-    margin-left: 18vw;
-    cursor: pointer;
+.companion-mp {
+  position: absolute;
+  height: 15vw;
+  margin-left: 18vw;
+  cursor: pointer;
 }
 
 .bottom {

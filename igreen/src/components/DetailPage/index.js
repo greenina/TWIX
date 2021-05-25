@@ -17,7 +17,7 @@ function DetailPage(props) {
   const [category, setCategory] = useState();
   const [products, setProducts] = useState({});
   const [img_src, setImgSrc] = useState({});
-  const [score, setScore] = useState();
+  const [score, setScore] = useState(0);
   const [console2, setConsole2] = useState();
   const [console3, setConsole3] = useState(0);
   const [bukkuk, setBukkuk] = useState([]);
@@ -183,6 +183,7 @@ function DetailPage(props) {
               .then(function (docc) {
                 var docs = docc.data();
                 setWished(docs['wished']);
+                setScore(docs['score']);
                 var clicked = !!(docs['wished'].indexOf(doc.id) + 1);
                 setStatus(
                   avg(
@@ -231,7 +232,7 @@ function DetailPage(props) {
         <img
           id="bukkuk"
           className="companion_gif"
-          src={img_src[1]}
+          src={img_src[score]}
           alt="companion"
           key={status}
           margin-left="-10%"
