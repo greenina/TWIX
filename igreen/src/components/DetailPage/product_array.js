@@ -322,11 +322,56 @@ let detergent_element = [
 ];
 
 let detergent = [
-  ['32', '6000', 'coconut oil', 'solid', 'middle', '150g', '4.3'],
-  ['33', '14000', 'coconut oil', 'solid', 'high', '500g', '4.6'],
-  ['34', '14000', 'natural ingredients', 'solid', 'high', '200g', '4.8'],
-  ['35', '17000', 'surfactants', 'sheet', 'high', '120 sheets', '4.5'],
-  ['36', '5000', 'surfactants', 'liquid', 'middle', '450mL', '4.4'],
+  [
+    '32',
+    '6000',
+    'coconut oil',
+    'solid',
+    'middle',
+    '150g',
+    '4.3',
+    'https://morestore.co.kr/web/product/big/202010/f302f9ab260c754249f1dbd42f62e09f.jpg',
+  ],
+  [
+    '33',
+    '14000',
+    'coconut oil',
+    'solid',
+    'high',
+    '500g',
+    '4.6',
+    'https://morestore.co.kr/web/product/big/202009/d480c39f39c33ee118f3d312d1f5ea5b.jpg',
+  ],
+  [
+    '34',
+    '14000',
+    'natural ingredients',
+    'solid',
+    'high',
+    '200g',
+    '4.8',
+    'https://morestore.co.kr/web/product/big/202105/c89c564737e0b7d0ef40510b94be50ca.jpg',
+  ],
+  [
+    '35',
+    '17000',
+    'surfactants',
+    'sheet',
+    'high',
+    '120 sheets',
+    '4.5',
+    'https://shop-phinf.pstatic.net/20190522_227/ljh7776_1558479028891nFBTF_JPEG/41110208388288634_1235680284.jpg?type=m510',
+  ],
+  [
+    '36',
+    '5000',
+    'surfactants',
+    'liquid',
+    'middle',
+    '450mL',
+    '4.4',
+    'http://img1a.coupangcdn.com/image/vendor_inventory/images/2017/07/15/1/9/3a08392d-4e00-46b4-ac5c-2049504f43f1.jpeg',
+  ],
 ];
 
 let cushion_element = [
