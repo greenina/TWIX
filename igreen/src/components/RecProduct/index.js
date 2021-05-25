@@ -25,7 +25,7 @@ class RecProduct extends Component {
 
   render() {
     var { name, price, imgg, a, ecoval, wished, idx } = this.props;
-    console.log('Recprops', this.props);
+
     return (
       <header>
         <div className="recBox"></div>

@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react';
 import WishProduct from '../WishProduct';
 import CurProduct from '../CurProduct';
 import RecProduct from '../RecProduct';
-import { BrowserRouter, Link, Route, Switch, Redirect } from 'react-router-dom';
 
 function MyPage() {
   // const [img_num, setImgNum] = useState(0);
@@ -64,13 +63,10 @@ function MyPage() {
 
   useEffect(() => {
     var infos = ['name', 'wished', 'experience', 'score'];
-    clearTimeout(timer);
+    // clearTimeout(timer);
     var bukkuk = document.getElementById('companion_gif');
     // console.log(bukkuk);
-    console.log('---------', overlayMode, overlayInfo, recArray);
-    if (bukkuk != null && overlayMode != 0) {
-      bukkuk.style = 'margin-left: 10%';
-    }
+    if (bukkuk != null && overlayMode != 0) bukkuk.style = 'margin-left: -15%';
 
     db.collection('users')
       .doc('1')
@@ -110,14 +106,14 @@ function MyPage() {
         console.log(products[printed[0]]);
 
         console.log(':::::::::::::', score, userInfo);
-        //debugger;
+        debugger;
 
         var tmpDic = userInfo;
 
         console.log(userInfo);
         tmpDic['score'] = score;
         console.log(userInfo);
-        //debugger;
+        debugger;
         db.collection('users').doc('1').set(tmpDic);
       });
 
@@ -136,8 +132,8 @@ function MyPage() {
         setOverlayInfo([val]);
         // console.log('overlay info :::::::', overlayInfo);
         // debugger;
-        setRecArray([]);
         setOverlay(1);
+        setRecArray([]);
         // console.log('overlay num :::::::', overlayMode);
         // debugger;
       } else {
@@ -213,53 +209,45 @@ function MyPage() {
           }
           setScore(Math.round(new_score / userInfo['wished'].length));
           console.log(':::::::::::::', score, userInfo);
-          //debugger;
+          debugger;
         }
         var tmpDic = userInfo;
 
         console.log(userInfo);
         tmpDic['score'] = score;
         console.log(userInfo);
-        //debugger;
+        debugger;
         db.collection('users').doc('1').set(tmpDic);
       });
+
     setOverlayInfo([]);
-    setRecArray([]);
     setOverlay(0);
+    setRecArray([]);
   };
 
   const heartOn = (e) => {
     e.preventDefault();
-    var ttmp = userInfo;
+    var tmp = userInfo;
     var val = e.target.parentElement.getAttribute('value');
     var index = del_idx.pop();
-    ttmp['wished'].splice(index, 0, val);
+    tmp['wished'].splice(index, 0, val);
 
     db.collection('users')
       .doc('1')
-      .set(ttmp)
+      .set(tmp)
       .then(() => {
         var current_wish = wishes + 1;
+        setWishes(current_wish);
         var new_score = 0;
         for (var i = 0; i < userInfo['wished'].length; i++) {
           new_score += products[userInfo['wished'][i]['eco']];
         }
         setScore(Math.round(new_score / userInfo['wished'].length));
-        setWishes(current_wish);
         // console.log(score, userInfo);
-
-        var tmpDic = userInfo;
-
-        console.log(userInfo);
-        tmpDic['score'] = score;
-        console.log(userInfo);
-        //debugger;
-        db.collection('users').doc('1').set(tmpDic);
       });
-
     setOverlayInfo([]);
-    setRecArray([]);
     setOverlay(0);
+    setRecArray([]);
   };
 
   return (
@@ -295,28 +283,14 @@ function MyPage() {
               overlayInfo <= '9' &&
               Object.keys(products[overlayInfo[0]]).includes('name') ? (
                 <div className="showing">
-                  <Link
-                    to={{
-                      pathname: `/detail/`,
-                      state: {
-                        name: products[overlayInfo[0]]['name'],
-                        price: products[overlayInfo[0]]['price'],
-                        imgg: products[overlayInfo[0]]['imgg'],
-                        link: products[overlayInfo[0]]['a'],
-                        ecoval: products[overlayInfo[0]]['eco'],
-                        idx: [overlayInfo[0]],
-                      },
-                    }}
-                  >
-                    <CurProduct
-                      name={products[overlayInfo[0]]['name']}
-                      price={products[overlayInfo[0]]['price']}
-                      imgg={products[overlayInfo[0]]['imgg']}
-                      a={products[overlayInfo[0]]['a']}
-                      ecoval={products[overlayInfo[0]]['eco']}
-                      idx={overlayInfo[0]}
-                    />
-                  </Link>
+                  <CurProduct
+                    name={products[overlayInfo[0]]['name']}
+                    price={products[overlayInfo[0]]['price']}
+                    imgg={products[overlayInfo[0]]['imgg']}
+                    a={products[overlayInfo[0]]['a']}
+                    ecoval={products[overlayInfo[0]]['eco']}
+                    idx={overlayInfo[0]}
+                  />
                 </div>
               ) : null}
             </div>
@@ -328,29 +302,15 @@ function MyPage() {
                 {/* <div> {recArray.length} </div> */}
                 {recArray.map((val, idx) => (
                   <div key={val}>
-                    <Link
-                      to={{
-                        pathname: `/detail/`,
-                        state: {
-                          name: products[val]['name'],
-                          price: products[val]['price'],
-                          imgg: products[val]['imgg'],
-                          link: products[val]['a'],
-                          ecoval: products[val]['eco'],
-                          idx: val,
-                        },
-                      }}
-                    >
-                      <RecProduct
-                        name={products[val]['name']}
-                        price={products[val]['price']}
-                        imgg={products[val]['imgg']}
-                        a={products[val]['a']}
-                        ecoval={products[val]['eco']}
-                        idx={products[val]}
-                        wished={printed.includes(1)}
-                      />
-                    </Link>
+                    <RecProduct
+                      name={products[val]['name']}
+                      price={products[val]['price']}
+                      imgg={products[val]['imgg']}
+                      a={products[val]['a']}
+                      ecoval={products[val]['eco']}
+                      idx={products[val]}
+                      wished={printed.includes(1)}
+                    />
                   </div>
                 ))}
               </div>
@@ -372,29 +332,15 @@ function MyPage() {
                 key={val}
                 value={val}
               >
-                <Link
-                  to={{
-                    pathname: `/detail/`,
-                    state: {
-                      name: products[printed[idx]]['name'],
-                      price: products[printed[idx]]['price'],
-                      imgg: products[printed[idx]]['imgg'],
-                      link: products[printed[idx]]['a'],
-                      ecoval: products[printed[idx]]['eco'],
-                      idx: idx,
-                    },
-                  }}
-                >
-                  <WishProduct
-                    name={products[printed[idx]]['name']}
-                    price={products[printed[idx]]['price']}
-                    imgg={products[printed[idx]]['imgg']}
-                    a={products[printed[idx]]['a']}
-                    ecoval={products[printed[idx]]['eco']}
-                    idx={idx}
-                    wished={printed.includes(printed[idx])}
-                  />
-                </Link>
+                <WishProduct
+                  name={products[printed[idx]]['name']}
+                  price={products[printed[idx]]['price']}
+                  imgg={products[printed[idx]]['imgg']}
+                  a={products[printed[idx]]['a']}
+                  ecoval={products[printed[idx]]['eco']}
+                  idx={idx}
+                  wished={printed.includes(printed[idx])}
+                />
                 {userInfo['wished'].includes(printed[idx]) ? (
                   <img
                     className="myheart__"

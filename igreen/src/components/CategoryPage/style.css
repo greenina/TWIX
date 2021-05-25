@@ -69,7 +69,8 @@
 .fixed_container {
   text-align: right;
   margin-right: 10vw;
-  margin-bottom: -2vw;
+  margin-bottom: vw;
+ 
 }
 
 .c_companion {
