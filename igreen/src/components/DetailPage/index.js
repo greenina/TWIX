@@ -11,6 +11,7 @@ import { scrubber_element, scrubber } from './product_array';
 import { bag_element, bag } from './product_array';
 import { detergent_element, detergent } from './product_array';
 import { cushion_element, cushion } from './product_array';
+import { shampoo_element, shampoo } from './product_array';
 
 function DetailPage(props) {
   //console.log("props",props)
@@ -181,6 +182,16 @@ function DetailPage(props) {
                   break;
                 }
               }
+            } else if (cgg == 'shampoo') {
+              setELength(shampoo_element.length);
+              setElements(shampoo_element);
+              setProductIn(shampoo);
+              for (var i = 0; i < shampoo.length; i++) {
+                if (shampoo[i][0] == tmp) {
+                  setProductId(i);
+                  break;
+                }
+              }
             }
 
             console.log('::::::', elements, products_in);
@@ -273,7 +284,7 @@ function DetailPage(props) {
         <div className="info">
           <div className="row1">
             <h1 className="product_name">{name}</h1>
-            <Heart isClick={isClick} onClick={heartClick} />
+            <Heart className="heart" isClick={isClick} onClick={heartClick} />
             <div
               className="share"
               onClick={() => {

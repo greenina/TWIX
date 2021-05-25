@@ -163,3 +163,13 @@ table {
 .table3 {
   margin-left: -50px;
 }
+.heart:hover {
+  opacity: 50%;
+}
+.share:hover {
+  opacity: 50%;
+}
+
+.buy:hover {
+  opacity: 50%;
+}

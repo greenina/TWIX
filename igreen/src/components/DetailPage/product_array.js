@@ -87,6 +87,7 @@ let tissue = [
     '4',
     'pack',
     '4.1',
+    'https://morestore.co.kr/web/product/big/202007/edaab347cb891638e7e57b9b090f1c56.jpg',
   ],
   [
     '15',
@@ -97,6 +98,7 @@ let tissue = [
     '10',
     'reusable',
     '4.6',
+    'https://morestore.co.kr/web/product/big/202007/de933cb615035c87e485d6c8c83178c6.jpg',
   ],
   [
     '16',
@@ -107,6 +109,7 @@ let tissue = [
     '3',
     'pack',
     '4.0',
+    'https://morestore.co.kr/web/product/big/202104/5c02a392f988d4076c4a81e2b517747b.jpg',
   ],
   [
     '17',
@@ -117,6 +120,7 @@ let tissue = [
     '30',
     'roll',
     '4.1',
+    'https://shopping-phinf.pstatic.net/main_2105173/21051735457.20191114161731.jpg?type=f640',
   ],
   [
     '18',
@@ -127,6 +131,7 @@ let tissue = [
     '840',
     'pack',
     '4.2',
+    'https://shopping-phinf.pstatic.net/main_5602940/5602940127.20200602173738.jpg?type=f640',
   ],
 ];
 
@@ -386,6 +391,68 @@ let cushion = [
   ],
 ];
 
+let shampoo_element = [
+  'docsid',
+  'Price',
+  'Hair type',
+  'Volume',
+  'Active Ingredient',
+  'Main feature',
+  'Rating',
+];
+let shampoo = [
+  [
+    '2',
+    '20000',
+    'all',
+    're-fill, 500mL',
+    'Rosemary extracts, Pine leaves extracts, BHA',
+    'Scaling',
+    '4.3',
+    'https://morestore.co.kr/web/product/big/202105/2488ae58abc270a3850fa66cfd2558e8.jpg',
+  ],
+  [
+    '11',
+    '18000',
+    'all',
+    're-fill, 500mL',
+    'Quinoa extracts, Ceramide, LPP, BHA',
+    'Protein clinic',
+    '4.1',
+    'https://morestore.co.kr/web/product/big/202105/e32ff1d04519ff2c1d1a024aab6c0f5a.jpg',
+  ],
+  [
+    '12',
+    '13500',
+    'all',
+    'bar, 120g',
+    'Rosemary leaves oil, Coco-betaine, Olive oil',
+    'Washing hair',
+    '4.7',
+    'https://morestore.co.kr/web/product/big/202102/04c79fb733dc30fc05429b84e519ef25.jpg',
+  ],
+  [
+    '13',
+    '3000',
+    'all',
+    'liquid, 680mL',
+    'SLES, Dimethicone, Perfume, Cetyl alcohol',
+    'Hair relief, washing hair',
+    '4.7',
+    'https://shopping-phinf.pstatic.net/main_1071522/10715228956.20200720152240.jpg?type=f640',
+  ],
+  [
+    '14',
+    '3000',
+    'all',
+    'liquid, 600mL',
+    'SLES, Dimethicone, Perfume, Cetyl alcohol',
+    'Perfume shamoo',
+    '4.4',
+    'https://shopping-phinf.pstatic.net/main_6752893/6752893870.20190905142440.jpg?type=f640',
+  ],
+];
+
 export { facials_element, facials };
 export { tissue_element, tissue };
 export { toothpaste_element, toothpaste };
@@ -393,3 +460,4 @@ export { scrubber_element, scrubber };
 export { bag_element, bag };
 export { detergent_element, detergent };
 export { cushion_element, cushion };
+export { shampoo_element, shampoo };
