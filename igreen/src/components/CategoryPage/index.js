@@ -193,6 +193,7 @@ class CategoryPage extends React.Component {
               <span class="checkin">
                 <label>Eco-friendly</label>
                 <input
+                  className="checkboxes"
                   type="checkbox"
                   id="ecoonly"
                   value="에코"
@@ -202,6 +203,7 @@ class CategoryPage extends React.Component {
               <span class="checkin">
                 <label>Save Environment</label>
                 <input
+                  className="checkboxes"
                   type="checkbox"
                   id="vegan"
                   value="비건"
@@ -211,6 +213,7 @@ class CategoryPage extends React.Component {
               <span class="checkin">
                 <label>Protect Animal</label>
                 <input
+                  className="checkboxes"
                   type="checkbox"
                   id="ap"
                   value="동물보호"
@@ -226,7 +229,11 @@ class CategoryPage extends React.Component {
                   onClick={this.datarefresh}
                 ></input>
               </span>
-              <button id="onesight" onClick={this.onesight}>
+              <button
+                id="onesight"
+                className="inaglance"
+                onClick={this.onesight}
+              >
                 In a Glance
               </button>
             </div>
@@ -243,16 +250,16 @@ class CategoryPage extends React.Component {
               ></Productlist>
             </div>
             <div>
-              <div id="cprofile">
+              <div className="c_companion" id="cprofile">
                 <img
                   id="bukkuk"
-                  className="companion_gif1"
+                  className="companion_gif"
                   src={this.state.img_src[score]}
                   alt="companion"
                   key={this.state.score}
                 ></img>
-                <p>name : bukkuk</p>
-                <p>state : {states[score]}</p>
+                {/* <p>name : bukkuk</p>
+                <p>state : {states[score]}</p> */}
               </div>
             </div>
           </div>
