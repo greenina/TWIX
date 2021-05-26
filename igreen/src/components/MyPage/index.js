@@ -414,7 +414,7 @@ function MyPage() {
             ))}
           </div>
         ) : (
-          <div onClick={() => console.log(userInfo['wished'])}>No Product</div>
+          <div className="emptyWished" onClick={() => console.log(userInfo['wished'])}>No Product</div>
         )}
       </div>
     </div>

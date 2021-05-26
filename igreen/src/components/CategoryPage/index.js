@@ -251,13 +251,15 @@ class CategoryPage extends React.Component {
             </div>
             <div>
               <div className="c_companion" id="cprofile">
+                <a href="/mypage">
                 <img
                   id="bukkuk"
                   className="companion_gif"
                   src={this.state.img_src[score]}
                   alt="companion"
                   key={this.state.score}
-                ></img>
+                  ></img>
+                  </a>
                 {/* <p>name : bukkuk</p>
                 <p>state : {states[score]}</p> */}
               </div>
