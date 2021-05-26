@@ -263,6 +263,7 @@ function DetailPage(props) {
   return (
     <div class="whole">
       <div className="d_companion">
+        <a href="/mypage">
         <img
           id="bukkuk"
           className="companion_gif"
@@ -270,7 +271,8 @@ function DetailPage(props) {
           alt="companion"
           key={status}
           margin-left="-10%"
-        ></img>
+          ></img>
+          </a>
       </div>
       <div className="wrap">
         <div className="img">
