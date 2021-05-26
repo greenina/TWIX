@@ -65,7 +65,7 @@ class CategoryPage extends React.Component {
         img_src: dic,
       }));
     }
-    dic[4] = dic['adult_good'];
+    dic[4] = dic[2];
     this.setState((prv) => ({ img_src: dic }));
     console.log('companion img source list', this.state.img_src);
   }
