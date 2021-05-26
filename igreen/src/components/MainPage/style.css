@@ -100,13 +100,13 @@ body {
 /*companion state*/
 .companion-mainpage {
   position: absolute;
-  margin-top: 35%;
+  margin-top: 35.8%;
   display: flex;
 }
 
 .companion-mp {
   position: absolute;
-  height: 15vw;
+  height: 18vw;
   margin-left: 18vw;
   cursor: pointer;
 }
