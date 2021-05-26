@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/https//greenina.github.io/static/css/main.49c13f63.chunk.css",
-    "main.js": "/https//greenina.github.io/static/js/main.cf076542.chunk.js",
-    "main.js.map": "/https//greenina.github.io/static/js/main.cf076542.chunk.js.map",
-    "runtime-main.js": "/https//greenina.github.io/static/js/runtime-main.e49a2b7c.js",
-    "runtime-main.js.map": "/https//greenina.github.io/static/js/runtime-main.e49a2b7c.js.map",
-    "static/js/2.c4ec4482.chunk.js": "/https//greenina.github.io/static/js/2.c4ec4482.chunk.js",
-    "static/js/2.c4ec4482.chunk.js.map": "/https//greenina.github.io/static/js/2.c4ec4482.chunk.js.map",
-    "static/js/3.c4d4e3dd.chunk.js": "/https//greenina.github.io/static/js/3.c4d4e3dd.chunk.js",
-    "static/js/3.c4d4e3dd.chunk.js.map": "/https//greenina.github.io/static/js/3.c4d4e3dd.chunk.js.map",
-    "index.html": "/https//greenina.github.io/index.html",
-    "static/css/main.49c13f63.chunk.css.map": "/https//greenina.github.io/static/css/main.49c13f63.chunk.css.map",
-    "static/js/2.c4ec4482.chunk.js.LICENSE.txt": "/https//greenina.github.io/static/js/2.c4ec4482.chunk.js.LICENSE.txt",
-    "static/media/logo.2dc4235d.png": "/https//greenina.github.io/static/media/logo.2dc4235d.png"
+    "main.css": "/https//greenina.github.io/TWIX/static/css/main.49c13f63.chunk.css",
+    "main.js": "/https//greenina.github.io/TWIX/static/js/main.cf076542.chunk.js",
+    "main.js.map": "/https//greenina.github.io/TWIX/static/js/main.cf076542.chunk.js.map",
+    "runtime-main.js": "/https//greenina.github.io/TWIX/static/js/runtime-main.5c6aab78.js",
+    "runtime-main.js.map": "/https//greenina.github.io/TWIX/static/js/runtime-main.5c6aab78.js.map",
+    "static/js/2.dec81d18.chunk.js": "/https//greenina.github.io/TWIX/static/js/2.dec81d18.chunk.js",
+    "static/js/2.dec81d18.chunk.js.map": "/https//greenina.github.io/TWIX/static/js/2.dec81d18.chunk.js.map",
+    "static/js/3.c4d4e3dd.chunk.js": "/https//greenina.github.io/TWIX/static/js/3.c4d4e3dd.chunk.js",
+    "static/js/3.c4d4e3dd.chunk.js.map": "/https//greenina.github.io/TWIX/static/js/3.c4d4e3dd.chunk.js.map",
+    "index.html": "/https//greenina.github.io/TWIX/index.html",
+    "static/css/main.49c13f63.chunk.css.map": "/https//greenina.github.io/TWIX/static/css/main.49c13f63.chunk.css.map",
+    "static/js/2.dec81d18.chunk.js.LICENSE.txt": "/https//greenina.github.io/TWIX/static/js/2.dec81d18.chunk.js.LICENSE.txt",
+    "static/media/logo.2dc4235d.png": "/https//greenina.github.io/TWIX/static/media/logo.2dc4235d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e49a2b7c.js",
-    "static/js/2.c4ec4482.chunk.js",
+    "static/js/runtime-main.5c6aab78.js",
+    "static/js/2.dec81d18.chunk.js",
     "static/css/main.49c13f63.chunk.css",
     "static/js/main.cf076542.chunk.js"
   ]
