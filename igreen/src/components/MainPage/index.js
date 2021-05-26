@@ -188,19 +188,19 @@ function MainPage() {
               <area data-tip="tissue"
                 shape="poly" alt="" title=""
                 coords={resizeArea([229,516,231,512,250,511,250,557,224,565,222,527,208,533,189,534,175,522,169,507,169,494,180,476,193,470,210,469,218,469,225,472,230,484,233,498])}
-                href="/category/bath" target="" />
+                 />
               <area data-tip="soap"
                 shape="poly" alt="" title=""
                 coords={resizeArea([568,461,565,466,570,470,602,470,606,470,607,463,603,460])}
-                href= "/category/bath" target="" />
+                 />
               <area data-tip="toothpaste" data-place="bottom"
                 shape="poly" alt="" title=""
                 coords={resizeArea([727,451,754,450,756,456,750,518,746,527,739,528,735,526,734,517,731,517,727,455])}
-                  />
+                href= "/category/bath" target=""  />
               <area data-tip="toothbrush"
                 shape="poly" alt="" title=""
                 coords={resizeArea([779,434,778,466,785,469,793,468,806,468,806,431,800,432,806,402,805,400,798,401,794,414,798,416,794,432,787,432,781,417,785,415,781,404,778,403,774,405,769,405,780,430])}
-                href= "/category/bath" target="" />
+                 />
               <area data-tip="shampoo"
                 shape="poly" alt="" title=""
                 coords={resizeArea([1063,454,1075,453,1081,469,1081,473,1086,481,1092,490,1099,490,1099,484,1107,474,1110,472,1107,470,1108,460,1112,460,1112,457,1101,457,1099,454,1101,452,1120,451,1123,452,1120,456,1120,460,1125,460,1124,470,1121,472,1125,477,1134,487,1133,521,1132,530,1114,531,1097,492,1092,492,1108,532,1098,531,1098,511,1090,492,1092,531,1058,531,1058,485,1065,477,1070,472,1069,470,1067,469,1067,461,1070,461,1072,461,1071,457,1063,457,1061,454])}
@@ -210,14 +210,14 @@ function MainPage() {
           <div className="slide">
             <img src="https://ifh.cc/g/tcEe36.jpg" alt="" useMap="#myroom-map"></img>
             <map id="myroom-map" name="myroom-map" width="100%" height="100%" border="5px solid #000000">
-              <area data-tip="lotion"
+              <area data-tip="facial"
                 shape="poly" alt="" title=""
                 coords={resizeArea([207,411,222,409,226,412,224,433,225,452,222,455,223,464,213,462,213,456,210,451,208,428])}
                 href= "/category/beauty" target="" />
               <area data-tip="blanket"
                 shape="poly" alt="" title=""
                 coords={resizeArea([672,462,664,472,667,481,670,489,676,496,673,508,670,518,668,541,666,564,670,571,679,576,670,585,669,591,678,595,693,600,705,601,724,594,744,595,775,594,791,599,831,591,848,589,858,580,894,575,903,566,899,536,883,504,843,473,803,461,776,456,760,453,695,456])}
-                href= "/category/living" target="" />
+                />
               <area data-tip="mug"
                 shape="poly" alt="" title=""
                 coords={resizeArea([1160,508,1155,503,1160,525,1161,541,1170,546,1174,544,1175,536,1171,532,1173,526,1179,525,1188,526,1195,529,1200,523,1198,513,1194,509,1194,503,1174,500,1166,502])}
@@ -225,7 +225,7 @@ function MainPage() {
               <area data-tip="eco-bag"
                 shape="poly" alt="" title=""
                 coords={resizeArea([1225,634,1227,732,1245,736,1281,736,1305,734,1304,631,1300,629,1286,633,1286,623,1282,609,1270,605,1263,605,1253,615,1247,635])}
-                 />
+                href= "/category/beauty" target="" />
             </map>
           </div>
           <div className="navigation-manual">
