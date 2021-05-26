@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/https//greenina.github.io/TWIX/static/css/main.49c13f63.chunk.css",
-    "main.js": "/https//greenina.github.io/TWIX/static/js/main.cf076542.chunk.js",
-    "main.js.map": "/https//greenina.github.io/TWIX/static/js/main.cf076542.chunk.js.map",
-    "runtime-main.js": "/https//greenina.github.io/TWIX/static/js/runtime-main.5c6aab78.js",
-    "runtime-main.js.map": "/https//greenina.github.io/TWIX/static/js/runtime-main.5c6aab78.js.map",
-    "static/js/2.dec81d18.chunk.js": "/https//greenina.github.io/TWIX/static/js/2.dec81d18.chunk.js",
-    "static/js/2.dec81d18.chunk.js.map": "/https//greenina.github.io/TWIX/static/js/2.dec81d18.chunk.js.map",
-    "static/js/3.c4d4e3dd.chunk.js": "/https//greenina.github.io/TWIX/static/js/3.c4d4e3dd.chunk.js",
-    "static/js/3.c4d4e3dd.chunk.js.map": "/https//greenina.github.io/TWIX/static/js/3.c4d4e3dd.chunk.js.map",
-    "index.html": "/https//greenina.github.io/TWIX/index.html",
-    "static/css/main.49c13f63.chunk.css.map": "/https//greenina.github.io/TWIX/static/css/main.49c13f63.chunk.css.map",
-    "static/js/2.dec81d18.chunk.js.LICENSE.txt": "/https//greenina.github.io/TWIX/static/js/2.dec81d18.chunk.js.LICENSE.txt",
-    "static/media/logo.2dc4235d.png": "/https//greenina.github.io/TWIX/static/media/logo.2dc4235d.png"
+    "main.css": "/TWIX/static/css/main.49c13f63.chunk.css",
+    "main.js": "/TWIX/static/js/main.cf076542.chunk.js",
+    "main.js.map": "/TWIX/static/js/main.cf076542.chunk.js.map",
+    "runtime-main.js": "/TWIX/static/js/runtime-main.d4fafbe5.js",
+    "runtime-main.js.map": "/TWIX/static/js/runtime-main.d4fafbe5.js.map",
+    "static/js/2.9f3e486d.chunk.js": "/TWIX/static/js/2.9f3e486d.chunk.js",
+    "static/js/2.9f3e486d.chunk.js.map": "/TWIX/static/js/2.9f3e486d.chunk.js.map",
+    "static/js/3.c4d4e3dd.chunk.js": "/TWIX/static/js/3.c4d4e3dd.chunk.js",
+    "static/js/3.c4d4e3dd.chunk.js.map": "/TWIX/static/js/3.c4d4e3dd.chunk.js.map",
+    "index.html": "/TWIX/index.html",
+    "static/css/main.49c13f63.chunk.css.map": "/TWIX/static/css/main.49c13f63.chunk.css.map",
+    "static/js/2.9f3e486d.chunk.js.LICENSE.txt": "/TWIX/static/js/2.9f3e486d.chunk.js.LICENSE.txt",
+    "static/media/logo.2dc4235d.png": "/TWIX/static/media/logo.2dc4235d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5c6aab78.js",
-    "static/js/2.dec81d18.chunk.js",
+    "static/js/runtime-main.d4fafbe5.js",
+    "static/js/2.9f3e486d.chunk.js",
     "static/css/main.49c13f63.chunk.css",
     "static/js/main.cf076542.chunk.js"
   ]
