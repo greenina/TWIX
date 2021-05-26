@@ -41,7 +41,7 @@ class CategoryPage extends React.Component {
       this.setState(() => ({
         score: docs['score'],
       }));
-      console.log(docs);
+      console.log('::::::::::', this.state.score);
     }
   }
   wishthen(doc) {
@@ -56,14 +56,17 @@ class CategoryPage extends React.Component {
   bukkukthen(doc) {
     var states = ['adult_bad', 'adult_normal', 'adult_good', 'adult_dance'];
     let docs = doc.data();
+    let dic = this.state.img_src;
 
     for (var i = 0; i < Object.keys(docs).length; i++) {
-      let dic = this.state.img_src;
+      dic = this.state.img_src;
       dic[i] = docs[states[i]];
       this.setState((prv) => ({
         img_src: dic,
       }));
     }
+    dic[4] = dic['adult_good'];
+    this.setState((prv) => ({ img_src: dic }));
     console.log('companion img source list', this.state.img_src);
   }
   onesight() {
