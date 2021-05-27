@@ -6,7 +6,7 @@
 
 ---
 
-We set up our POV using user needs and insights. We were inspired by the interview results we conducted interviews in the past.
+//////We re-stated our POV using user needs and insights. We were inspired by the interview results we conducted interviews in the past.
 
 - **POV**
 
@@ -16,35 +16,40 @@ We set up our POV using user needs and insights. We were inspired by the intervi
 
     needs to
 
-    **be motivated steadily in eco-friendly consumption**
+    **be supported in continuously receiving impetus about the environment without being discouraged by personal gain(price, functionality, etc)**
 
-    because it
+    because
 
-    makes the **“desire of contributing to environment” overcome the “desire of personal gain(price, function, etc)”** in purchasing product which helps users **act at will to protect the environment**.
+    **they lack of experience in considering eco-friendly factors when thinking about products in daily life**.
+    
+    
+     
 
-    
-    ///////POV is clearly written?
-    
-    
-    
-    
-
-## Target Users : In one sentence, say who your target users are
+### Target Users : In one sentence, say who your target users are
 
 ---
 
-We developed a persona with details(profile, demography, needs, etc). As a process, we first collected a wide range of ideas about persona's detail through brainstorming, and then decided on the final detail through review and voting.
+그래서 우리의 타겟유저는 이 사람이다. 이전에 진행한 인터뷰를 바탕으로 니즈와 인사이트를 작성하였고, 여러 차례 피드백을 반영하여 re-state를 하면서 concrete하게 만들었다. 뒤에서 서술할 테스크나 프로토타입을 작성하는 과정에서 이 POV와 이를 바탕으로 DP2에서 작성한 페르소나를 생각하면서 프로토타입을 작성하였다. 
 
 ////////////Targer users are clearly presented with enough concreteness?
-
-
-
 
 ## Tasks : List three core tasks your prototype supports
 
 ---
 
-We made some short HMW questions for out team's [POV](#POV), and picked top 3 HMW questions with through the following process consisting of brainstorming, grouping, and voting.
+이를 바탕으로 우리의 프로토타입을 사용할 유저들이 수행할 테스크를 작성해보았다. 
+
+**1. Put each one household of every room at home(living room, kitchen, bathroom, bedroom) to wish list**
+
+    자세한 설명
+    
+**2. Select an eco-friendly cushion you like and put in the wish list**
+
+    자세한 설명
+
+**3. Choose one non eco-friendly product in a wish list, and replace it with what companion likes**
+
+    자세한 설명
 
 ///////Tasks align with the POV?
 
@@ -65,6 +70,8 @@ We made some short HMW questions for out team's [POV](#POV), and picked top 3 HM
 
 ***URL of our prototype***
 
+https://twixigreen.herokuapp.com/
+
 A live version of the prototype for evalation.
 Note: the URL must work at least until your assignment is graded.
 If it doesn't work, you'll be penalized.
@@ -75,11 +82,18 @@ If there are specific requirements (e.g., test user's ID/password, browser or de
 Make sure to add a README file that briefly describes the code, e.g., main JavaScript file, where main feature implementations are, etc.
 Several lines are enough.
 
+https://github.com/greenina/twixigreen.git
+
 ***Libraries and frameworks***
 
 List any external dependencies you used for your implementation (e.g., React, Bootstrap, Semantic UI, etc.)
 
+리액트
 
+    리액트 그 하트랑 툴팁
+
+외부 dependecies를 사용하면 편하고 에쁠수는 있으나 우리가 원하는 것을 마음대로 표현할 수 없을 것이라 판단하여
+나머지는 순수 html, js, css를 활용하여 작성함
 
 ***Representative screenshots***
 
