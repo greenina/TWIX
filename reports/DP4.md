@@ -87,9 +87,11 @@ We just found some trivial errors such as the objects become transparent when ho
 
 ### URL of our Git repository
 
-URL: <https://github.com/greenina/twixigreen.git>
+Old URL: <https://github.com/greenina/TWIX>
 
-We just made a new repository for the deployment of our site. Here is our new Git repository URL. We also added README file.
+New URL: <https://github.com/greenina/twixigreen.git>
+
+We just made a new repository from the old one for the deployment of our site. Here is our new Git repository URL. We also added README file.
 
 <br>
 
