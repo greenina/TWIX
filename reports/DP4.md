@@ -43,7 +43,7 @@ Then, we chose three core tasks our prototype supports for the users. We conside
 
 We just searched for a few reports of green consumption to concentrate on the core problem and to find out what the users really hesitate about the green consumption. While reading them, we found out that the consumer knowledge is one of the most important motivation on buying eco-friednly products<sup>[[1]](#footnote_1)</sup>. We kept considering about the form of mainpage between the page of online shopping mall style and the page with companion, but each one had its own painpoint. So we came out with a new idea based on the reasearch, which is to make the users to realize that there are a lot of eco-friendly products in daily life.
 
-Through this task, the users realize the existence of various kinds of green products in daily life. We expect this progress can keep users from hesitated consumption of the users which caused by not knowing eco-friendly products. Also, by knowing these informations, they could have more chances to think about eco-friendly factors in real daily life.
+Through this task, the users would realize the existence of various kinds of green products in daily life. We expect this progress can keep users from hesitated consumption of the users which caused by not knowing eco-friendly products. Also, by knowing these informations, they could have more chances to think about eco-friendly factors in real daily life.
 
 <br>
     
@@ -63,6 +63,9 @@ Through this task, the users realize the existence of various kinds of green pro
     
 <br>
 
+*You can check out the end-to-end scenario with these tasks in [this video](https://youtu.be/6vgBhVSdAqY).*
+
+<br>
 ///////Tasks align with the POV?
 
 ///////Tasks reflect target users's needs?
@@ -80,30 +83,26 @@ Through this task, the users realize the existence of various kinds of green pro
 
 ***URL of our prototype***
 
-https://twixigreen.herokuapp.com/
+URL: <https://twixigreen.herokuapp.com/>
 
-A live version of the prototype for evalation.
-Note: the URL must work at least until your assignment is graded.
-If it doesn't work, you'll be penalized.
-If there are specific requirements (e.g., test user's ID/password, browser or device settings), include them as well.
+We just found some trivial errors such as the objects become transparent when hovering(it should be translucent, not transparent), or a few objects link to ackward path, or a little database information is not loaded. Since our prototype worked well without any error in local, and also those obejects use same code but acting differently in URL, we are finding the reason why these errors occur when we deploy the site. Except for those, it works well.
+
+<br>
 
 ***URL of our Git repository***
 
-Make sure to add a README file that briefly describes the code, e.g., main JavaScript file, where main feature implementations are, etc.
-Several lines are enough.
+URL: <https://github.com/greenina/twixigreen.git>
 
-https://github.com/greenina/twixigreen.git
+We just made a new repository for the deployment of our site. Here is our new Git repository URL.
+
+<br>
 
 ***Libraries and frameworks***
 
-List any external dependencies you used for your implementation (e.g., React, Bootstrap, Semantic UI, etc.)
+We only used React as an external dependency for our implementation. It might be easier and prettier to use external dependencies, but we decided not to use because those external dependecies might allow us some limitations on the implementation what we really want to express with our prototype. So we just used pure html, js, and css except for React grammar.
+Also we applied two pre-maded components with React. One is *react-tooltip* for MainPage, and second one is *react-animated-heart* for DetailPage of each product.
 
-리액트
-
-    리액트 그 하트랑 툴팁
-
-외부 dependecies를 사용하면 편하고 에쁠수는 있으나 우리가 원하는 것을 마음대로 표현할 수 없을 것이라 판단하여
-나머지는 순수 html, js, css를 활용하여 작성함
+<br>
 
 ***Representative screenshots***
 
