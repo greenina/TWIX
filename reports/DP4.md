@@ -2,42 +2,40 @@
 
 
 
-## POV : Re-state the POV of your project
+## POV
 
 ---
 
-//////We re-stated our POV using user needs and insights. We were inspired by the interview results we conducted interviews in the past.
+We re-stated our POV based on the feedback of DP3. While doing this, we tried not to ruin the values what we were inspired from by the interview results.
 
-- **POV**
+### POV
 
+> **Newcomers of eco-friendly product consumption**
+
+needs to
+
+> **be supported in continuously receiving impetus about the environment without being discouraged by personal gain(price, functionality, etc)**
+
+because
+
+> **they lack of experience in considering eco-friendly factors when thinking about products in daily life**.
     
-
-    **Newcomers of eco-friendly product consumption**
-
-    needs to
-
-    **be supported in continuously receiving impetus about the environment without being discouraged by personal gain(price, functionality, etc)**
-
-    because
-
-    **they lack of experience in considering eco-friendly factors when thinking about products in daily life**.
-    
-    
+<br>
      
 
-### Target Users : In one sentence, say who your target users are
+### Target Users
 
----
+So our target users are **the newcomers of eco-friendly product consumption** who has ever been discouraged their green consumption by personal gain(price, functionality, etc).
 
-그래서 우리의 타겟유저는 이 사람이다. 이전에 진행한 인터뷰를 바탕으로 니즈와 인사이트를 작성하였고, 여러 차례 피드백을 반영하여 re-state를 하면서 concrete하게 만들었다. 뒤에서 서술할 테스크나 프로토타입을 작성하는 과정에서 이 POV와 이를 바탕으로 DP2에서 작성한 페르소나를 생각하면서 프로토타입을 작성하였다. 
+We had define the word *newcomer* and *eco-friendly product* on our DP1 report. We also stated our needs and insights based on the interview results we conducted before, and we finally ended up with pretty decent POV through several revisions due to a few feedbacks. We tried to keep reminding our persona we wrote in DP2 and this POV in a progress of listing our tasks and making prototype which are following next parts.
 
-////////////Targer users are clearly presented with enough concreteness?
+<br><br>
 
 ## Tasks : List three core tasks your prototype supports
 
 ---
 
-이를 바탕으로 우리의 프로토타입을 사용할 유저들이 수행할 테스크를 작성해보았다. 
+Then, we chose three core tasks our prototype supports for the users. We considered that each task could support the end-to-end scenario of the users.
 
 **1. Put each one household of every room at home(living room, kitchen, bathroom, bedroom) to wish list**
 
