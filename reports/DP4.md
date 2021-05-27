@@ -65,74 +65,111 @@ Through this task, the users would realize the existence of various kinds of gre
 
 *You can check out the end-to-end scenario with these tasks in [this video](https://youtu.be/6vgBhVSdAqY).*
 
-<br>
-///////Tasks align with the POV?
-
-///////Tasks reflect target users's needs?
-
-///////Are the tasks distinct from each other?
-
-//////Are the tasks described concretely and clearly?
-
-/////User-level description not functionality description?
-
+<br><br>
 
 ## Implementation Notes
 
 ---
 
-***URL of our prototype***
+### URL of our prototype
 
 URL: <https://twixigreen.herokuapp.com/>
 
-We just found some trivial errors such as the objects become transparent when hovering(it should be translucent, not transparent), or a few objects link to ackward path, or a little database information is not loaded. Since our prototype worked well without any error in local, and also those obejects use same code but acting differently in URL, we are finding the reason why these errors occur when we deploy the site. Except for those, it works well.
+We just found some trivial errors such as the objects become transparent when hovering(it should be translucent, not transparent), or a little database information is not loaded. Since our prototype worked well without any error in local, and also those obejects use same code but acting differently in URL, we are still finding the reason why these errors occur when we deploy the site. Except for these, it works well.
 
 <br>
 
-***URL of our Git repository***
+### URL of our Git repository
 
 URL: <https://github.com/greenina/twixigreen.git>
 
-We just made a new repository for the deployment of our site. Here is our new Git repository URL.
+We just made a new repository for the deployment of our site. Here is our new Git repository URL. We also added README file.
 
 <br>
 
-***Libraries and frameworks***
+### Libraries and frameworks
 
 We only used React as an external dependency for our implementation. It might be easier and prettier to use external dependencies, but we decided not to use because those external dependecies might allow us some limitations on the implementation what we really want to express with our prototype. So we just used pure html, js, and css except for React grammar.
 Also we applied two pre-maded components with React. One is *react-tooltip* for MainPage, and second one is *react-animated-heart* for DetailPage of each product.
 
 <br>
 
-***Representative screenshots***
+### Representative screenshots
 
-Include a few most important screenshots that showcase the uniqueness of your application
+We implemented all functions we planned to make in low-fi prototyping, with some features changed based on DP3 feedbacks. Among them, we're going to introduce a few screenshots for each page which we think the most important and unique representation of oru applicaiton.
+
+***MainPage***
+
+place we use everyday life
 
 ![](https://ifh.cc/g/EVYBXe.jpg)
 
-/////////Prototype URL is accessible and works properly?
+***CategoryPage***
 
-//////Repository URL is accessible and contains README?
+in a glance
 
-//////Libraries and frameworks used are listed?
+***DetailPage***
 
-//////Screenshots are added?
+three icons / compare table
+
+***MyPage***
+
+companion / recommandation
 
 /////Screenshots capture representative moments of the prototype?
 
-/////The prototype captures the three tasks?
-
-/////The prototype is complete in that it supports an end-to-end scenario?
-
-////The prototype follows good practices in visual design, layout, color, etc.?
+<br><br>
 
 ## Individual Reflections
 
-Each member should write this part on their own, reflecting on their own experience.
-Merge all members' mini-reports in the final report. Answer the following questions:
-Which part of the UI did you directly contribute to?
-What were some of the difficulties you faced?
-List one useful implementation skill you learned while working on this milestone.
+**Gyewon Kim**
+
+- Which part of the UI did you directly contribute to?
+
+
+- What were some of the difficulties you faced?
+
+
+- List one useful implementation skill you learned while working on this milestone.
+
+
+
+**Inhwa Song**
+
+- Which part of the UI did you directly contribute to?
+
+
+- What were some of the difficulties you faced?
+
+
+- List one useful implementation skill you learned while working on this milestone.
+
+
+
+**Taeyang Yoon**
+
+- Which part of the UI did you directly contribute to?
+
+
+- What were some of the difficulties you faced?
+
+
+- List one useful implementation skill you learned while working on this milestone.
+
+
+
+**Seungyeon Choi**
+
+- Which part of the UI did you directly contribute to?
+
+
+- What were some of the difficulties you faced?
+
+
+- List one useful implementation skill you learned while working on this milestone.
+
+
+<br><br>
 
 
 ## Studio Reflection
@@ -146,96 +183,112 @@ List one useful implementation skill you learned while working on this milestone
 ### Peer reviews
 
 **I like …**
-[Arlandar/Mukhtar] that your app’s design is user-centered. Nice implementation.
-[Colics/Minseo] I like that you changed your tasks to more meaningful ones. 
-[pacific/han] cool animation when heart is clicked 200% satisfied with that cool thing
-[HLK/Sewon Lim] Showing the product in the real living context is good.
-[Colics/Sangwoo Park] Green-based overall color web
-[Pacific/Choi]: The change of animation of polar bear was impressive and it would help user feel more satisfying.
-[Pacific/Sehoon Lim]: Cute animation on companion
 
-- Suggested solutions and specific reasons of HMWs and solutions
-    - could be understood easily
-    - how they touched user’s emotion by virtual companion
-- Contents
-    - persona description with brands info
-    - the POV is related to eco-friendly products since they’re saving the nature
-    - dividing environmental infos into several categories
-    - detail and quality of storyboards
+- Application Design
+    - nice implementation of user-cented design
+    - showing the product in the real living context
+    - cool animation when heart is clicked
+    - green-based overall color web
+    - cute/impressive animation on companion which helps users feel more satisfying
+- Tasks
+    - more meaningful tasks than last presentation
+
 
 **I wish ...**
 
-I wish …
-[Pacific/Sehoon Lim]: There was more description. Green border doesn’t feel like ‘this is eco friendly'. it is true that green color shows eco friendly, but somehow it feels like green is for consistency not meaning echo. Showing selectable products in image of first page would be good, too.
-[HLK/JaeHyun Kim] I wish there are more information about protecting animal, protecting nature..etc. And I also want to how it is done in this products. I think it should have standard since company may just say that they are doing all of these falsely for their sale.
-[HLK/HanSookyung] items in the hovering pictures more visible
-[[Pacific/Jaeryung Chung]I wish there were feature to search for the item. People usually don’t hover on the photo to search for what to buy. 
-items in th
-[pacific/han] checkbox was toggled when text are clicked
-[HLK/Kangsan Kim] Using slide show? in the main page might not be efficient because users have to pass the card until they find what they want. 
-[HLK/JaeHyun Kim] I wish that I can find the product easier. Because some products like tissue or lug are not only used in living room. It might be confused.
-[Arlandar/Mukhtar] waving bear would be smaller since it distracts from focusing on products.
-[Arlandar/Aidyn Aluadin] rating item could be implemented
-[Arlandar/Aidyn Aluadin] Info about items could be more clear (i.e: “Production process”, “using product”, ‘after use” are not clear)
-[Colics/Yoojin Hong] More information about eco-friendly products in detail below icons (Production Process, ..)
+- More Description
+    - green borders are not enough to show the eco-friendlyness →[[1]](#one)
+    - showing selectable products in the image of main page →[[2]](#two)
+- More Information
+    - more information about protecting animal, protecting nature..etc. →[[3]](#three)
+    - how each category is done in this products →[[3]](#three)
+    - more information and clarification about in detail below icons (Production Process, ..) →[[4]](#four)
+- Standard
+    - standard for green products since company may just say that they are doing all of these falsely for their sale →[[5]](#five)
+- Improvement on Prototype →[[6]](#six)
+    - checkbox to be toggled also when the text is clicked
+    - items in the hovering pictures more visible
+    - smaller waving bear because it distracts focusing on the products
+- Pain Points
+    - finding the product by sliding pictures in the mainpage might not be efficient →[[9]](#nine)
+    - some products are not only used in particular room, which might make the users confused →[[8]](#eight)
+- New Implementation
+    - the rating system →[[7]](#seven)
+    - feature to search for the item →[[8]](#eight)
 
-- Descriptions
-    - explanation about why ‘to be steadily motivated in eco-friendly product consumption’ is the needs of the new-comers to eco-friendly products! Or was it the problem status? →[[1]](#fb-one)
-- Wishes in a presentation
-    - more explanation about the term you use in your presentation. I does not directly what it means getting interact emotionally and other terms.
-    - reminder of HMW questions while introducing the solutions
-    - indicator of which storyboard explain which solution
-- Opinions about setting product's contribution
-    - The effects of each product differ by amount, material, etc.
 
 **What if ...**
+- Flexibility
+    - the users put the products that they want →[[7]](#seven)
 
-[Colics/Sangwoo Park] Let user put the products that they want
 
 **Others**
 
-[Pacific/Jaeryung Chung] Where are the products information coming from?
-[HLK/Han Sookyung] I couldn’t understand the polar bear at first, and it just seemed to block my view..
-[Colics/Minseo] I wonder why there are also non eco friendly products(the ones that Bukkuk recommend other products) on your website.    
-[Arlandar/Nurlykhan Kopenov] i like the idea, but where you will get 
-eco-friendly products
+- Where the information of the products coming from →[[10]](#ten)
+- Couldn't understand the polar bear at first, and it just seemed to block the view →[[11]](#eleven)
+- Why there are also non eco-friendly products(the ones that Bukkuk recommend other products) on your website →[[12]](#twelve)
 
-- I’m curious why you chose those brands to explain persona! What did you intended for those information? → [[3]](#fb-three)
-- Is the green points you mentioned in 3rd story board will be enough motivation? Maybe appealing that they use eco-friendly products may be good to advertise their cafe. → [[2]](#fb-two)
-- I’m wondering how to evaluate environmental contribution
-- I wonder what does 'interacting emotionally with eco-friendly products' means in HMW.
-- I wonder if giving points on buying eco friendly products will cause overconsumption, which is bad for the environment. → [[2]](#fb-two)
-- How will the green points divided when users purchase in group? → [[2]](#fb-two)
+<br>
 
 ### Feedback during Session Time
 
-- Extra explanation regarding needs → [[1]](#fb-one)
-- Storyboard should not be UI-driven but scenario-driven → [[4]](#fb-four)
-- Not like in the PPT, the storyboard and description should exist together, not separate → [[4]](#fb-four)
+- not intuitive to me, what it really mean? quite understand/imagine that, but wording could be improved, color difference is not huge to users / more direct improvement on design → [[4]](#four)
+- when the bear is dancing, wanna know how they can make it dance. assistance message → [[4]](#fb-four)
+
+<br>
 
 ### Summarize the reflection of feedback
 
-- Provision of more descriptions
-    - <a name="fb-one"></a>[1] Extra explanation of needs :
+- Provision of more description in using prototype
 
-        Our target users have the will to protect the environment, but they sometimes find their desire of personal gain(price, functionality, etc) suppressing their desire of contributing to environment, and eventually fail to purchase eco-friendly product.
-        Therefore, users want to get motivated steadily in eco-friendly consumption for the desire of contributing to environment to overcome the desire of personal gain.
-        We actually got this point not by our own assumption, but by the mentioning of our interviewee.
+    - <a name="one"></a>[1] Not understanding / misunderstanding the meaning of colors
 
-    - <a name="fb-two"></a>[2] About green points
+        Maybe we can provide some additional notes on the top about the meaning of each color has.
 
-        For reasons such as the UI of the program and its exact function are not clearly determined, we inserted the concept of a green point on the third storyboard. This is expressed as an example of a method to motivate. I will try to find a better motivation-giving method than the green point by proceeding with the project later. 
+    - <a name="fb-two"></a>[2] description about the clickable product
 
-    - <a name="fb-three"></a>[3] Intention of the brand description in Persona
+        In prototype, we drawed each product with splashing colors and shaded on the photo to differenciate the products which show tooltips when the mouse is hovering. Among them, we make the mouse pointer to change when the product is clickavle, which means the products exist in the category. Since it's prototype, we made it available for a few products, but in real, all of the products in the photo should be available to click.
 
-        As we set our target user as Newcomers of 'eco-friendly' product consumption, we wanted to explain that he is not a complete "online shopping" new comer by describing the online or shopping application he usually uses.
+- Provision of more information about the products
 
-- Modification of storyboards
+    - <a name="three"></a>[3] Extra explanation of each categories
+
+        Actually, in low-fi prototype, we gaved some additional information about each products, how the product can effect the environment. However, since we tried to organize them in the process of the product is used, those information just disappeared. We can add those information on the existing icons that match with process in a textbox form so that the users can read when they hover on each icon.
   
-    - <a name="fb-four"></a>[4] We combined text on the storyboard and modified the storyboard of the solution 1 "Visually show how environment changes when purchasing each product", to make it user - and scenario- driven, not solution-driven
+    - <a name="four"></a>[4] 저시기
+
+        뭐시기
+        
+    - <a name="five"></a>[5] 저시기
+
+        뭐시기
+
+- Improvement on prototype
+
+    - <a name="six"></a>[6] New features and modification of original features
+
+        We would try to implement or fix those features!
+
+    - <a name="seven"></a>[7] Flexibility
+
+        We also considered the participation of users, and it was oen of our hmw quesitons. However, we chose to concentrate more on providing the information to users about how the products effect the environment. It could be fascinating to apply those rating, or user-adding features, but we think that's not we should do this time. It has nothing to do with our insight.
 
 
+- Others
 
+    - <a name="nine"></a>[9] 저시기
+
+        뭐시기
+
+    - <a name="ten"></a>[10] 저시기
+
+        뭐시기
+        
+    - <a name="eleven"></a>[11] 저시기
+
+        뭐시기
+
+---
 
 <a name="footnote_1">[1]</a> Important motivators for buying green products. <https://www.researchgate.net/publication/286689918_Important_motivators_for_buying_green_products>
 
