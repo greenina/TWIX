@@ -263,9 +263,9 @@ companion / recommandation
 
         Actually, in low-fi prototype, we gaved some additional information about each products, how the product can effect the environment. However, since we tried to organize them in the process of the product is used, those information just disappeared. We can add those information on the existing icons that match with process in a textbox form so that the users can read when they hover on each icon.
   
-    - <a name="four"></a>[4] 저시기
+    - <a name="four"></a>[4] More information with each icon (Production Process, ..)
 
-        뭐시기
+        We also agree with the needs of more description about each icon, so we'll add it on the page. Also, we can change the words that represent the meaning of what we intended, so that people can understand much easier.
         
     - <a name="five"></a>[5] 저시기
 
