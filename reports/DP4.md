@@ -49,18 +49,24 @@ Through this task, the users would realize the existence of various kinds of gre
     
 **2. Select an eco-friendly cushion you like and put in the wish list**
 
-기존의 유저들이 hesitate한 부분을 가장 직접적으로 해결했다고 볼 수 있다. 이 일련의 과정에서 쿠션을 찾는 과정에서, eco-friendly한 factor들을 접할 수 있는 기회를 많이 만든다.
+We tried to come up with the solutions for the hesitate part of users in eco-friendly product consumption more directly. In the process of completing this task, the users are given a lot of opportunities to meet the eco-friendly factors from our prototype.
 
-일단 카테고리 페이지에서 여러 환경친화적인 기준으로 필터링해서 볼 수 있다. 자신이 생각하는 가장 중요한 환경친화적인 요소를 가지고 있는 제품을 살 수 있도록 한다. 자신이 좋아하는 쿠션을 고르는 과정에서 각 제품끼리의 비교가 필수적인데, 이 과정에 대한 베리어를 낮추어 사용자들이 좀 더 쉽게 비교 분석하여 결정할 수 있도록 한다. 비친환경 제품의 경우에는 친환경 제품과 여러 feature들을 비교하고, 친환경 제품을 클릭할 경우 같은 카테고리의 친환경 제품들을 비교하도록 한다. 그래서 그 유저가 hesitate한 점들 중, 각 제품에 대한 비교가 어렵다는 점을 해결하였다.
+Once the user visit the category page, they can filter the products by several eco-friendly criteria. Users can buy the products with the most important eco-friendly factors they think. Not only in our prototype, but all people who are willing to buy any product in any online shopping mall, they are tended to compare the products with similar functions. By providing already compared information about each products in their unique features, users can feel easier to compare and analyze similar products.
+
+In the case of non-environmental products, the comparison with eco-friendly products in the features allows the users to face the concern which is caused by personal gain such as price or functionality directly. This provides the users to think again with the effects the product gives on the environment once again. They could compare whether the product is eco-friendly in each process the product goes through, for example, production, during usage, after it's deposed.
+
+Comparing the products in various creteria could give plenty times of experience in considering eco-friendly factors in their consumption.
     
 <br>
 
 **3. Choose one non eco-friendly product in a wish list, and replace it with what companion likes**
 
-정보를 아는 것과 지구를 지키고 싶다는 마음이 가장 큰 모티베이션이긴 하나, 이를 지속적으로 이끌어 줄 기능이 필요하다. 이에 대한 해결책으로 유저들이 감정적으로 교류할 수 잇는 companion을 만들자고 생각을 했다. 
+ Although knowing information and will to protect the earth are the biggest motivations, they are not enough them to keep that state. Because the users want to be supported in **continuously** receiving impetus about the environment, we think of the solution to make a companion, which represent the endangered animals/plants due to the environmental destruction. We hope users would interact with it emotionally.
 
-유저의 입장에서, 자신의 구매로 인해 companion의 상태가 안좋아지는 결과를 알고 있음에도 그 행동(구입)을 그대로 실행하기란 쉽지 않다. 우리는 이 점을 파고 들었다. 마이페이지의 위시리스트를 보면 일반적인 유저의 경우 친환경적인 제품과 아닌 제품들이 모두 들어 있을 것이다. 친환경 제품의 경우 좋아하고, 아닌 제품의 경우 같은 역할을 하는 더 친환경적인 제품을 보여줌으로써 친환경적인 소비를 할 수 있도록 유도함과 동시에, 이코프렌들리한 facto에 대해 한번 더 생각해보도록 할 수 잇따. 또한 유저는 환경에 대해 한번 더 생각해볼 수 있는 기회를 받음으로써 계속해서 이러한 측면을 생각하고 고려할 수 있도록 도와준다.
-    
+From the users' point of view, it would be not easy to purchase non eco-friendly products, even though they know the result of the companion's deteriorating condition due to their purchase. We dug into this point.
+
+If you look at the wish list on My Page, there will be both eco-friendly and non-friendly products for general users. The companion would be pleasant when they hover the eco-friendly product in the wish list. However, in the case of hovering eco-friendly products, the users can get the information about eco-friendly products that do the same function, and at the same time, we can encourage not to give up the green consumtion by personal gains. The users can think about the eco-friendly factors and the effect the products have on the environment once again.
+
 <br>
 
 *You can check out the end-to-end scenario with these tasks in [this video](https://youtu.be/6vgBhVSdAqY).*
@@ -287,6 +293,8 @@ companion / recommandation
     - <a name="eleven"></a>[11] 저시기
 
         뭐시기
+
+<br><br>
 
 ---
 
