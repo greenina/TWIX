@@ -152,8 +152,6 @@
 
   → Plan to address: Normally, the circles underneath the images are used to indicate where I am now, and in our case this was used as a button to change the image. Also the circles were in a position that could be seen by scrolling down, making it more difficult for users to access. Therefore, we want to show more explicitly that the image can be moved over by adding arrow buttons on the left and right side of the image, to positions that can be seen immediately when the page is loaded.
 
-- → Plan to address: 
-
 - *[High]* Be confused that he just pressed a particular item in the photo, but other items also displayed together after moving to the category page. (P1, P2, P3, P4)
 
   → Plan to address: A subcategory function is created to show specific product subcategories, for example, within the living room so that only tissues can be collected and viewed, when the user clicked the tissue on the Mainpage.
