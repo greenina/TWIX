@@ -148,7 +148,7 @@
 
 #### [Task 1] Put each one household in every room at home(living room, kitchen, bathroom, bedroom) to a wish list.	
 
--  *[Medium]* Didn't catch how to move to other rooms. (P1, P3)
+- *[Medium]* Didn't catch how to move to other rooms. (P1, P3)
 
   → Plan to address: Normally, the circles underneath the images are used to indicate where I am now, and in our case this was used as a button to change the image. Also the circles were in a position that could be seen by scrolling down, making it more difficult for users to access. Therefore, we want to show more explicitly that the image can be moved over by adding arrow buttons on the left and right side of the image, to positions that can be seen immediately when the page is loaded.
 
@@ -309,6 +309,3 @@
   - Adding an arrow button in the main page
 - **Seungyeon Choi**
   - Implementing subcategory capabilities (path indicator texts, page routing)
-
-------
-
