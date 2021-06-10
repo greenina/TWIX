@@ -200,9 +200,13 @@ DP5: Usability Testing
 
 - What did you overall learn from the user testing experience?
 
-  
+  - We found it difficult for users to find all the eco-friendly keywords/hints we provided and understand the meaning immediately as well as we thought. It was necessary to provide a direct explanation for some factors that users thought would interpret the meaning while using the website currently without explanation.
+  - We find that users may feel confused during use if we do not match the common contexts or features that users have learned while using other websites, such that it is also able to click hearts in the entire product list, or if the user takes the wrong action that causes an error, making the users encounter an alert window.
 
 - What would you do differently for better results and insights?
+
+  - In the unfriendly parts that we firstly thought would be understandable in context, for features that have been difficult to understand for many users, we have to provide sufficient explanation and induction. For instance, we have to improve to show more efficiently that the status of polar bears varies with user action, the main page shows different types of rooms that can be moved to different rooms, and so on.
+  - Even if we implemented a new feature, in terms of its usage and user experience, we will have to match the context of ours with their other experiences they have gained from using other websites so far. For example, such as the feature that allow hearts to be turned off and on at the category page, which could not be completed before testing because of implementation issues, must be completed for better usability.
 
   
 
