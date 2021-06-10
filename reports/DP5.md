@@ -83,11 +83,12 @@ DP5: Usability Testing
 5. Was there a function or part that you were confused about or didn't know the meaning? (with showing screenshots of each page for reminder)
 
 6. Please tell me all the clues that represent the eco-friendly factors you found doing this web service testing.
+
    6-1. About the detected functions:
 
    - Do you think that those functions are designed as user-oriented enoughly and worked well with you?
 
-   6-2. About the missed functions:
+    6-2. About the missed functions:
 
       - (After explaining the remaining features that the test user has not discovered, we ask if he/she have noticed the presence of the feature and if he/she think it has been implemented properly.)
       - e.g. Have you realized that each item in the product list has different eco-ratings according to how many green properties it meets, and these different eco-ratings are represented by borders of different saturation when your mouse is over a certain item?
@@ -121,14 +122,16 @@ DP5: Usability Testing
 
 | Participants                       | Photos                                                       |
 | ---------------------------------- | ------------------------------------------------------------ |
-| <center>P1</center>                | ![A](https://ifh.cc/g/sW0v4g.jpg)                            |
-| <center>Demographic of P1</center> | ***Age*** \|  31 yr old<br />***Gender*** \|  Male<br />***Feature*** \|  Salaryman<br />***Why is he a representative target user?***<br />He thinks he is usually quite interested in the environment, but he feels more uncomfortable when he buys eco-friendly products than he thought, so he couldn’t overcome the barrier. *“I’ve felt complacent about using eco-friendly products”* However, he is desperately aware of shortcomings such as durability and high price. |
-| <center>P2</center>                | ![B](https://ifh.cc/g/ynbDwo.jpg)                            |
-| <center>Demographic of P2</center> | ***Age*** \|  34 yr old<br />***Gender*** \|  Male<br />***Feature*** \|  Freelance Entrepreneur<br />***Why is he a representative target user?***<br />As a young businessman, he did lots of food business, once own the waffle truck at big park in Seoul. He usually thinks he is interested in the environment, but when asked if he’s ever bought eco-friendly products, he tried to buy them, but didn’t because they were expensive. Regarding the use of disposable products that he experienced while running the store, he said that it is expensive and difficult to dispose of because disposable products are used very much. |
-| <center>P3</center>                | ![C](https://ifh.cc/g/h8Wmtf.jpg)                            |
-| <center>Demographic of P3</center> | ***Age*** \|  25 yr old<br />***Gender*** \|  Female<br />***Feature*** \|  Cafe Vlog Youtuber<br />***Why is she a representative target user?***<br />She had quite deep dexperience of cafe part time job. In the process of working at the cafe, she said that many disposable products reminded her of a picture of a straw in the turtle’s nostril, so she often uses a tumbler when she visits other cafes. She’s bought and used eco-friendly dishwashing detergent, but after that she doesn’t find eco-friendly products because the detergent didn’t make bubbles easily. |
-| <center>P4</center>                | ![D](https://ifh.cc/g/bxP4FR.jpg)                            |
-| <center>Demographic of P4</center> | ***Age*** \|  21 yr old<br />***Gender*** \|  Male<br />***Feature*** \|  Student<br />***Why is he a representative target user?***<br />He is the interviewee that gave the insight of our POV. *“It’s my first time seeing eco-friendly consumption through this interview, and I want to continue eco-friendly consumption, but it’s a little difficult to actually practice due to lack of information, price, and so on.”* |
+| <center>P1</center>                | ![p11](https://ifh.cc/g/iyvpLl.jpg)<br />![p12](https://ifh.cc/g/9jFGZA.jpg) |
+| <center>Demographic of P1</center> | ***Age*** \|  35 yr old<br />***Gender*** \|  Male<br />***Feature*** \|  Office Worker<br />***Why is he a representative target user*** \|<br />He is similar to our persona because he usually uses a lot of product purchasing sites like Coupang. However, he said that he rarely considered eco-friendly factors when purchasing goods online, so even if he encountered eco-friendly products, he did not buy them because he could not understand the detailed information of that product.<br />***Summary description of session*** \|<br />As a whole, most of the features were well understood and used, accepting that they were similar to normal shopping mall sites. However, he totally failed to recognize that the state of polar bear is keep changing. He also confused when he met other items appear even though he only pressed the cushion on the mainpage. |
+| <center>P2</center>                | ![P21](https://ifh.cc/g/ASWwtS.jpg)<br />![p22](https://ifh.cc/g/KXYCot.jpg) |
+| <center>Demographic of P2</center> | ***Age*** \|  20 yr old<br />***Gender*** \|  Male<br />***Feature*** \|  Student<br />***Why is he a representative target user \|***<br />He is one of our target users, who we conducted observation on DP1. Since he participated in our observation on DP1, he expressed his interest in our project continuously. He said "*It'd be great to see if the data from my interview helped you to improve your project. Also, I'm curious about how the solutions driven by my problem had implemented in the service."* So we thought we can check more directly if the hesitated points are whether solve or not through the observation/user testing of him.<br />***Summary description of session*** \|<br />Since he knows the context how we developed our service, he followed well and found almost every elements we embedded. However, what he had a few conflicts was mostly in using main page which means the main page has crucial problem in learnability (e.g. not knowing how to go to next room, getting confused what to click, and feeling curious why the page redirect to living category page with other products even he clicked tissue, etc.) |
+| <center>P3</center>                | ![P31](https://ifh.cc/g/zrOECS.jpg)<br />![P32](https://ifh.cc/g/Q2GpSw.jpg) |
+| <center>Demographic of P3</center> | ***Age*** \|  25 yr old<br />***Gender*** \|  Female<br />***Feature*** \|  Cafe Vlog Youtuber<br />***Why is she a representative target user \|***<br />After working at a cafe for a long time and experiencing a lot of disposable products, she became to have a habit of using tumblers. However, for other eco-friendly consumption, she has never tried it because she thought the barriers to entry were high, and she already has some pride that using tumblers alone seems to be sufficiently and enoughly helpful to the environment.<br />***Summary description of session*** \|<br />She seems to be really happy about the visual interface such as the dancing polar bear with speech bubbles when hovering the mouse. After she relized the condition when the polar bear's status will change, she kept focused on the polar bear and observed it by putting in and canceling various products. She was embrassed with the feedback that is given when pressing the share button for copying url in the form of alert, as she thought it was a defect of the website itself that she just occured a bug. |
+| <center>P4</center>                | ![P4](https://ifh.cc/g/ZhEHas.jpg)                           |
+| <center>Demographic of P4</center> | ***Age*** \|  25 yr old<br />***Gender*** \|  Male<br />***Feature*** \|  Part-time job in a personal cafe<br />***Why is he a representative target user \|***<br />He is absolutely a newcomer of eco friendly product, and currently got interested in green consuming, influenced by an public advertisement related to protecting the environment. Since he was interested in some websites selling eco-friendly products, he could compare our website igreen with ones he've used so far(even though our website's purpose is different with those).<br />***Summary description of session*** \|<br />Since he was quite a motivated person even among newcomers, he really tried to avoid putting all non-eco-friendly products(which border was black) in the wish list. Also, it was out of our expectation that relationship of experience of green consumption and requirement in environmental related info of products would be proportional. He would like to get more info of each products, even though he was a real newcomer of eco-friendly consumption, |
+
+* All the participants are our friends or acquaintance of our friends. All four participants were recently introduced to eco-friendly consumption on their own particular route, but the depth of all was still shallow.
 
 
 
@@ -143,9 +146,36 @@ DP5: Usability Testing
 
 **Severity scale** Evaluated in three aspects, frequency, impact, and persistence, each ranged among Cosmetic, Minor, Major, Catastrophic
 
+#### [Task 1] Put each one household in every room at home(living room, kitchen, bathroom, bedroom) to a wish list.	
+
+-  *[Minor]* Didn't catch how to move to other rooms.
+- *[Catastrophic]* Be confused that he just pressed a particular item in the photo, but other items also displayed together. 
+- *[Major]* She doesn't know which category she's in on the category page, after clicking a certain item in the main page. 
+- *[Cosmetic]* On the main page, because some products can't be clicked, it was hard to distinguish which one is clickable.
 
 
+##### Reflections: 
 
+#### [Task 2] Select an eco-friendly cushion you like and put in the wish list.
+
+- *[Cosmetic]* He didn't notice that the category page showed how green each product was by the differenct colors of border.
+- *[Minor]* He was unaware that the 'In a glance' button existed.
+- *[Catastrophic]* She was also uncomfortable with not being able to tap hearts on the category page.
+- *[Minor]* She thinks it's an error when she hits the share button, being showed an alert window.
+
+##### Reflections: 
+
+#### [Task 3] Choose one non eco-friendly product in a wish list, and replace it with what your companion may like.
+
+- *[Cosmetic]* He felt that it takes too long for the recommended product to pop up after hovering over the non-friendly product photo on my page.
+- *[Minor]* When hovering over pictures of non-environmental products on my page, she knew that the recommended products were displayed, but she didn't notice that the polar bear's comments above were changing.
+- *[Major]* Didn't understand what eco-score on my page meant.
+- *[Minor]* It takes a long time to understand what polar bears mean.
+- *[Major]* It was difficult to distinguish between eco-friendly and non-eco-friendly products on the wish list.
+- *[Cosmetic]* Doubtful about not disappearing immediately when he cancels a heart from the wishlist.
+
+
+##### Reflections: 
 
 
 
@@ -164,6 +194,3 @@ DP5: Usability Testing
 
 
 ## 5. Plan for iteration
-
-
-
