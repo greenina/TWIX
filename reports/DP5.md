@@ -295,6 +295,9 @@
 
    * At this time, we considered how long each function takes to implement, how similar each function is in the code, and where each person took the initiative in creating the prototype and wrote the code at the first phase.
    * For now, we divided our roles for efficiency, but decided to inform each other and collaborate if any problems arise during the actual implementation.
+   * Overall, the main goal is to resolve two problems as below
+     * **Sufficiently considering the usability of the user point**
+     * **Enoughly support to hesitating moments for the newcomers of eco-friendly consumption**
 
 - **Gyewon Kim**
   - Enable heart click on category page
