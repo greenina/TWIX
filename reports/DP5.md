@@ -1,4 +1,4 @@
-DP5: Usability Testing
+# DP5: Usability Testing
 
 ------
 
@@ -218,7 +218,31 @@ DP5: Usability Testing
 
 ## 4. Studio Reflections
 
+#### About the written Protocol
 
+- I like the large amount of questionnaires and interview questions
+
+- What if there were more various levels of asking semantic satisfaction in user interview?
+
+  → Accepting this feedback, when we asked about what elements you could get green information from, we decided to ask users in more detail how well they thought the feature was implemented, why they didn't find it if they failed to caputre,  how they wanted it to develop, and so on.
+
+#### About the usability of our prototype
+
+- On My Page, the product boxes on the wish list looked exactly like the boxes on the category page, so I could see that when I clicked it, I can go the deatiled page for that product. However, in the case of the recommended products that pops up when I hover my mouse on, it looked completely different and didn't have even a heart button, so I didn't think it is clickable.
+
+  → First of all, we decided to add a heart icon for recommended products. In addition, other clickable elements provided visual feedback that translucent when hovering the mouse but for this case it doesn't. In other words, it further reduced usability due to the lack of that feature. Therefore, we decided to provide visual feedback on how the product box looks translucent when hovering over the image of recommended products.
+
+- It was harder than I thought to compare whether the product was eco-friendly or to what extent it was eco-friendly. There were so many contents written in the table below in the detailed page that it was a bit troublesome to read one by one, but instead, I just judged based on only three icons marked by the process(Production, Usage, Afterward) above.
+
+  → During the overall testing process, we thought that users would not try to read specific information with the attitude of *"checking whether the features of a prototype made by a friend work correctly"* rather than *"finding information that would actually help me to buy a product.*" Therefore, we decided to recommend participating in the testing by immersing themselves in the situation with the idea of actually purchasing goods through revising the written protocol.
+
+- I felt that it was hard to distinguish a clickable items from the main page.
+
+  → As mentioned earlier in the Usability Lesson, we plan to make clickable products stand out more by adding borders.
+
+- Because I moved my mouse in a hurry, I was not aware of tooltips(speech balloons showing when mouse hovering).
+
+  → As mentioned earlier in the Usability Lesson, as for the problem that the users were not well aware of the change in polar bear's condition, we decided to show their status or important messages directly through speech balloons on the product details page.
 
 
 
