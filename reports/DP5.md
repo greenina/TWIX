@@ -38,7 +38,7 @@
 
 #### 1) Put each one household in every room at home(living room, kitchen, bathroom, bedroom) to a wish list.
 
-- On the main page, you can see the rooms that exist in the regular home you are staying in. Each room has a number of household items that we use quite often, so choose one household item for each room and put the products into the wishlist from that category.
+- As a first step towards green consumption, you may be at a loss where to begin. On the main page, you can see the rooms that exist in the regular home you are staying in. Each room has a number of household items that we use quite often, so choose one household item for each room and put the products into the wishlist from that category.
 
 - If there is a product that you have used often from the product list, please select that product.
 
@@ -64,7 +64,7 @@
 > Seungyeon Choi will verbally give you listed tasks (Facilitator),
 > Inhwa Song will ask a few questions after the testing session (Interviewer),
 > Gyewon Kim will observe how the service is used by writing down all user actions. (Observer), 
-> Taeyang Yoon takes screenshots or partial screen recordings, while checking technical issues as well as if datas is properly being collected in the database (Tech person). 
+> Taeyang Yoon takes screenshots or partial screen recordings, while checking technical issues as well as if data is properly being collected in the database (Tech person). 
 >
 > After it’s recorded, we’ll capture some representative screenshots of the testing session, observe it and find some insights, and destroy it right away after use.
 
