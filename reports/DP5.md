@@ -4,7 +4,7 @@ DP5: Usability Testing
 
 
 
-## 1. Experience
+## 1. Written Protocol
 
 
 
@@ -91,7 +91,7 @@ DP5: Usability Testing
 
       - (After explaining the remaining features that the test user has not discovered, we ask if he/she have noticed the presence of the feature and if he/she think it has been implemented properly.)
       - e.g. Have you realized that each item in the product list has different eco-ratings according to how many green properties it meets, and these different eco-ratings are represented by borders of different saturation when your mouse is over a certain item?
-        - → Do you think this way of describing the degree of eco-friendly is appropriate?
+        → Do you think this way of describing the degree of eco-friendly is appropriate?
 
 7. Do you have any tips for other users who will be using this service in the future?
 
@@ -119,16 +119,16 @@ DP5: Usability Testing
 
 
 
-| Participants                       | Photos                            |
-| ---------------------------------- | --------------------------------- |
-| <center>P1</center>                | ![A](https://ifh.cc/g/sW0v4g.jpg) |
-| <center>Demographic of P1</center> |                                   |
-| <center>P2</center>                | ![B](https://ifh.cc/g/ynbDwo.jpg) |
-| <center>Demographic of P2</center> |                                   |
-| <center>P3</center>                | ![C](https://ifh.cc/g/h8Wmtf.jpg) |
-| <center>Demographic of P3</center> |                                   |
-| <center>P4</center>                | ![D](https://ifh.cc/g/bxP4FR.jpg) |
-| <center>Demographic of P4</center> |                                   |
+| Participants                       | Photos                                                       |
+| ---------------------------------- | ------------------------------------------------------------ |
+| <center>P1</center>                | ![A](https://ifh.cc/g/sW0v4g.jpg)                            |
+| <center>Demographic of P1</center> | ***Age*** \|  31 yr old<br />***Gender*** \|  Male<br />***Feature*** \|  Salaryman<br />***Why is he a representative target user?***<br />He thinks he is usually quite interested in the environment, but he feels more uncomfortable when he buys eco-friendly products than he thought, so he couldn’t overcome the barrier. *“I’ve felt complacent about using eco-friendly products”* However, he is desperately aware of shortcomings such as durability and high price. |
+| <center>P2</center>                | ![B](https://ifh.cc/g/ynbDwo.jpg)                            |
+| <center>Demographic of P2</center> | ***Age*** \|  34 yr old<br />***Gender*** \|  Male<br />***Feature*** \|  Freelance Entrepreneur<br />***Why is he a representative target user?***<br />As a young businessman, he did lots of food business, once own the waffle truck at big park in Seoul. He usually thinks he is interested in the environment, but when asked if he’s ever bought eco-friendly products, he tried to buy them, but didn’t because they were expensive. Regarding the use of disposable products that he experienced while running the store, he said that it is expensive and difficult to dispose of because disposable products are used very much. |
+| <center>P3</center>                | ![C](https://ifh.cc/g/h8Wmtf.jpg)                            |
+| <center>Demographic of P3</center> | ***Age*** \|  25 yr old<br />***Gender*** \|  Female<br />***Feature*** \|  Cafe Vlog Youtuber<br />***Why is she a representative target user?***<br />She had quite deep dexperience of cafe part time job. In the process of working at the cafe, she said that many disposable products reminded her of a picture of a straw in the turtle’s nostril, so she often uses a tumbler when she visits other cafes. She’s bought and used eco-friendly dishwashing detergent, but after that she doesn’t find eco-friendly products because the detergent didn’t make bubbles easily. |
+| <center>P4</center>                | ![D](https://ifh.cc/g/bxP4FR.jpg)                            |
+| <center>Demographic of P4</center> | ***Age*** \|  21 yr old<br />***Gender*** \|  Male<br />***Feature*** \|  Student<br />***Why is he a representative target user?***<br />He is the interviewee that gave the insight of our POV. *“It’s my first time seeing eco-friendly consumption through this interview, and I want to continue eco-friendly consumption, but it’s a little difficult to actually practice due to lack of information, price, and so on.”* |
 
 
 
@@ -140,6 +140,10 @@ DP5: Usability Testing
 
 
 ## 3. Usability lessons
+
+**Severity scale** Evaluated in three aspects, frequency, impact, and persistence, each ranged among Cosmetic, Minor, Major, Catastrophic
+
+
 
 
 
@@ -162,8 +166,4 @@ DP5: Usability Testing
 ## 5. Plan for iteration
 
 
-
-
-
-------
 
