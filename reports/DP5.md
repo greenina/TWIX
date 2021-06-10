@@ -30,7 +30,7 @@
 > Yes, thank you. Before starting the full-scale testing, you need to login to use the web service. This step is just taken in order to prevent data from overlapping in the DB when multiple people are testing simultaneously. As it is not related to the core test of our prototype, I would like to inform you that it is not a completely working function as used in normal websites. But for now, we ask you to login so that you can experience the proper test flow.
 > Since you are using this website for the first time, you may need to sign up. Please create an account by entering a valid email address (including @) and a password of at least 6 characters. You can write down how you want to name your companion, in the “Companion name”, who will become your friend throughout your eco-friendly journey using this web service.
 >
-> Then, please log in using the email and password you just entered. Now let's start testing. During the testing process, you will have to clear three main tasks we offer you. Just follow our guide, and if there is something you don't know or want to say, feel free to tell us!
+> Then, please log in using the email and password you just entered. Now let's start testing. During the testing process, you will have to clear three main tasks we offer you. I would appreciate it if you could think that you are actually purchasing the product and immerse yourself more like a real situation. Just follow our guide, and if there is something you don't know or want to say, feel free to tell us!
 
 
 
