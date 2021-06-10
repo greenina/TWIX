@@ -249,5 +249,64 @@
 
 ---
 
-
 ## 5. Plan for iteration
+
+1. #### Combining user testing results and studio reflection, we were able to organize the problems that we are going to improve as follows.
+
+- ##### Not sufficiently consider the usability of the user point
+
+  - Heart icons on the category page are not clickable.
+
+    → In both the Category Page and the list of recommended products on My Page, make the heart icon can be clicked to add/delete to the wish list.
+
+  - Heart icons of the recommended products shown on My Pageare not clickable without entering the product details page.
+
+    → In both the Category Page and the list of recommended products on My Page, make the heart icon can be clicked to add/delete to the wish list.
+
+  - There is a shortage of indicators on the category page to see which category I am currently looking at.
+
+    → Subcategory features can be added to address this problem by telling users which path they have accessed the current page through.
+
+  - There is just no way to to move to another room rather than the radio button in the main page .
+
+    → Add arrows to images on Main Page to show that you can move on to other images, as well as use the arrows as buttons.
+
+  - It is necessary to show what role each of the icons on the detail page (putting goods in the wishlist, sharing url, and going to the sales site) plays.
+
+    → When hovering over each icon, text tells the users what each icon means, such as *wish*, *share*, *buy*.
+
+- ##### Can't have enough support to hesitating moments for the newcomers of eco-friendly consumption
+
+  - When the user go from the main page to the category page, even though he/she only clicked the tissue, other products are displayed together. Furthermore, the tissue can be found in any room in real world, we only placed it at the living room in our website.
+
+    → Add a subcategory function to automatically filter, for example, the tissue products so that if the user clicks the tissue in the living room, it will go to the category page corresponding to the living room but can see only tissues there.
+
+  - The main page should allow the users to consider green elements daily without that much effort, but it doesn't tell them enough about which products are available for green consumption.
+
+    → More explicitly shows which clickable items exist for eco-friendly products in the Main Page.
+
+  - The users are not well aware of the changing state of the companion character, polar bear.
+
+    → Polar bears communicate their condition more directly through speech balloons.
+
+2. #### Then, each function above was classified as how long it would take to be actually implemented (something that could be done quickly vs. something that would take a long time to change).
+
+3. #### We decided to revise the part by dividing the roles as below.
+
+   * At this time, we considered how long each function takes to implement, how similar each function is in the code, and where each person took the initiative in creating the prototype and wrote the code at the first phase.
+   * For now, we divided our roles for efficiency, but decided to inform each other and collaborate if any problems arise during the actual implementation.
+
+- **Gyewon Kim**
+  - Enable heart click on category page
+  - Enable heart click on product recommendation list in my page
+- **Inhwa Song** 
+  - Adding a speech balloon to a polar bear on the detail page
+  - Show text when hovering icons on detail pages (wish, share, buy)
+- **Taeyang Yoon**
+  - Modify the product shown on the main page (more noticeable representation of the clickable product)
+  - Adding an arrow button in the main page
+- **Seungyeon Choi**
+  - Implementing subcategory capabilities (path indicator texts, page routing)
+
+------
+
