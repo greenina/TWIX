@@ -144,38 +144,67 @@ DP5: Usability Testing
 
 ## 3. Usability lessons
 
-**Severity scale** Evaluated in three aspects, frequency, impact, and persistence, each ranged among Cosmetic, Minor, Major, Catastrophic
+**Severity scale** Evaluated in three aspects, frequency, impact, and persistence, each ranged among High, Medium, Low
 
 #### [Task 1] Put each one household in every room at home(living room, kitchen, bathroom, bedroom) to a wish list.	
 
--  *[Minor]* Didn't catch how to move to other rooms.
-- *[Catastrophic]* Be confused that he just pressed a particular item in the photo, but other items also displayed together. 
-- *[Major]* She doesn't know which category she's in on the category page, after clicking a certain item in the main page. 
-- *[Cosmetic]* On the main page, because some products can't be clicked, it was hard to distinguish which one is clickable.
+-  *[Medium]* Didn't catch how to move to other rooms. (P1, P3)
 
+  → Plan to address: Normally, the circles underneath the images are used to indicate where I am now, and in our case this was used as a button to change the image. Also the circles were in a position that could be seen by scrolling down, making it more difficult for users to access. Therefore, we want to show more explicitly that the image can be moved over by adding arrow buttons on the left and right side of the image, to positions that can be seen immediately when the page is loaded.
 
-##### Reflections: 
+- *[High]* Be confused that he just pressed a particular item in the photo, but other items also displayed together after moving to the category page. (P1, P2, P3, P4)
+
+  → Plan to address: A subcategory function is created to show specific product subcategories, for example, within the living room so that only tissues can be collected and viewed, when the user clicked the tissue on the Mainpage.
+
+- *[Medium]* She doesn't know which category she's in on the category page, after clicking a certain item in the main page. (P3)
+
+  → Plan to address: Creating a subcategory feature, it also shows the route through which the user enters the page.
+
+- *[Low]* On the main page, because some products can't be clicked, it was hard to distinguish which one is clickable. (P1, P2, P4)
+
+  → Plan to address: Originally, there were products that seemed clickable to create a function that providing relevant environmental information/news. However, since we have decided not to implement this feature, we plan to make these products look like backgrounds and make clickable products stand out more by adding borders.
 
 #### [Task 2] Select an eco-friendly cushion you like and put in the wish list.
 
-- *[Cosmetic]* He didn't notice that the category page showed how green each product was by the differenct colors of border.
-- *[Minor]* He was unaware that the 'In a glance' button existed.
-- *[Catastrophic]* She was also uncomfortable with not being able to tap hearts on the category page.
-- *[Minor]* She thinks it's an error when she hits the share button, being showed an alert window.
+- *[Low]* He was unaware that the 'In a glance' button existed. (P1, P2)
 
-##### Reflections: 
+  → Plan to address: Originally, the 'In a glance' button was in the very last corner of the filtering options on the category page. However, technically, the role of these filtering options and the button was different, so we decided to place in each different row and explicitly indicate why the users might need this feature.
+
+- *[High]* She was uncomfortable with not being able to tap hearts on the category page. (P1, P2, P3, P4)
+
+  → Plan to address: We are planning to add clicklisters to the heart buttons of the product boxes on the category page and implement them to be syncronized with the DB to enable addition/deletion to the wishlist.
+
+- *[Medium]* She thinks it's an error when she hits the share button, being showed an alert window. (P3)
+
+  → Plan to address: Instead of an alert window, we decied to replace it with a modal window with an mood that is visually similar to other elements on our website.
+
+- [High] Users did not notice the fact that polar bears' fur color, ice size, and condition were changing much more than we expected. (P2, P3)
+
+  → Plan to address: In the product detail page, the polar bear conveys their status more directly through speech balloons.
 
 #### [Task 3] Choose one non eco-friendly product in a wish list, and replace it with what your companion may like.
 
-- *[Cosmetic]* He felt that it takes too long for the recommended product to pop up after hovering over the non-friendly product photo on my page.
-- *[Minor]* When hovering over pictures of non-environmental products on my page, she knew that the recommended products were displayed, but she didn't notice that the polar bear's comments above were changing.
-- *[Major]* Didn't understand what eco-score on my page meant.
-- *[Minor]* It takes a long time to understand what polar bears mean.
-- *[Major]* It was difficult to distinguish between eco-friendly and non-eco-friendly products on the wish list.
-- *[Cosmetic]* Doubtful about not disappearing immediately when he cancels a heart from the wishlist.
+- *[Low]* He felt that it takes too long for the recommended product to pop up after hovering over the non-friendly product photo on my page. (P2)
 
+  → Plan to address: The delay was made intentionally to allow users to recognize why the recommended product was emerging, because if the delay time was reduced, the elements on the screen could be changed even before the user could recognize which product the user had hovering over. So we concluded not to change this delaying time.
 
-##### Reflections: 
+- *[High]* Didn't understand what eco-score on my page meant. (P1, P3)
+
+  → Plan to address: Originally, as the eco-score changed from 0 to 3, the state of polar bears was set to change to one of the four cases. It was easy for all users to understand what the polar bear status meant, but they found it difficult to understand exactly what the score meant. So we decided to just write down a description of the polar bear status, excepting eco-score.
+
+- *[Low]* Doubtful about not disappearing immediately when he cancels a heart from the wishlist. (P2)
+
+  → Plan to address: If a user accidentally clicks a heart, it is set not to be deleted immediately, reducing the risk of deleting it from the wishlist. Asking if you want to delete it through a modal window can cause unnecessary and bothersome mouse movements, so users can just turn the heart off and on. Comparing this risk reduction effect with the resolving question of why the product is not deleted immediately, we decided to choose the former, keeping the current implementation choice.
+
+#### **[High-level Reflections]**
+
+- What did you overall learn from the user testing experience?
+
+  
+
+- What would you do differently for better results and insights?
+
+  
 
 
 
